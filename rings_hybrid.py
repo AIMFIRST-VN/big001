@@ -48,7 +48,7 @@ while t < tend:
     P = np.where(fluid, cs_pressure(rho, es), 0.0)
     dv = vs - np.concatenate(([0.0], vs[:-1]))
     q = np.where(fluid & (dv < 0), 2.0 * rho * dv**2, 0.0)
-    Pt = P + q
+    Pt = np.nan_to_num(P + q, nan=0.0, posinf=1e6)
     Pout = np.concatenate((Pt[1:], [0.0]))
     area = 4 * np.pi * rs**2
     mass_face = 0.5 * (ms + np.concatenate((ms[1:], [ms[-1]])))
@@ -72,9 +72,12 @@ while t < tend:
     # scatter back
     r[order] = rs_new; v[order] = vs; e[order] = es
     t += dt
-    cs = np.sqrt(np.maximum((5 / 3) * Pt / rho, 1e-12))
-    dr = np.maximum(rs - r_in, 1e-6)
-    dt = min(0.3 * np.min(dr / (cs + np.abs(vs) + 1e-9)), 5e-3)
+    cs = np.sqrt(np.maximum(np.nan_to_num((5 / 3) * Pt / rho, nan=0.0, posinf=1e6), 1e-12))
+    dr = np.maximum(rs_new - r_in_new, 1e-6)
+    dt_c = 0.3 * np.nanmin(dr / (cs + np.abs(np.nan_to_num(vs)) + 1e-9))
+    dt = min(dt_c if np.isfinite(dt_c) and dt_c > 0 else 1e-6, 5e-3)
+    if not (np.isfinite(rs_new).all() and np.isfinite(vs).all()):
+        print(f'NONFINITE at step {step} t {t:.4f}', file=sys.stderr); break
     step += 1
 
 order = np.argsort(r); rs = r[order]; vs = v[order]; ms = m[order]
