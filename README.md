@@ -8,7 +8,7 @@ Single current version at the head of the repo: `big-pool-bangs.md` (source), `b
 
 Versioning uses git tags and GitHub Releases: every released version is a tag (`v5-2`, ...) with the PDF attached under https://github.com/AIMFIRST-VN/big001/releases. Older drafts (v1–v5-1) remain in the git history.
 
-Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm -V fontsize=11pt`
+Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm -V fontsize=11pt  (title and subtitle come from the YAML header)`
 
 ## Analysis scripts
 
