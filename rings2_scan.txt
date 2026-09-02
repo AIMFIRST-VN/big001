@@ -1,0 +1,20 @@
+f_local=0.5 beta=1e-06 N=100 t_end=20.0 steps=4175972
+unbound fraction = 0.310   total KE/|U| = 0.50 (E_tot>0 if >1); pressureless run of this code is the ballistic null
+wave passages through core = 3
+physical edges (>0.5 dex over 5 shells) = 9 at mass fractions [0.03, 0.51, 0.57, 0.63, 0.7, 0.76, 0.82, 0.88, 0.94]
+f_local=0.6 beta=1e-06 N=100 t_end=20.0 steps=38820
+unbound fraction = 0.000   total KE/|U| = 0.72 (E_tot>0 if >1); pressureless run of this code is the ballistic null
+wave passages through core = 1
+physical edges (>0.5 dex over 5 shells) = 6 at mass fractions [0.03, 0.58, 0.69, 0.75, 0.86, 0.93]
+f_local=0.6 beta=0.05 N=100 t_end=20.0 steps=370780
+unbound fraction = 1.000   total KE/|U| = 0.72 (E_tot>0 if >1); pressureless run of this code is the ballistic null
+wave passages through core = 2
+physical edges (>0.5 dex over 5 shells) = 10 at mass fractions [0.03, 0.36, 0.42, 0.48, 0.54, 0.6, 0.74, 0.8, 0.86, 0.92]
+f_local=0.7 beta=1e-06 N=100 t_end=20.0 steps=643658
+unbound fraction = 0.980   total KE/|U| = 0.98 (E_tot>0 if >1); pressureless run of this code is the ballistic null
+wave passages through core = 0
+physical edges (>0.5 dex over 5 shells) = 6 at mass fractions [0.03, 0.67, 0.73, 0.79, 0.91, 0.97]
+f_local=0.7 beta=0.05 N=100 t_end=20.0 steps=108436
+unbound fraction = 0.010   total KE/|U| = 0.98 (E_tot>0 if >1); pressureless run of this code is the ballistic null
+wave passages through core = 0
+physical edges (>0.5 dex over 5 shells) = 4 at mass fractions [0.04, 0.76, 0.82, 0.94]
