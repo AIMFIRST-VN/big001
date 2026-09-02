@@ -2,11 +2,13 @@
 Relative test only: curl-map variance stacked at the 8 extreme spots vs random
 positions, mean-field subtracted via Gaussian sims through the same pipeline.
 Normalization cancels in the spot-vs-null comparison."""
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
 import numpy as np, healpy as hp
 
 NS, LMAX = 256, 512
-T = hp.read_map("/home/ubuntu/big-pool-bang/smica.fits", field=0)
-TM = hp.read_map("/home/ubuntu/big-pool-bang/smica.fits", field=3)
+T = hp.read_map(os.path.join(HERE, "smica.fits"), field=0)
+TM = hp.read_map(os.path.join(HERE, "smica.fits"), field=3)
 T = hp.ud_grade(T, NS); TM = hp.ud_grade(TM, NS) > 0.9
 if np.std(T[TM]) < 1e-2: T *= 1e6
 T = T - np.mean(T[TM])
@@ -40,7 +42,7 @@ for i in rng_seeds:
     mf += curl_map(hp.synfast(ctot, NS))
 mf /= len(list(rng_seeds))
 wd = wd - mf
-np.save("/home/ubuntu/big-pool-bang/curl_omega_map.npy", wd)
+np.save(os.path.join(HERE, "curl_omega_map.npy"), wd)
 
 npix = hp.nside2npix(NS)
 lp, bp = hp.pix2ang(NS, np.arange(npix), lonlat=True)

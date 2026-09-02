@@ -10,6 +10,8 @@ Planck units internally (G = hbar = c = 1), rho in units of the critical
 (jamming) density rho_c = 0.64 * rho_P. Matter treated as the hard-sphere
 fluid: rho evolves via continuity drho/dt = -3H(rho + P).
 """
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -70,7 +72,7 @@ ax[1].axhline(1.0, color="k", ls=":", lw=0.8, label=r"jamming density $\rho_c$")
 ax[1].set_xlabel("t  [Planck times]"); ax[1].set_ylabel(r"$\rho/\rho_c$")
 ax[1].set_yscale("log"); ax[1].legend(fontsize=8); ax[1].set_title("Density history")
 fig.tight_layout()
-fig.savefig("/home/ubuntu/big-pool-bang/bounce.png", dpi=150)
+fig.savefig(os.path.join(HERE, "bounce.png"), dpi=150)
 
 print("classical: final a = %.3e, max rho/rho_c = %.3e  (runaway collapse)" % (a1[-1], r1.max() / RHO_C))
 print("modified : min  a = %.3e, max rho/rho_c = %.6f  (bounce at rho_c)" % (a2.min(), r2.max() / RHO_C))

@@ -4,6 +4,8 @@ last-scattering sphere at comoving D=(1+eps)d.  Profile: f(t)=1/sqrt(eps^2+2(1+e
 Half-max angle th -> eps = th/sqrt(3).  The same mass produces a 1/r tail over the
 whole sky -> predicted l=1..3 pattern, and a tidal pull -> predicted bulk-flow direction.
 Compare with the observed SMICA low multipoles and the CF4 bulk flow."""
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
 import numpy as np, healpy as hp
 
 spots = [  # l, b, dT peak (uK), half-max (deg)
@@ -39,7 +41,7 @@ def axis(alm,l):
         s=sum(m*m*abs(a[hp.Alm.getidx(3,l,m)])**2*(2 if m>0 else 1) for m in range(l+1))
         if best is None or s>best[0]: best=(s,i)
     return hp.pix2ang(16,best[1],lonlat=True)
-sm=np.load("/home/ubuntu/big-pool-bang/smica_nside128.npy")
+sm=np.load(os.path.join(HERE, "smica_nside128.npy"))
 if np.std(sm)<1e-2: sm*=1e6
 almo=hp.map2alm(sm-sm.mean(),lmax=3); clo=hp.alm2cl(almo)
 print("observed (unmasked SMICA) C2,C3: %.0f %.0f uK^2"%(clo[2],clo[3]))

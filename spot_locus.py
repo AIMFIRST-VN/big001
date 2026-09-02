@@ -3,10 +3,12 @@ with theta = half-max radius of the radial profile around each peak.
 Locus test: common-distance-shell bangs predict DT ~ theta^3 (slope +3);
 BBKS Gaussian peaks predict weak amplitude-size correlation.
 Null: 60 Gaussian realizations from the map's own pseudo-Cl, same pipeline."""
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
 import numpy as np, healpy as hp
 
 NSIDE = 128
-m = np.load("/home/ubuntu/big-pool-bang/smica_nside128.npy").astype(float)
+m = np.load(os.path.join(HERE, "smica_nside128.npy")).astype(float)
 m -= m.mean()
 if np.std(m) < 1e-2:      # map in K -> uK
     m *= 1e6
