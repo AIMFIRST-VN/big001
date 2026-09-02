@@ -4,17 +4,11 @@ Speculative cosmology paper: a jammed hard-sphere Planck-relic core, a loop-quan
 
 ## Paper
 
-| Version | Files |
-|---|---|
-| v1 (original) | `big-pool-bangs.md` / `.tex` / `.pdf` |
-| v2 (refocused on three questions, adds H5–H7, constant-tension expansion history, Appendix B) | `big-pool-bangs-v2.md` / `.tex` / `.pdf` |
-| v3 (second adversarial review applied) | `big-pool-bangs-v3.md` / `.tex` / `.pdf` |
-| v4 (third review applied; two geometries A/B, H5 as discriminator, reference list) | `big-pool-bangs-v4.md` / `.tex` / `.pdf` |
-| v5 (fourth review applied; Geometry B without bounce mechanism, mock-percentile offset floor, spin bounds, numbered tables) | `big-pool-bangs-v5.md` / `.tex` / `.pdf` |
-| v5-1 (abstract opens with the dark-sector scorecard; epilogue surprises and dark-matter section) | `big-pool-bangs-v5-1.md` / `.tex` / `.pdf` |
-| v5-2 (epilogue: neighbours push but not outward on average; 1% cap attributed to ejecta) | `big-pool-bangs-v5-2.md` / `.tex` / `.pdf` |
+Single current version at the head of the repo: `big-pool-bangs.md` (source), `big-pool-bangs.tex`, `big-pool-bangs.pdf`.
 
-Build: `pandoc big-pool-bangs-v5-2.md -s -o big-pool-bangs-v5-2.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm -V fontsize=11pt`
+Versioning uses git tags and GitHub Releases: every released version is a tag (`v5-2`, ...) with the PDF attached under https://github.com/AIMFIRST-VN/big001/releases. Older drafts (v1–v5-1) remain in the git history.
+
+Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm -V fontsize=11pt`
 
 ## Analysis scripts
 
