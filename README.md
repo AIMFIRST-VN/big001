@@ -24,6 +24,8 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `neighbour_tail.py` | Point-mass Sachs–Wolfe tail (low-ℓ template) and tidal bulk-flow direction |
 | `rings_hydro.py` | First 1-D hydro toy (RETRACTED numbers: kick profile and band-finder artefacts, see paper Sec. 3.2); kept for the record with `rings_hydro_scan.txt` |
 | `rings_hydro2.py` | Controlled 1-D hydro toy: kick at a fixed fraction of the local escape speed, pressure-to-gravity ratio beta, fixed-contrast edge finder, pressureless run as ballistic null |
+| `jm_cells.py` | Johnson–Mehl nucleation-and-growth Monte Carlo for the pool of bangs: nearest-wall distance, neighbour count, age differences, observer offset; results in `jm_cells_results.txt` |
+| `rings_hybrid.py` | Hybrid 1-D toy: shells are fluid where the local packing fraction exceeds a threshold and billiard balls elsewhere |
 | `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |
 

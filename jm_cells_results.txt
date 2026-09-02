@@ -1,0 +1,28 @@
+realizations used: 150  (mean cell size L = 1, c = 1)
+nearest wall distance / L: 10/50/90% = [0.02  0.125 0.352]
+observer offset from own seed / L: 10/50/90% = [0.385 0.666 1.058]
+number of neighbours touched (distinct cells along 200 rays): 10/50/90% = [ 9.  14.5 21. ]
+fraction of a cell's neighbours that are OLDER: mean = 0.41
+age difference across walls (t_neighbour - t_ours)/ (L/c): 10/50/90% = [-0.246  0.102  0.558]; |dt| median = 0.207
+P(nearest wall < 0.25 L) = 0.78, < 0.5 L = 0.98, > 1 L = 0.00
+realizations used: 150  (mean cell size L = 1, c = 1)
+nearest wall distance / L: 10/50/90% = [0.027 0.118 0.344]
+observer offset from own seed / L: 10/50/90% = [0.333 0.675 1.026]
+number of neighbours touched (distinct cells along 200 rays): 10/50/90% = [10. 14. 21.]
+fraction of a cell's neighbours that are OLDER: mean = 0.39
+age difference across walls (t_neighbour - t_ours)/ (L/c): 10/50/90% = [-0.25   0.11   0.547]; |dt| median = 0.214
+P(nearest wall < 0.25 L) = 0.80, < 0.5 L = 0.99, > 1 L = 0.00
+realizations used: 150  (mean cell size L = 1, c = 1)
+nearest wall distance / L: 10/50/90% = [0.02  0.136 0.359]
+observer offset from own seed / L: 10/50/90% = [0.269 0.656 1.052]
+number of neighbours touched (distinct cells along 200 rays): 10/50/90% = [ 9.  15.  20.1]
+fraction of a cell's neighbours that are OLDER: mean = 0.40
+age difference across walls (t_neighbour - t_ours)/ (L/c): 10/50/90% = [-0.238  0.103  0.559]; |dt| median = 0.199
+P(nearest wall < 0.25 L) = 0.77, < 0.5 L = 0.98, > 1 L = 0.00
+realizations used: 150  (mean cell size L = 1, c = 1)
+nearest wall distance / L: 10/50/90% = [0.027 0.148 0.305]
+observer offset from own seed / L: 10/50/90% = [0.354 0.702 1.021]
+number of neighbours touched (distinct cells along 200 rays): 10/50/90% = [10. 16. 20.]
+fraction of a cell's neighbours that are OLDER: mean = 0.36
+age difference across walls (t_neighbour - t_ours)/ (L/c): 10/50/90% = [-0.191  0.135  0.568]; |dt| median = 0.205
+P(nearest wall < 0.25 L) = 0.77, < 0.5 L = 0.99, > 1 L = 0.00
