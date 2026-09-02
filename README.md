@@ -11,8 +11,9 @@ Speculative cosmology paper: a jammed hard-sphere Planck-relic core, a loop-quan
 | v3 (second adversarial review applied) | `big-pool-bangs-v3.md` / `.tex` / `.pdf` |
 | v4 (third review applied; two geometries A/B, H5 as discriminator, reference list) | `big-pool-bangs-v4.md` / `.tex` / `.pdf` |
 | v5 (fourth review applied; Geometry B without bounce mechanism, mock-percentile offset floor, spin bounds, numbered tables) | `big-pool-bangs-v5.md` / `.tex` / `.pdf` |
+| v5-1 (abstract opens with the dark-sector scorecard; epilogue surprises and dark-matter section) | `big-pool-bangs-v5-1.md` / `.tex` / `.pdf` |
 
-Build: `pandoc big-pool-bangs-v5.md -s -o big-pool-bangs-v5.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm -V fontsize=11pt`
+Build: `pandoc big-pool-bangs-v5-1.md -s -o big-pool-bangs-v5-1.pdf --pdf-engine=pdflatex -V geometry:margin=2.5cm -V fontsize=11pt`
 
 ## Analysis scripts
 
