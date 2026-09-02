@@ -160,9 +160,13 @@ explicit falsifiers collected in one table; we catalogue ten predictions
 (P1 (Polarization Ring)--P10 (Induced-Velocity Bound)) with the
 instruments required, and state the unsolved problems: causal structure
 of the bounce, relativistic formulation of ejection, the horizon and
-flatness problems, and the expansion history (the ejecta, though born
-relativistic, are cold by matter--radiation equality through momentum
-redshift).
+flatness problems, the expansion history, and an energy-budget conflict:
+a radiation era sourced by the relics themselves leaves the ejecta
+relativistic at matter--radiation equality (hot dark matter), while a
+cold-relic history requires the bounce energy to be radiation from the
+crystallization with the relics an unjammed trace, so the jamming bounce
+and the \(88\%\) ejection cannot both be the origin of cold dark matter
+(Sec. 3).
 
 \hypertarget{introduction-three-questions}{%
 \subsection{\texorpdfstring{\textbf{1. Introduction: Three
@@ -181,9 +185,9 @@ This paper is organized around three questions.
   ejection happens everywhere, and the sorting is velocity-space
   structure on an FLRW background: the ejection sets the matter's
   initial peculiar-velocity distribution, which redshifts into the
-  Hubble flow by the momentum-redshift argument of Sec. 3. In
-  \emph{Geometry B} (finite centred cloud) the rebound is a single
-  centred event, genuine radial ordering survives --- the fastest
+  Hubble flow only under the radiation-dominated budget of Sec. 3, case
+  (iii). In \emph{Geometry B} (finite centred cloud) the rebound is a
+  single centred event, genuine radial ordering survives --- the fastest
   furthest --- and the Hubble-like law is ballistic (\(v = r/t\)) plus
   the adopted tension --- though Geometry B has, at present, no bounce
   mechanism (Sec. 3). H5 (Our Position -- Where Is Nemo; Sec. 10) is the
@@ -429,29 +433,38 @@ sorts the mass into two components:
 \end{itemize}
 \end{quote}
 
-\textbf{Ejecta temperature: cold by momentum redshift.} The ejecta leave
-at a substantial fraction of the (formally superluminal) escape speed,
-i.e.~relativistically, so one must check that they are not \emph{hot}
-dark matter by the epoch of structure formation. They are not, for the
-standard reason: the physical momentum of a free-streaming particle
-falls as \(p \propto 1/a\). The bounce occurs at
-\(\rho_c \approx 0.41\,\rho_P\), where the radiation temperature is of
-order the Planck temperature, \(T_P = 1.4\times10^{32}\) K, and
-matter--radiation equality is at \(T_{\rm eq} \approx 9\times10^{3}\) K,
-so \(a_{\rm eq}/a_{\rm bounce} \approx T_P/T_{\rm eq} \approx 10^{28}\).
-A relic ejected with Lorentz factor \(\gamma\) therefore reaches
-equality with \(p/m_Pc \approx \gamma\beta \times 10^{-28}\): for
-\(\gamma\beta \sim 1\) its peculiar velocity is \(\sim\!10^{-28}c\), and
-it remains non-relativistic at equality for any
-\(\gamma \lesssim 10^{28}\), far beyond anything the ejection could
-plausibly supply. The free-streaming length is correspondingly
-negligible and Planck-relic ejecta are \emph{cold} dark matter. In
-Geometry A this is automatic; in Geometry B the same \(1/a\) decay
-applies to the velocity dispersion about the local ballistic flow. What
-this argument does not do is fix the ejecta's energy budget at the
-bounce (kinetic energy that redshifts away is radiation-like, so the
-\(88\%\) figure is a rest-mass fraction) or supply the relativistic
-formulation of the ejection itself, which remains open (Sec. 12).
+\textbf{Ejecta temperature and the bounce-to-equality energy budget.}
+The ejecta leave relativistically, so they must be cold
+(\(p/m_Pc \lesssim 10^{-3}\)) by matter--radiation equality or they are
+hot dark matter. Free-streaming momenta redshift as \(p \propto 1/a\),
+so the question is how much expansion separates the bounce from
+equality, and that is fixed by the energy budget:
+\(a_{\rm eq}/a_{\rm bounce}\) equals the ratio of radiation-like to
+rest-mass energy at the bounce. We evaluated this ratio for every source
+of radiation the framework offers (\texttt{energy\_budget.py}). (i) If
+the radiation is the relics' own kinetic energy, then radiation
+domination ends exactly when the relics stop being relativistic, because
+it is the same energy redshifting: for any ejection Lorentz factor from
+\(2\) to \(10^{20}\), with or without the furnace converting all trapped
+rest mass, the ejecta reach equality with \(p/m_Pc = 1.6\)--\(1.9\).
+They are hot dark matter, independent of \(\gamma\). (ii) The furnace
+cannot rescue this: the trapped relics are the slow ones by velocity
+sorting, so they carry less energy than the ejecta; cold ejecta would
+require the trapped population to hold \(\gtrsim 100\) times the
+ejecta's energy per particle. (iii) The only consistent budget is an
+\emph{independent} radiation component \(R_0\) released by the
+crystallization itself (latent heat of the false vacuum) with
+\(R_0 \gg \gamma\) in units of the relic rest energy: then
+\(p/m_Pc = \gamma/R_0\) at equality, all relics survive, and the
+dark-matter-to-baryon split is whatever fraction the furnace later
+converts. The cost is that the relics are then a trace \(1/R_0\) of the
+energy at the bounce, with packing fraction
+\(\sim\!0.64/R_0 \lesssim 10^{-3}\): nothing is jammed, the bounce is a
+bounce of a radiation fluid, and the rebound ejection fraction does not
+govern the cosmological background. Planck-relic \emph{cold} dark matter
+survives in case (iii); the jamming bounce and the \(88\%\) ejection as
+the origin of the dark-matter fraction do not survive together with it.
+This is recorded as the leading open problem (Sec. 12).
 
 \textbf{Ejection fraction (toy \(N\)-body).} A softened \(N = 1000\)
 equal-mass simulation of a cold uniform sphere given a radial kick
@@ -511,9 +524,9 @@ toy, and this paper carries two geometric hypotheses in parallel.
   statistical content (ejected fraction, speed distribution, isotropy);
   what does not is the geometric centre. The ejection sets the matter's
   \emph{initial peculiar-velocity distribution}, which redshifts into
-  the Hubble flow by the momentum-redshift argument of Sec. 3. This
-  geometry avoids the trapped-surface problem of Sec. 1.1 and predicts a
-  null for H5 (Our Position -- Where Is Nemo).
+  the Hubble flow only under the radiation-dominated budget of Sec. 3,
+  case (iii). This geometry avoids the trapped-surface problem of Sec.
+  1.1 and predicts a null for H5 (Our Position -- Where Is Nemo).
 \item
   \textbf{Geometry B (finite centred cloud).} The rebound is a single
   centred event and genuine radial velocity sorting survives: the
@@ -716,27 +729,27 @@ included, the ejecta are treated as pressureless dust on a flat
 the shell \emph{kinematics}, not the background equation of state. In
 Geometry A (Sec. 3) the ejection sets the matter's initial
 peculiar-velocity distribution on that background, those peculiar
-velocities redshift into the Hubble flow by the momentum-redshift
-argument of Sec. 3, and the supernova, BAO and kSZ comparisons are
-satisfied because the \(\Lambda\)CDM background is assumed: the ejecta
-shells of Sec. 3 describe how the matter component acquired its initial
-velocities rather than an alternative expansion law. Geometry B has no
-such shelter. There the expansion law \emph{is} the ballistic ordering
-of the ejecta, \(v = r/t\), plus the tension, and the observational
-comparison must be made on that law. The ballistic-only LTB lightcone
-(Appendix C) decelerates (\(q_0^{\text{eff}} = +0.16\)) and departs from
-\(\Lambda\)CDM by \(\sim\!0.35\) mag by \(z \sim 5\); the
-LTB-plus-\(\Lambda\) lightcone --- an inhomogeneous ballistic dust cloud
-with a constant tension, seen by an interior observer --- has \emph{not}
-been computed. That monopole distance--redshift relation, not the
-dipole, is Geometry B's principal observational burden, and until it is
-computed Geometry B cannot claim the supernova, BAO and kSZ agreement
-that Geometry A inherits from its assumed background. What the framework
-does not supply is the value of the tension: the one framework-native
-candidate, a residual unconverted vacuum fraction, reproduces the
-\(10^{-123}\) tuning of standard cosmology (Appendix C), and the origin
-of \(\rho_\Lambda\) is counted among the open problems (Sec. 12),
-exactly as in \(\Lambda\)CDM.
+velocities redshift into the Hubble flow only under the
+radiation-dominated budget of Sec. 3, case (iii), and the supernova, BAO
+and kSZ comparisons are satisfied because the \(\Lambda\)CDM background
+is assumed: the ejecta shells of Sec. 3 describe how the matter
+component acquired its initial velocities rather than an alternative
+expansion law. Geometry B has no such shelter. There the expansion law
+\emph{is} the ballistic ordering of the ejecta, \(v = r/t\), plus the
+tension, and the observational comparison must be made on that law. The
+ballistic-only LTB lightcone (Appendix C) decelerates
+(\(q_0^{\text{eff}} = +0.16\)) and departs from \(\Lambda\)CDM by
+\(\sim\!0.35\) mag by \(z \sim 5\); the LTB-plus-\(\Lambda\) lightcone
+--- an inhomogeneous ballistic dust cloud with a constant tension, seen
+by an interior observer --- has \emph{not} been computed. That monopole
+distance--redshift relation, not the dipole, is Geometry B's principal
+observational burden, and until it is computed Geometry B cannot claim
+the supernova, BAO and kSZ agreement that Geometry A inherits from its
+assumed background. What the framework does not supply is the value of
+the tension: the one framework-native candidate, a residual unconverted
+vacuum fraction, reproduces the \(10^{-123}\) tuning of standard
+cosmology (Appendix C), and the origin of \(\rho_\Lambda\) is counted
+among the open problems (Sec. 12), exactly as in \(\Lambda\)CDM.
 
 \hypertarget{h2-vortex-the-cold-eye-of-sauron-the-cold-spot-and-the-axis-of-evil}{%
 \subsection{\texorpdfstring{\textbf{6. H2 (Vortex -- The Cold Eye of
@@ -1692,17 +1705,21 @@ Problems}}{12. Limitations and Open Problems}}\label{limitations-and-open-proble
   \(n_s - 1 = -\nu_t/3\) are fitted inputs; the compatibility of a
   Kolmogorov cascade with near scale invariance is unproven.
 \item
-  \textbf{Dark-matter fraction and temperature.} The \(88\% \pm 4\%\)
-  ejection requires \(\sigma_{\text{rel}} \approx 1\), which the cascade
-  model reaches only marginally, and the end-to-end chain is untested.
-  The ejecta are born relativistic but are cold by matter--radiation
-  equality through the \(p \propto 1/a\) momentum redshift over the
-  \(\sim\!10^{28}\) expansion from the bounce (Sec. 3), which in
-  Geometry A is also what carries the ejection-set peculiar velocities
-  into the Hubble flow (Sec. 5.2); what remains open is the relativistic
-  formulation of the ejection and its energy budget at the bounce.
-  Planck-relic dark matter must also face femtolensing, capture, and
-  abundance constraints.
+  \textbf{Energy budget: jamming bounce versus cold relics.} The
+  \(88\% \pm 4\%\) ejection requires \(\sigma_{\text{rel}} \approx 1\),
+  which the cascade model reaches only marginally, and the end-to-end
+  chain is untested. More seriously, the bounce-to-equality budget (Sec.
+  3) shows that if the radiation era is sourced by the relics themselves
+  the ejecta are still relativistic at equality (\(p/m_Pc \approx 1.7\)
+  for any \(\gamma\)), i.e.~hot dark matter, while a consistent
+  cold-relic history needs an independent radiation component from the
+  crystallization that makes the relics a trace at the bounce, unjammed.
+  The framework must choose: a jammed-relic bounce with hot relics, or a
+  radiation-fluid bounce with cold Planck-relic dark matter whose
+  abundance is not set by the rebound. Neither option has been
+  developed. Planck-relic dark matter must also face femtolensing,
+  capture, and abundance constraints, and the relativistic formulation
+  of the ejection remains open.
 \item
   \textbf{Expansion history.} Neither the Newtonian toy nor the LTB
   lightcone produces apparent acceleration, the toy's \(w(z)\) drift
@@ -1840,25 +1857,27 @@ debris is our dark matter. What its speed-sorting means depends on which
 of two geometries the universe chose. In Geometry A the crush was
 everywhere and had no centre: the ejection set the matter's initial
 peculiar velocities on a homogeneous background, and those velocities
-redshift into the Hubble flow by the momentum-redshift argument of Sec.
-3. In Geometry B the rebound was one centred event: the fastest went
-furthest, and that ordering \emph{is} a ballistic Hubble-like law,
-\(v = r/t\), to which the tension below is added --- at the price of
-having, as yet, no bounce mechanism at all (a finite cloud of that mass
-sits \(10^{40}\) inside its own horizon, and nothing in the equations
-brings it out) and of a monopole distance--redshift relation that has
-not yet been computed. Either way the debris does not push the universe
-faster; nothing outside a volume ever can, and nothing inside it pushes
-unless it has negative pressure. The acceleration we measure comes from
-a constant tension of space, \(w = -1\), which we adopt on an assumed
-\(\Lambda\)CDM background and cannot yet derive. So the model works as
-far as the matter goes, hands the expansion to a tension it does not
-explain, and carries three open problems: the ejection has no
-relativistic formulation yet (the ejecta themselves, born relativistic,
-are cooled to rest by the \(10^{28}\)-fold expansion before structure
-forms), the thermal ring around the Cold Spot is not there, and the
-bounce is only meaningful without qualification if the jammed patch was
-the whole universe rather than a ball inside its own horizon.
+redshift into the Hubble flow only under the radiation-dominated budget
+of Sec. 3, case (iii). In Geometry B the rebound was one centred event:
+the fastest went furthest, and that ordering \emph{is} a ballistic
+Hubble-like law, \(v = r/t\), to which the tension below is added --- at
+the price of having, as yet, no bounce mechanism at all (a finite cloud
+of that mass sits \(10^{40}\) inside its own horizon, and nothing in the
+equations brings it out) and of a monopole distance--redshift relation
+that has not yet been computed. Either way the debris does not push the
+universe faster; nothing outside a volume ever can, and nothing inside
+it pushes unless it has negative pressure. The acceleration we measure
+comes from a constant tension of space, \(w = -1\), which we adopt on an
+assumed \(\Lambda\)CDM background and cannot yet derive. So the model
+works as far as the matter goes, hands the expansion to a tension it
+does not explain, and carries three open problems: the ejecta are born
+relativistic, and the energy budget says they stay too fast for cold
+dark matter unless the bounce was a radiation bounce in which the relics
+were never jammed, so the pool mechanism and cold relic dark matter do
+not yet fit in one history, the thermal ring around the Cold Spot is not
+there, and the bounce is only meaningful without qualification if the
+jammed patch was the whole universe rather than a ball inside its own
+horizon.
 
 \textbf{Where are we?} This is the question that decides between the two
 geometries. In Geometry A the rebound happened everywhere, there is no

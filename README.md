@@ -22,6 +22,7 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `coldspot_profile.py`, `spot_locus.py` | Cold Spot ring profile; extreme-spot locus test |
 | `curl_qe.py` | Temperature-only quadratic-estimator curl search at the spots |
 | `neighbour_tail.py` | Point-mass Sachs–Wolfe tail (low-ℓ template) and tidal bulk-flow direction |
+| `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, furnace radiation, latent heat; ejecta momentum at equality |
 
 Figures: `bounce.png`, `ejecta_kinematics.png`, `sn_hubble.png`, `wz_effective.png`, `ltb_wz.png`, `coldspot_profile.png`.
 
