@@ -22,7 +22,9 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `coldspot_profile.py`, `spot_locus.py` | Cold Spot ring profile; extreme-spot locus test |
 | `curl_qe.py` | Temperature-only quadratic-estimator curl search at the spots |
 | `neighbour_tail.py` | Point-mass Sachs–Wolfe tail (low-ℓ template) and tidal bulk-flow direction |
-| `rings_hydro.py` | 1-D spherical hard-sphere hydro toy for the rings: jamming floor, self-gravity, kick scan; results in `rings_hydro_scan.txt` |
+| `rings_hydro.py` | First 1-D hydro toy (RETRACTED numbers: kick profile and band-finder artefacts, see paper Sec. 3.2); kept for the record with `rings_hydro_scan.txt` |
+| `rings_hydro2.py` | Controlled 1-D hydro toy: kick at a fixed fraction of the local escape speed, pressure-to-gravity ratio beta, fixed-contrast edge finder, pressureless run as ballistic null |
+| `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |
 
 Figures: `bounce.png`, `ejecta_kinematics.png`, `sn_hubble.png`, `wz_effective.png`, `ltb_wz.png`, `coldspot_profile.png`.
