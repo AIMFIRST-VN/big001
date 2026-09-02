@@ -1,0 +1,7 @@
+fbar=1.2 sigma_rel=0.0  t_end=20.0 dyn times  steps=4447 bound mass fraction (kernel+mantle) = 0.570   unbound (shell) = 0.430 coarse-grained bands (dense/rarefied alternation, 5-shell smoothing) = 3; edges at mass fractions [0.45, 0.99] 
+fbar=1.5 sigma_rel=0.0  t_end=20.0 dyn times  steps=4576 bound mass fraction (kernel+mantle) = 0.290   unbound (shell) = 0.710 coarse-grained bands (dense/rarefied alternation, 5-shell smoothing) = 3; edges at mass fractions [0.45, 0.98] 
+fbar=2.0 sigma_rel=0.0  t_end=20.0 dyn times  steps=4743 bound mass fraction (kernel+mantle) = 0.120   unbound (shell) = 0.880 coarse-grained bands (dense/rarefied alternation, 5-shell smoothing) = 3; edges at mass fractions [0.45, 0.98] 
+fbar=3.0 sigma_rel=0.0  t_end=20.0 dyn times  steps=4972 bound mass fraction (kernel+mantle) = 0.030   unbound (shell) = 0.970 coarse-grained bands (dense/rarefied alternation, 5-shell smoothing) = 3; edges at mass fractions [0.45, 0.98] 
+fbar=5.0 sigma_rel=0.0  t_end=20.0 dyn times  steps=5244 bound mass fraction (kernel+mantle) = 0.000   unbound (shell) = 1.000 coarse-grained bands (dense/rarefied alternation, 5-shell smoothing) = 3; edges at mass fractions [0.45, 0.98] 
+
+[exited with code 0]
