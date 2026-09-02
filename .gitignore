@@ -1,0 +1,14 @@
+# large datasets: see README for download links
+*.fits
+*.fits.gz
+*.npy
+*.npz
+*.tar
+*.dat
+*.csv
+PR4_variations/
+spincat/
+__pycache__/
+*.out
+bpb_build*.md
+twompp_README.txt

@@ -1,0 +1,1882 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{the-big-pool-bangs-theory-cosmology-via-jammed-phase-transitions-and-the-hard-sphere-kinetic-bounce}{%
+\section{\texorpdfstring{\textbf{The Big Pool Bangs Theory: Cosmology
+via Jammed Phase Transitions and the Hard-Sphere Kinetic
+Bounce}}{The Big Pool Bangs Theory: Cosmology via Jammed Phase Transitions and the Hard-Sphere Kinetic Bounce}}\label{the-big-pool-bangs-theory-cosmology-via-jammed-phase-transitions-and-the-hard-sphere-kinetic-bounce}}
+
+\textbf{Abstract.} We explore a mechanical alternative to inflationary
+\(\Lambda\)CDM in which the universe begins as a jammed ensemble of
+\(\sim\!10^{60}\) Planck-mass relics, treated as effective hard spheres
+(an ansatz motivated by the Compton--Schwarzschild coincidence). A
+loop-quantum-cosmology-type modified Friedmann equation, with critical
+density conjecturally identified with the hard-sphere jamming density,
+produces a non-singular bounce; the subsequent chaotic rebound ejects
+most of the ensemble. Toy \(N\)-body simulations with a turbulent kick
+distribution eject \(88\% \pm 4\%\) of the mass, consistent with the
+observed dark-matter fraction for \(\sigma_{\text{rel}} \approx 1\) ---
+a regime a cascade nucleation model only marginally reaches --- and show
+clean velocity sorting of the ejecta into radial shells. The framework
+does \emph{not} reproduce cosmic acceleration: coasting expansion is
+disfavored by Pantheon+ (\(\Delta\chi^2 \approx 84\)) and DES-SN5YR
+(\(\Delta\chi^2 \approx 131\)), a relativistic LTB lightcone through the
+ejecta decelerates (\(q_0^{\text{eff}} = +0.16\)), a toy effective
+\(w(z)\) drifts in the wrong direction relative to the DES+DESI fit, and
+a kinetic-Sunyaev--Zel'dovich gate shows that no ejection profile can
+supply more than \(\sim\!1\%\) of the observed dark energy. We therefore
+adopt the pool model \emph{plus a constant tension of space} (\(w=-1\))
+as the expansion history: the rebound sets the origin and velocity
+structure of the matter, the tension sets the acceleration, and the
+value of the tension is not derived. A predicted Cold Spot hot ring at
+\(5°\)--\(7°\) is absent in Planck 2018 data. We organize the claims
+into seven hypotheses --- the bounce-and-ejection core (H1), the Cold
+Spot as a frozen vortex (H2), a neighbouring Big Pool Bang in the Cold
+Spot direction (H3), a population of such neighbours (H4), our own
+position inside Universe 1 (H5), the location of the second Big Pool
+Bang (H6), and the Pool Model of the population (H7) --- each with
+explicit falsifiers, catalogue eleven predictions (P1--P11) with the
+instruments required, and state the unsolved problems: causal structure
+of the bounce, relativistic formulation of ejection, the relativistic
+(hot) temperature of the ejecta, the horizon and flatness problems, and
+the expansion history.
+
+\hypertarget{introduction-three-questions}{%
+\subsection{\texorpdfstring{\textbf{1. Introduction: Three
+Questions}}{1. Introduction: Three Questions}}\label{introduction-three-questions}}
+
+This paper is organized around three questions.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Where are we?} If the universe began as a jammed ball of
+  Planck-mass relics that rebounded and ejected most of its mass, then
+  every observer sits somewhere in the resulting structure: near the
+  surviving core, in the mixed mantle, or in the outer shell of fastest
+  ejecta. The velocity sorting of the rebound (Sec. 3, Fig. 4) makes
+  radial position a physical quantity, and only the outermost layers
+  retain any memory of the initial geometry. Our current answer (H5,
+  Sec. 8) is that the displaced-centre test is null to within a few Mpc,
+  the bulk flow at \(\sim\!400\) km s\(^{-1}\) is the only kinematic
+  handle, and the hemispherical asymmetry is better assigned to an
+  external neighbour than to our own offset.
+\item
+  \textbf{Where is the second Big Bang?} If our universe is one Big Pool
+  Bang, others may exist, and a neighbour would imprint the
+  last-scattering surface with a localized, non-Gaussian, possibly
+  rotating spot. The Cold Spot at \((l,b) = (203°, -56°)\) is the
+  candidate (H2, H3, H6, Secs. 6, 7, 9): direction known to \(\pm 3°\),
+  comoving distance bounded below at \(\sim\!46\) Gly, mass
+  \(\sim\!5\times10^{49}\) kg to within an order of magnitude, and a
+  decisive curl-mode test (P9) already pre-registered. The eight extreme
+  spots of the Planck map are the candidate list for a population of
+  such neighbours (H4, H7, Sec. 10).
+\item
+  \textbf{How does the Big Pool Bang model work, and what does it
+  explain?} A first-order vacuum crystallization jams into a hard-sphere
+  state; a loop-quantum-cosmology-type bounce rebounds it; chaotic
+  ejection sends \(88\% \pm 4\%\) of the mass outward as dark matter
+  (H1, Secs. 2--4). The rebound kinetics do \emph{not} reproduce cosmic
+  acceleration, so the adopted expansion history is the pool model plus
+  a constant tension of space whose value is not derived (Sec. 5.2); the
+  predicted Cold Spot thermal ring is absent, and the ejecta are
+  relativistic, so ``cold'' dark matter is unproven (Sec. 12). We state
+  these failures as plainly as the successes.
+\end{enumerate}
+
+The rest of the paper answers the third question first, because the
+first two depend on it, and then returns to questions 1 and 2 with their
+own hypotheses, estimates, and falsifiers. Section 11 collects the
+eleven predictions with the instruments required.
+
+\hypertarget{vacuum-crystallization-and-the-hard-sphere-state}{%
+\subsubsection{\texorpdfstring{\textbf{1.1 Vacuum Crystallization and
+the Hard-Sphere
+State}}{1.1 Vacuum Crystallization and the Hard-Sphere State}}\label{vacuum-crystallization-and-the-hard-sphere-state}}
+
+Standard cosmology (\(\Lambda\)CDM) relies on scalar-field inflation to
+explain why the observable universe is flat, isotropic, and thermally
+uniform, at the cost of fine-tuning and of singularity theorems
+(Borde--Guth--Vilenkin). The \textbf{Big Pool Bangs Theory} is a
+mechanical alternative grounded in first-order phase-transition
+dynamics. Space begins in a false vacuum with energy density near the
+Planck limit (\(\rho_{\text{vac}} \sim \rho_P\)). Quantum fluctuations
+trigger a \textbf{vacuum crystallization} transition which, like any
+first-order transition, nucleates at many points: small bubbles of
+converted phase grow, collide, and merge, and the ``bang'' is their
+percolation into a single jammed state.
+
+\emph{Timeline.} Bubble walls propagate at \(\leq c\), so percolating a
+\(\sim\!10^{20}\,\ell_P\) patch takes at least
+\(10^{20}\,t_P = 5.4\times10^{-24}\) s divided by the number of
+nucleation sites per crossing length. The nucleation density is a free
+parameter, and any density sparse enough to give nontrivial merger
+statistics implies an assembly time many orders of magnitude above
+\(t_P\); its consistency with trapped-surface avoidance (Sec. 3) is
+open.
+
+\emph{Nucleation as the origin of the kick spectrum.} The randomness of
+the merger history is inherited by the jammed core as internal
+turbulence, a candidate source for the stochastic kick spectrum that the
+rebound dynamics of Sec. 3 otherwise require as an input --- provided
+nucleation-era velocity structure survives the collisional jammed epoch
+rather than thermalizing. A Poisson nucleation-and-merger simulation
+(vector-summed wall impulses) recovers a Maxwellian kick distribution
+(speed coefficient of variation \(0.41\)--\(0.42\)), largely a
+central-limit consequence; the nontrivial statistic is the
+coherent-to-dispersive ratio \(\sigma_{\text{rel}}\). Poisson nucleation
+is turbulence-dominated (\(\sigma/\langle v_r\rangle \approx 5\)--\(8\))
+and cannot supply the coherent radial component the ejection fraction
+requires. A \emph{cascade} model --- a single seed bubble whose wall
+catalyzes further nucleation, halted by a jamming feedback at
+\(\eta \approx 0.64\) --- sweeps a conversion front outward and yields
+\(\sigma_{\text{rel}} = 0.65\)--\(0.78\), robust across a \(4\times\)
+range in trigger distance, against the \(\approx 0.75\)--\(1.0\) window
+the dark-matter fraction requires: the cascade reaches that window only
+marginally. Three caveats gate the chain ``cascade \(\to\) kick spectrum
+\(\to\) ejection fraction'': the \(88\% \pm 4\%\) figure comes from
+Maxwellian-ansatz \(N\)-body runs and the cascade's own heavier-tailed
+kick field has not been fed through the \(N\)-body pipeline end-to-end;
+the model retains structural choices (trigger distance, nucleation lag,
+wall-area weighting, the arrest \(\eta = 0.64\), an unscanned
+impulse-collection window); and the wall-momentum efficiency is assumed
+universal, whereas in first-order-transition physics it is
+model-dependent and typically small (Espinosa--Konstandin--No--Servant).
+
+Because quantum geometry prohibits localized infinite densities, the
+energy crystallizes into \(N \approx 10^{60}\) irreducible
+\textbf{Planck-mass relics}
+(\(m_P = \sqrt{\hbar c/G} \approx 21.8\,\mu\)g), total mass
+\(M_{\text{total}} = N m_P \approx 2.2\times10^{52}\) kg (\(N\) is
+order-of-magnitude; the observable universe's matter mass is
+\(\sim\!1.5\times10^{53}\) kg). The relics saturate local volume up to
+the random close-packing limit \(\eta_{\text{rcp}} \approx 0.64\). With
+\(\rho_P = m_P/\ell_P^3 = 5.2\times10^{96}\) kg m\(^{-3}\) the nominal
+jamming radius of such a ball would be
+
+\[R_{\text{jam}} = \left( \frac{3 M_{\text{total}}}{4 \pi \rho_P \eta_{\text{rcp}}} \right)^{1/3} \approx 1.2 \times 10^{-15} \text{ m},\]
+
+but this number must not be read as the size of an isolated object: the
+Schwarzschild radius of \(2.2\times10^{52}\) kg is \(3.3\times10^{25}\)
+m, forty orders of magnitude larger, so a finite ball of this mass and
+density is deep inside its own horizon and would be a black hole, not a
+bouncing patch. The bounce of Sec. 3 is meaningful only if the jammed
+patch is the whole (or a super-horizon) universe described by a
+homogeneous FLRW-type metric, for which no exterior Schwarzschild
+geometry exists. We therefore use \(\rho_c\), not \(R_{\text{jam}}\), as
+the physical parameter.
+
+\hypertarget{planck-mass-relics-as-effective-hard-spheres}{%
+\subsection{\texorpdfstring{\textbf{2. Planck-Mass Relics as Effective
+Hard
+Spheres}}{2. Planck-Mass Relics as Effective Hard Spheres}}\label{planck-mass-relics-as-effective-hard-spheres}}
+
+For a particle of mass \(m\) the reduced Compton wavelength
+\(\lambda_C = \hbar/mc\) and the Schwarzschild radius \(R_s = 2Gm/c^2\)
+coincide at \(m \approx m_P\), where both equal
+\(\sim\!\ell_P = 1.616\times10^{-35}\) m. This is the regime in which
+neither quantum field theory nor classical general relativity is
+separately valid. \textbf{We adopt, as a modeling ansatz rather than a
+derivation, that Planck relics possess a minimum spatial extent
+\(\sim\!\ell_P\) that no interaction can compress}, and treat them as
+effective incompressible hard spheres. The ansatz is judged by the
+phenomenology it generates (Secs. 3--9); its microphysical justification
+is an open problem (Sec. 10).
+
+\hypertarget{the-kinetic-bounce-and-chaotic-ejection-hypothesis-1-the-big-pool-bang}{%
+\subsection{\texorpdfstring{\textbf{3. The Kinetic Bounce and Chaotic
+Ejection (Hypothesis 1, ``The Big Pool
+Bang'')}}{3. The Kinetic Bounce and Chaotic Ejection (Hypothesis 1, ``The Big Pool Bang'')}}\label{the-kinetic-bounce-and-chaotic-ejection-hypothesis-1-the-big-pool-bang}}
+
+\textbf{Why hard-sphere pressure cannot bounce the collapse.} Inside a
+homogeneous fluid the dynamics are governed by the Raychaudhuri equation
+
+\[\frac{\ddot{a}}{a} = -\frac{4\pi G}{3} \left( \rho + \frac{3P}{c^2} \right).\]
+
+Near random close packing the hard-sphere kinetic pressure diverges
+(free-volume equation of state,
+\(P \propto n k_B T\,[1 - (\eta/\eta_{\text{rcp}})^{1/3}]^{-1}\)). In
+general relativity positive pressure \emph{gravitates}: a divergent
+\(P\) makes \(\rho + 3P/c^2\) more positive and accelerates collapse. No
+classical equation of state with \(P > 0\) can bounce an FLRW collapse.
+The rebound must be sourced by quantum-geometric corrections that
+dominate when the ensemble reaches the jamming density
+\(\rho_c = \eta_{\text{rcp}}\,\rho_P\). The minimal object with the
+required property is the loop-quantum-cosmology (LQC) modified Friedmann
+equation,
+
+\[H^2 = \frac{8\pi G}{3}\,\rho \left( 1 - \frac{\rho}{\rho_c} \right), \qquad \rho_c = \eta_{\text{rcp}}\,\rho_P,\]
+
+which encodes a maximum attainable density covariantly: \(H \to 0\) as
+\(\rho \to \rho_c\), the contraction halts, and the effective
+Raychaudhuri equation flips sign. We propose the jamming limit of the
+relic gas as the physical origin of the \(\rho_c\) that LQC introduces
+axiomatically, while noting that LQC's own Immirzi-fixed value is
+\(\rho_c \approx 0.41\,\rho_P\) versus \(0.64\,\rho_P\) here ---
+order-of-magnitude agreement, a coincidence to be explained rather than
+a derivation. A numerical integration (Fig. 1) confirms that the
+classical hard-sphere fluid overshoots the jamming density by \(>10^4\)
+(collapse) while the modified equation bounces at \(\rho = \rho_c\); the
+bounce is built into the equation, not independently confirmed by it.
+Whether the bounce completes before a trapped surface forms around the
+still-homogeneous patch is an assumption (Sec. 10).
+
+\begin{figure}
+\centering
+\includegraphics{bounce.png}
+\caption{Fig. 1 --- Toy FLRW integration. Left: scale factor. Right:
+density history. Classical GR with jamming pressure (red) overshoots the
+jamming density by \(>10^4\) (collapse); the modified Friedmann equation
+(blue) bounces at \(\rho_c\).}
+\end{figure}
+
+\textbf{Regime disclaimer.} Everything that follows in this section is a
+\textbf{Newtonian analogy}: the real dynamics occur where escape
+velocities formally exceed \(c\) by \(\sim\!20\) orders of magnitude and
+only a general-relativistic treatment (ejecta as streams on an expanding
+background) is meaningful. We use the Newtonian model because
+violent-relaxation statistics (which fraction unbinds, how ejecta sort
+by speed) are plausibly governed by dimensionless energy ratios that
+survive the translation; whether they do is the central open problem of
+Sec. 10.
+
+\textbf{The slingshot phase.} Picture the jammed core as \(10^{60}\)
+billiard balls packed to the jamming limit; when the bounce reverses the
+collapse, the rebound is the break. At jamming density the relic gas is
+collisional --- mean free paths are far below a particle radius --- so
+the slingshot phase begins only after expansion dilutes the ensemble
+below the contact threshold and relics decouple onto ballistic
+trajectories. From then on the system is a dense self-gravitating
+\(N\)-body ensemble in which three-body encounters dominate relaxation:
+two bodies drop into a tighter binary and the released binding energy
+ejects the third --- the ``core collapse and halo ejection'' of
+globular-cluster dynamics, which sheds most of a system's mass to reach
+a bound remnant. Applied to the birth of the universe it sorts the mass
+into two components:
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The ejected halo (\(\approx 88\%\)):} relics kicked above
+  escape velocity, free-streaming through expanding space and rarely
+  colliding again --- the candidate dark-matter component. This requires
+  no new particle, but see the temperature caveat below.
+\item
+  \textbf{The trapped furnace (\(\approx 12\%\)):} relics that fall back
+  and grind against each other in a turbulent core, proposed as the
+  origin of the photon--baryon plasma. \textbf{Caveat (essential):} this
+  identification requires an unspecified conversion channel from Planck
+  relics to Standard-Model plasma --- including baryogenesis and the
+  photon-to-baryon ratio --- while ejected relics must remain stable for
+  13.8 Gyr. Reconciling relic stability with furnace disintegration
+  (e.g.~a threshold collision energy the ejecta never reach) is an open
+  requirement; absent it, the trapped fraction cannot be identified with
+  the baryon budget.
+\end{itemize}
+\end{quote}
+
+\textbf{Ejecta temperature.} The ejecta leave at a substantial fraction
+of the (formally superluminal) escape speed, i.e.~relativistically.
+Without a redshifting or cooling argument that brings their thermal
+velocities below the free-streaming limit by the epoch of structure
+formation, Planck-relic ejecta behave as \emph{hot}, not cold, dark
+matter and would erase small-scale structure. Cosmological redshifting
+of free-streaming momenta (\(p \propto 1/a\)) is the natural candidate
+mechanism, but no calculation of the residual velocity dispersion at
+matter--radiation equality exists here; this is a first-order open
+problem (Sec. 10).
+
+\textbf{Ejection fraction (toy \(N\)-body).} A softened \(N = 1000\)
+equal-mass simulation of a cold uniform sphere given a radial kick
+\(v = f\,v_{\text{esc}}\) has a steep ejection threshold:
+\(f = 0.6 \to 3\%\), \(0.8 \to 41\%\), \(0.9 \to 98\%\),
+\(f \geq 1 \to 100\%\). A monolithic kick reproduces the dark-matter
+fraction only in the narrow window \(f \approx 0.85\)--\(0.9\), and the
+zero-energy bounce (\(f = 1\)) over-ejects. A Maxwellian turbulent
+component of dispersion \(\sigma_{\text{rel}}\bar{f}v_{\text{esc}}\)
+superimposed on a mean rebound \(\bar{f}v_{\text{esc}}\) broadens the
+transition: at \(\bar{f} = 0.7\) the ejected fraction rises from
+\(22\%\) (\(\sigma_{\text{rel}} = 0.5\)) through \(\approx 88\%\)
+(\(1.0\)) to \(98\%\) (\(1.5\)). Over a 15-seed ensemble at
+\((\bar{f}, \sigma_{\text{rel}}) = (0.7, 1.0)\) the ejected fraction is
+\(88\% \pm 4\%\), consistent with the observed dark-matter mass
+fraction. This consistency holds for \(\sigma_{\text{rel}} \approx 1\),
+which the cascade model of Sec. 1 only marginally reaches
+(\(0.65\)--\(0.78\)); \((\bar{f}, \sigma_{\text{rel}})\) remain inputs
+to be derived from the bounce turbulence spectrum.
+
+\textbf{Ejecta kinematic structure (15 seeds, 13\{,\}140 ejecta).}
+Ejection is extended (median ejection time \(\sim\!1\) dynamical time;
+\(10\%\) of ejecta leave after \(11\)), with clean monotonic velocity
+sorting: median speeds fall from \(0.71\,v_{\text{esc}}\) for the
+earliest ejecta through \(0.43\) and \(0.35\) to
+\(0.28\,v_{\text{esc}}\) for the latest (Fig. 4). The fastest ejecta are
+outermost, so radial position maps onto ejection epoch --- the input for
+H5 (Sec. 8). The tangential structure shows no correlated anisotropy:
+the per-sky ejection dipole (\(0.064 \pm 0.024\)) matches the shot-noise
+expectation (\(0.053 \pm 0.024\)), and early-vs-late shell axes align
+only weakly (\(\langle\cos\theta\rangle = 0.37 \pm 0.49\)). The
+isotropic cascade therefore supplies no preferred axis; if one exists it
+must be seeded externally (Sec. 7).
+
+\begin{figure}
+\centering
+\includegraphics{ejecta_kinematics.png}
+\caption{Fig. 4 --- Ejecta kinematics over 15 seeds: ejection-time
+distribution (left) and speed vs ejection time (right), showing the
+velocity-sorted shell structure.}
+\end{figure}
+
+\hypertarget{consistency-checks}{%
+\subsection{\texorpdfstring{\textbf{4. Consistency
+Checks}}{4. Consistency Checks}}\label{consistency-checks}}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Horizon problem --- open.} The jammed patch is
+  \(\sim\!10^{20}\) Planck lengths across and cannot equilibrate within
+  a few Planck times; homogeneity of the initial patch is an assumed
+  initial condition.
+\item
+  \textbf{Flatness --- consistent, not explained.} A monolithic
+  zero-energy kick ejects \(100\%\) and is incompatible with the
+  observed split, but in the turbulent regime the simulations favor
+  (\(\bar{f} = 0.7\), \(\sigma_{\text{rel}} = 1.0\)) the mean kinetic
+  energy is
+  \(\langle v^2\rangle = \bar{f}^2(1+\sigma_{\text{rel}}^2)v_{\text{esc}}^2 \approx 0.98\,v_{\text{esc}}^2\):
+  total energy \(K + U \approx 0\) \emph{while} ejecting \(\sim\!88\%\),
+  the positive energy of the ejecta balanced by the binding energy of
+  the furnace. Why the rebound selects \(E \approx 0\) is not derived.
+\end{itemize}
+\end{quote}
+
+\emph{Remark on the spectral tilt.} One may parametrize the scalar index
+by a turbulent dissipation ratio \(\nu_t\) (eddy turnover time to
+expansion time) as \(n_s - 1 = -\nu_t/3\); the Planck 2018 value
+\(n_s = 0.965 \pm 0.004\) then corresponds to \(\nu_t \approx 0.105\).
+Both the relation and the value of \(\nu_t\) are fitted phenomenological
+inputs, not results of the framework, and showing that a Kolmogorov
+cascade (\(E(k) \propto k^{-5/3}\)) can produce a nearly scale-invariant
+curvature spectrum rather than a steeply red one is an open problem
+(Sec. 10).
+
+\hypertarget{expansion-history-why-the-pool-model-needs-a-constant-tension}{%
+\subsection{\texorpdfstring{\textbf{5. Expansion History: Why the Pool
+Model Needs a Constant
+Tension}}{5. Expansion History: Why the Pool Model Needs a Constant Tension}}\label{expansion-history-why-the-pool-model-needs-a-constant-tension}}
+
+The rebound kinetics alone imply a coasting expansion (\(a \propto t\)).
+We confront this with data, ask whether the ejecta distribution can
+mimic acceleration, find that it cannot, and conclude (Sec. 5.2) that
+the pool model must be combined with a constant tension of space.
+
+\textbf{Supernova distance--redshift relation.} Against 1371 Hubble-flow
+SNe Ia from Pantheon+ (diagonal errors, offset marginalized), coasting
+yields \(\chi^2 = 674\) vs \(590\) for flat \(\Lambda\)CDM
+(\(\Delta\chi^2 \approx 84\)): disfavored, though far better than
+matter-only Einstein--de Sitter (\(\chi^2 = 1170\); Fig. 3). On
+DES-SN5YR (Dovekie recalibration, 1820 SNe, full covariance):
+\(\chi^2 = 1632\) (\(\Lambda\)CDM), \(1763\) (coasting;
+\(\Delta\chi^2 \approx 131\)), \(2566\) (EdS). The data require
+late-time acceleration beyond coasting.
+
+\begin{figure}
+\centering
+\includegraphics{sn_hubble.png}
+\caption{Fig. 3 --- Pantheon+ binned distance-modulus residuals relative
+to the coasting model.}
+\end{figure}
+
+\textbf{Toy effective \(w(z)\) from the measured shells.} Integrating
+the measured ejecta speed distribution as cold spherical shells
+decelerating in their enclosed mass, and computing the equation of state
+an interior observer would fit, gives \(w_{\text{eff}}\) drifting from
+\(-0.29\) at \(z = 2\) to \(-0.31\) today (Fig. 5): a few-percent drift
+near the coasting value \(-1/3\), far from the observed
+\(w_0 \approx -0.8\) in magnitude. The remap is crude --- \(91\%\) of
+the ejecta re-bind when forced into a static enclosed-mass model, so the
+flow is built from the fastest \(9\%\).
+
+\hypertarget{the-wz-drift-evolving-but-in-the-wrong-direction}{%
+\subsubsection{\texorpdfstring{\textbf{5.1 The \(w(z)\) drift: evolving,
+but in the wrong
+direction}}{5.1 The w(z) drift: evolving, but in the wrong direction}}\label{the-wz-drift-evolving-but-in-the-wrong-direction}}
+
+Because the apparent equation of state in this mechanism is set by the
+evolving ratio of velocity-dispersion energy to clustered rest-mass
+energy, it cannot be constant: a cosmological constant is the one
+behavior the mechanism cannot produce. Combined DES-SN5YR and DESI DR2
+BAO analyses reject \(w = -1\) at \(3.2\sigma\) in a \(w_0w_a\)CDM fit
+(\(w_0 = -0.803 \pm 0.054\), \(w_a = -0.72 \pm 0.21\)), with \(w\)
+rising from \(\approx -1.5\) in the past toward \(-0.8\) today (less
+negative with time). The toy shell calculation drifts the
+\textbf{opposite way} (slowly more negative with time). The framework
+shares with the data only the qualitative statement that dark energy
+evolves; its toy realization predicts the wrong drift direction, which
+by our own criterion counts against H1 unless a refined treatment
+(relativistic shells on an expanding background, furnace backreaction)
+reverses it.
+
+\begin{figure}
+\centering
+\includegraphics{wz_effective.png}
+\caption{Fig. 5 --- Toy effective equation of state from velocity-sorted
+ejecta shells: a few-percent drift near \(w = -1/3\), in the opposite
+direction to the DES+DESI \(w_0w_a\) best fit, and of insufficient
+magnitude.}
+\end{figure}
+
+\textbf{Relativistic (LTB) recalculation.} Dust shells in the
+Lemaître--Tolman--Bondi metric obey the same radial equation as
+Newtonian shells; what the toy gets wrong is the \emph{observables}.
+Integrating radial null geodesics through the evolving LTB metric (300
+shells seeded from the ejecta speed distribution, fallback mass
+virialized into the interior, \(d_L = (1+z)^2 R\)) gives
+\(q_0^{\text{eff}} = +0.16\) (\(w_{\text{eff}}(0) \approx -0.23\)):
+\textbf{mild deceleration, no apparent acceleration}, with a
+distance-modulus shape \(\sim\!0.35\) mag from both \(\Lambda\)CDM and
+coasting out to \(z \sim 5\). Scope restrictions: the lightcone threads
+only the free-streaming \(9\%\), the interior treatment and observer
+epoch are modelling choices, and shell crossing was not monitored.
+
+\textbf{Profile inversion.} Since the ejection profile is an input, we
+searched power-law, bimodal fast-tail, and stochastically lumpy profiles
+for any that accelerates. Smooth families robustly decelerate
+(\(q_0^{\text{eff}} \sim +1\) to \(+4\)); apparently negative values in
+lumpy configurations are seed-ensemble noise (\(\pm 1.4\), exceeding the
+target \(|q_0| \approx 0.55\), so that family is unconstrained rather
+than excluded). The known way an LTB model mimics acceleration --- the
+giant void, observer inside a Gpc-scale underdensity --- is the
+\emph{opposite} density ordering from outward ejection.
+
+\textbf{Blast wave and the kSZ closure.} A rebound acting as a blast
+wave would sweep ejecta into a shell and leave a rarefied cavity, the
+giant-void geometry; swept-shell profiles do give smoother lightcones
+(\(0.03\)--\(0.08\) mag residuals vs \(\sim\!1\) mag). This is not a
+rescue: the comparison metric cannot separate \(\Lambda\)CDM from
+coasting (\(\sim\!0.04\) mag rms apart), a \(0.08\) mag residual
+corresponds to \(\Delta\chi^2 \sim 400\) against Pantheon+, a cavity
+deep enough for \(q_0 \approx -0.55\) is the giant-void model excluded
+by kinetic Sunyaev--Zel'dovich and Compton-\(y\) constraints (Zhang \&
+Stebbins 2011), and mass swept into a distant shell is unavailable as
+local dark matter. Imposing the constraints first: the kSZ limit on
+coherent cluster flows (\(v \lesssim 300\) km/s at Gpc distances) caps
+the mean interior contrast of any cavity at
+\(|\bar\delta| \lesssim 0.05\) (500 Mpc) to \(\lesssim 0.01\) (3 Gpc),
+i.e.~\(|\Delta q_0| \lesssim 0.01\) against the
+\(\Delta q_0 \approx -1.05\) required. \textbf{No ejection profile of
+any morphology supplies more than \(\sim\!1\%\) of the observed dark
+energy.} H1 must either incorporate a genuine dark-energy component or
+concede the acceleration sector.
+
+\textbf{A framework-native candidate, with its cost.} If crystallization
+is incomplete today, a residual unconverted vacuum fraction would be
+smooth, non-clumping, and immune to the kSZ gate --- qualitatively dark
+energy. Quantitatively this re-imports the cosmological-constant problem
+verbatim (\(\rho_P \sim 10^{96}\) vs \(6\times10^{-27}\) kg m\(^{-3}\):
+tuning to one part in \(10^{123}\)), and ongoing conversion would imply
+present-epoch nucleation, domain walls (Zel'dovich--Kobzarev--Okun
+bound), and an unconverted component at BBN and recombination --- none
+computed here. The boiling picture also anchors H3--H4 in Coleman--De
+Luccia bubble nucleation, whose collisions imprint disc-shaped CMB
+features with specific polarization profiles (Aguirre \& Johnson) and
+source a stochastic gravitational-wave background (P4).
+
+\hypertarget{stretch-tension-and-the-adopted-expansion-history-the-pool-model-plus-a-constant-tension}{%
+\subsubsection{\texorpdfstring{\textbf{5.2 Stretch, tension, and the
+adopted expansion history: the pool model plus a constant
+tension}}{5.2 Stretch, tension, and the adopted expansion history: the pool model plus a constant tension}}\label{stretch-tension-and-the-adopted-expansion-history-the-pool-model-plus-a-constant-tension}}
+
+The failures above are failures of one idea only: that the
+\emph{kinetics} of the rebound could substitute for dark energy. They do
+not touch the bounce, the ejection, or the dark-matter fraction. We
+therefore separate the two sectors explicitly. The pool model is
+responsible for the origin and velocity structure of the matter; the
+acceleration is attributed to a constant tension of space,
+\(\rho_\Lambda c^2 = -p_\Lambda\), which we adopt without claiming to
+derive it.
+
+The reason a \emph{tension} is the only admissible form follows from a
+one-line argument. For a comoving separation \(d = a\chi\), the second
+Friedmann equation gives \(\ddot d = (\ddot a/a)\,d\) with
+\(\ddot a/a = -\tfrac{4\pi G}{3}(\rho + 3p/c^2)\) (units: \(G\rho \sim\)
+s\(^{-2}\)). Acceleration is therefore proportional to distance, with a
+coefficient set locally by density and pressure, and is repulsive only
+for \(\rho + 3p/c^2 < 0\). If space stores an energy density \(u(a)\)
+when stretched, thermodynamics (\(p = -\partial(uV)/\partial V\)) fixes
+its pressure: for \(u \propto a^{-n}\), \(w = n/3 - 1\). Matter
+(\(n=3\)) attracts; strings or curvature (\(n=2\), \(w=-1/3\)) coast; a
+domain-wall network (\(n=1\), \(w=-2/3\)) repels; a constant tension
+(\(n=0\), \(w=-1\)) repels; a Hookean elastic space
+(\(u \propto a^{2}\), \(w=-5/3\)) is phantom and excluded. The measured
+constant equation of state, \(w = -1.03 \pm 0.03\) (CMB+BAO+SNe),
+selects the constant-tension case and excludes the wall network.
+Neighbouring Big Pool Bangs cannot contribute: a single neighbour
+supplies a tidal quadrupole and a bulk velocity (P5), a symmetric
+population supplies nothing by the shell theorem, and neither is a
+monopole. Today the tension term gives
+\(\ddot a/a = +3.4\times10^{-36}\) s\(^{-2}\) against
+\(-0.7\times10^{-36}\) s\(^{-2}\) from matter,
+i.e.~\(\ddot d \approx +1\times10^{-13}\) m s\(^{-2}\) at 1 Mpc.
+
+\emph{Vacuum energies of neighbours do not sum.} Vacuum energy acts only
+where it resides: the expansion rate of our region is fixed by the
+tension inside it, so the tensions of any number of neighbouring bangs
+contribute nothing here, for the same locality reason that their masses
+contribute no monopole (Appendix B). If all bangs crystallized into the
+same vacuum, the tension is one universal constant whose value the model
+does not predict; if into different vacua, the differences reside in the
+walls between them, whose network sums to \(w = -2/3\) and is excluded
+above, while a higher-tension neighbour drives its wall outward as a
+bubble collision (P4).
+
+\emph{Consequences for the rest of the paper.} With the tension
+included, the background expansion is that of flat \(\Lambda\)CDM and
+the supernova, BAO and kSZ comparisons of this section are satisfied by
+construction; the ejecta shells of Sec. 3 are then a description of how
+the matter component acquired its Hubble flow (velocity sorting, Fig. 4)
+rather than an alternative expansion law. The \(w(z)\) drift of Sec. 5.1
+is retained as a subleading correction the kinetic sector \emph{adds} to
+\(w=-1\); its predicted sign is wrong and its magnitude is at the
+percent level, so it is not currently a usable prediction. What the
+framework does not supply is the value of the tension: the
+residual-false-vacuum estimate above reproduces the \(10^{-123}\) tuning
+of standard cosmology, and we count the origin of \(\rho_\Lambda\) among
+the open problems (Sec. 12), exactly as \(\Lambda\)CDM does.
+
+\hypertarget{h2-the-cold-spot-and-the-axis-of-evil-the-cold-eye-of-sauron}{%
+\subsection{\texorpdfstring{\textbf{6. H2: The Cold Spot and the Axis of
+Evil (the Cold Eye of
+Sauron)}}{6. H2: The Cold Spot and the Axis of Evil (the Cold Eye of Sauron)}}\label{h2-the-cold-spot-and-the-axis-of-evil-the-cold-eye-of-sauron}}
+
+The Eridanus Cold Spot is the sky's outstanding non-Gaussian feature. On
+the Planck SMICA map it is centred at galactic
+\((l, b) = (203°, -56°)\), with a decrement of \(-70\,\mu\)K at \(5°\)
+smoothing and a peak of \(-168\,\mu\)K at \(2°\) smoothing, and a
+half-maximum radius of \(2.5°\); we use these values throughout.
+
+\textbf{Cyclonic vortex reading.} Internal quantum turbulence in the
+bounce creates macro-vortices. In the \textbf{Jovian/cyclonic model}
+these act as thermal dams that choke local heat transport, deform under
+shear into elongated features aligned along a preferred rotation axis
+(the ``Axis of Evil''), and --- without solid-surface friction to
+dissipate angular momentum --- scale up with expansion and freeze into
+the CMB at decoupling. The Cold Spot is read as such a frozen cyclone.
+
+\textbf{Failed prediction: the thermal ring.} A cyclone diverting
+thermal energy around its core was predicted to produce a concentric hot
+ring of \(+20\)--\(50\,\mu\)K at \(5°\)--\(7°\). The azimuthally
+averaged Planck 2018 SMICA profile (\(N_{\text{side}} = 128\)) around
+the Cold Spot, with uncertainties from 500 random high-latitude
+positions (Fig. 2), shows a cold core extending to \(\sim\!9°\)
+(reaching \(-3.4\sigma\) at \(3°\)) and \textbf{no hot ring at
+\(5°\)--\(7°\)}; a \(+37\)--\(52\,\mu\)K excess at \(13°\)--\(15°\) is
+\(\sim\!2.5\sigma\) before a trials factor of \(\sim\!10\) radial bins
+and is unremarkable. The thermal-ring prediction failed (P1). The
+polarization part survives: a frozen vortex boundary should carry a
+radial \(E\)-mode ring of amplitude \(1\)--\(3\,\mu\)K at
+\(\sim\!5°\)--\(15°\) (bracketing the half-max radius and the outer edge
+of the cold core). Planck's \(Q_r\) profile is consistent with zero in
+every \(2°\) ring to \(20°\) with per-ring errors of
+\(0.6\)--\(2.7\,\mu\)K, so the ring is neither detected nor excluded;
+the test requires CMB-S4 sensitivity.
+
+\begin{figure}
+\centering
+\includegraphics{coldspot_profile.png}
+\caption{Fig. 2 --- Planck 2018 SMICA radial temperature profile around
+the Cold Spot, vs.~500 random reference positions.}
+\end{figure}
+
+\textbf{Preferred axis.} Our simulations find ejection isotropic within
+shot noise (Sec. 3), so the isotropic cascade alone provides no
+preferred axis; in this framework an axis can only be supplied by an
+external seed, the neighbouring bang of Sec. 7. The literature's cluster
+of tentative, individually sub-decisive (\(\lesssim 3\sigma\))
+alignments --- a supernova acceleration dipole roughly along our CMB
+motion (Colin et al.~2019; Sah \& Rameez 2024), the quadrupole--octupole
+alignment with the dipole direction, coincident bulk-flow and
+quasar-polarization axes (Hutsemékers et al.) --- is motivation for
+H2/H3, not support.
+
+\textbf{Galaxy handedness.} Claimed spin-handedness dipoles (Longo 2011
+at \((52°, +68.5°)\); Shamir 2012--2022 at \((192°, +38°)\)) lie \(70°\)
+from each other and \(50°\)--\(74°\) from the axes above; we treat them
+as systematics-limited (Iye et al.~2021). The JWST/JADES field at
+\((224°, -54°)\), \(8.6°\) from the Cold Spot, shows a claimed
+\(2\!:\!1\) handedness asymmetry in 263 high-redshift galaxies (Shamir
+2025); we cite this only as a coincidence awaiting the control-field
+test (Appendix A).
+
+\textbf{Falsifier.} Absence of the \(E\)-mode ring at CMB-S4 sensitivity
+eliminates H2. A localized curl (P9) detection at the Cold Spot would
+support the vortex reading over the neighbour reading of the same
+direction (Sec. 7); a calibrated curl null retires it.
+
+\hypertarget{h3-and-h4-a-neighbouring-big-pool-bang-in-the-cold-spot-direction-big-pool-bang-multiverse-2-and-a-population-of-neighbours-the-dark-comic-background}{%
+\subsection{\texorpdfstring{\textbf{7. H3 and H4: A Neighbouring Big
+Pool Bang in the Cold Spot Direction (Big Pool Bang Multiverse 2), and a
+Population of Neighbours (the Dark Comic
+Background)}}{7. H3 and H4: A Neighbouring Big Pool Bang in the Cold Spot Direction (Big Pool Bang Multiverse 2), and a Population of Neighbours (the Dark Comic Background)}}\label{h3-and-h4-a-neighbouring-big-pool-bang-in-the-cold-spot-direction-big-pool-bang-multiverse-2-and-a-population-of-neighbours-the-dark-comic-background}}
+
+Because vacuum crystallization is stochastic across an unbounded
+background, our bang need not be unique. A neighbouring universe
+nucleating beyond our domain boundary imprints its boundary on our
+last-scattering surface, which lies at a comoving distance of
+\(\sim\!46\) Gly; a neighbour visible as a CMB feature is therefore at
+least that far in comoving terms, and any neighbour closer than last
+scattering would appear in large-scale-structure tracers, which the Cold
+Spot sightline does not show beyond the too-shallow Eridanus supervoid.
+
+\textbf{Cross-boundary signatures.} If black holes from Universe 2 cross
+the boundary into our sector, their properties differ from local
+objects:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.30\columnwidth}\raggedright
+Physical feature\strut
+\end{minipage} & \begin{minipage}[b]{0.30\columnwidth}\raggedright
+Universe 1 (local)\strut
+\end{minipage} & \begin{minipage}[b]{0.30\columnwidth}\raggedright
+Universe 2 (cross-boundary infall)\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\textbf{Mass profile}\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Astrophysical spectrum plus any Planck-relic clusters\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Standard stellar/supermassive spectrum, with sub-solar anomaly gaps
+(\(0.1\)--\(1.0\,M_\odot\))\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\textbf{Sky distribution}\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Isotropic\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Clustered toward the Cold Spot direction\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\textbf{Peculiar velocity}\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Bound to local orbital speeds (\(\sim\!200\) km/s)\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Directed component from the Cold Spot, bounded above by the kSZ limits
+(\(\lesssim 300\) km/s coherent)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\textbf{GW waveform}\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Standard inspiral chirp\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Gravitational-wave memory: step-function strain
+\(\Delta h \sim 10^{-22}\)--\(10^{-21}\)\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Detecting the memory strain requires isolating a non-oscillating step
+from noise: ground interferometers lack the sub-10 Hz response, so this
+is an Einstein Telescope / LISA measurement (P4).
+
+\textbf{The spin constraint.} A neighbour is the only agent that can
+torque our universe (internal angular momentum cancels), so the measured
+non-rotation constrains H3. An equal-mass neighbour --- taking
+\(1.5\times10^{53}\) kg, the observable-universe matter mass, as the
+upper bound for Universe 2 --- at \(D \sim 46\) Gly exerts a tidal field
+\(T \sim GM/D^3\) which, acting on our quadrupole asymmetry
+(\(q \sim 10^{-5}\)) over the causally available few Gyr, induces
+vorticity above the Planck Bianchi bound \(\omega/H_0 \lesssim 10^{-9}\)
+(Saadeh et al.~2016) unless the boundary transmits \(\lesssim 0.1\%\) of
+the shear. \textbf{The Cold Spot's own amplitude fixes the mass.} If the
+decrement is the neighbour's Sachs--Wolfe imprint,
+\(\Delta T/T \approx 2.6\times10^{-5}\) gives
+\(M_2 \approx 3(\Delta T/T)\,c^2 D/G \approx 5\times10^{49}\) kg at
+\(D = 46\) Gly --- a \emph{dwarf} neighbour, \(\sim\!2\times10^{-3}\) of
+\(M_{\text{total}}\). Fed back into the torque estimate,
+\(\omega/H_0 \sim 10^{-11}\), two orders under the bound. The mass the
+amplitude demands is automatically small enough to satisfy non-rotation,
+subject to \(\mathcal{O}(1)\) Sachs--Wolfe factors and the uncomputed
+boundary transmission (which pushes \(M_2\) up). The angular-size check
+passes: \(5°\) at \(46\) Gly subtends \(\sim\!4\) Gly.
+
+\textbf{The bubble spectrometer.} The two observables of any anomalous
+spot invert into the neighbour's parameters: Sachs--Wolfe gives
+\(M/D \propto \Delta T\), and an imprint scale set by the neighbour's
+size (\(R \propto M^{1/3}\) at fixed formation density) gives
+\(\theta \propto M^{1/3}/D\), hence
+
+\[M \propto (\Delta T/\theta)^{3/2}, \qquad D \propto \Delta T^{1/2}\,\theta^{-3/2}.\]
+
+These are scaling relations: absolute values require the neighbour's
+formation density, so the inversion supplies ranks, and the Sachs--Wolfe
+estimate supplies the absolute mass at an assumed distance. They apply
+only to the non-Gaussian outlier population --- the acoustic-peak spots
+are \(\Lambda\)CDM's best-confirmed physics. Neighbours on a common
+distance shell populate a locus \(\Delta T \propto \theta^3\), whereas
+Gaussian peaks obey BBKS statistics with amplitude and size nearly
+independent. The inferred neighbour mass function is the nucleation size
+spectrum of the vacuum transition --- the same distribution that drove
+the cascade of Sec. 1 --- so the internal (ejecta) and external (spot)
+samples of one process must agree, a cross-consistency requirement
+linking H1 and H4.
+
+\textbf{Southern one-sidedness.} All eight most-extreme large-scale
+spots on the SMICA map (\(|b| > 25°\), \(2°\) smoothing; Appendix A) lie
+in the southern galactic hemisphere; in 200 Gaussian realizations
+through the same pipeline none placed its full top-8 in one hemisphere
+(mock mean \(5.2\) of \(8\)). The honest significance is that of the
+published hemispherical power asymmetry (\(p \sim 1\)--\(10\%\),
+estimator-dependent), since our mocks are simplified and the frame post
+hoc. In this framework the asymmetry is not a separate anomaly: a single
+massive neighbour to the galactic south --- the object invoked for the
+Cold Spot --- modulates large-scale power on one side of the sky by
+tidal and Sachs--Wolfe action, so the asymmetry, the Cold Spot, and the
+preferred axis of Sec. 6 become one prediction with one direction. An
+isotropic swarm of neighbours (H4) predicts no such one-sidedness.
+
+\textbf{H4.} Since nucleation is stochastic, the neighbour should not be
+unique: a population of Big Pool Bangs at varying distances, each
+imprinting a distinct anomaly (P7). Planck 2018 isotropy analyses find
+the sky consistent with Gaussian \(\Lambda\)CDM apart from
+\(2\)--\(3\sigma\) large-scale anomalies and the single Cold Spot, so
+additional neighbours must imprint below Planck's per-spot threshold
+(more distant or weaker boundaries). H4 stands or falls on population
+statistics (Sec. 9, H7), not on any single spot.
+
+\textbf{Falsifiers.} H3 is eliminated by the absence of anisotropic
+sub-solar mergers and memory strain at ET/LISA sensitivity, or by a
+foreground structure shown to account for the full decrement; H4 by a
+null in sub-threshold spot statistics at LiteBIRD/CMB-S4 depth.
+
+\hypertarget{h5-where-are-we-relative-to-our-own-big-pool-bang-1}{%
+\subsection{\texorpdfstring{\textbf{8. H5: Where Are We Relative to Our
+Own Big Pool Bang
+1?}}{8. H5: Where Are We Relative to Our Own Big Pool Bang 1?}}\label{h5-where-are-we-relative-to-our-own-big-pool-bang-1}}
+
+Unlike standard cosmology, this framework has a centre (the seed bubble
+/ furnace) and a radial structure --- the velocity-sorted shells of Sec.
+3 --- so ``where are we inside Universe 1: near the centre, in the
+mantle, or in the border shell?'' is a meaningful question.
+
+\textbf{What the model expects.} Observers are made of furnace material
+and so sit near the centre by construction; the fastest ejecta are
+outermost, so radial position maps onto ejection epoch (Fig. 4), and the
+border shell --- which is what the CMB sky \emph{is}, seen from near the
+centre --- should carry the fossil arrangement of the earliest ejecta.
+Only those escaped in a single pass and preserve geometric correlations;
+everything slower underwent violent relaxation, which conserves spin
+magnitude but randomizes spin geometry. The model therefore predicts a
+\textbf{coherence gradient}: fossil geometry intact at the border,
+degrading inward, absent in the well-mixed interior. Intermediate-shell
+tracers (quasar-polarization alignments at \(z \sim 1\)--\(2\); galaxy
+handedness axes) lie \(24°\)--\(73°\) from the Cold Spot direction,
+consistent with random axes, and the local same-handedness correlation
+over 77\{,\}840 SDSS galaxies is zero to a few parts in \(10^3\) --- as
+mixing requires.
+
+\textbf{Displacement from the centre.} The machinery is standard
+(off-centre observer constraints from the CMB dipole: Alnes \&
+Amarzguioui 2006; tilted-universe program: King \& Ellis 1973; Asvesta
+et al.~2022); what is specific here is the attribution of a shared
+vector to displacement from a physical origin. Attributing the full CMB
+dipole (\(370\) km/s) to off-centring gives \(\Delta r \approx 5\) Mpc;
+the residual unexplained by local gravity gives
+\(\Delta r \lesssim 1\)--\(2\) Mpc. A displaced centre is invisible in a
+linear flow but enters at \(\mathcal{O}(Hc^2/r)\), \(\sim\!90\) km/s at
+\(10\) Mpc for a \(5\) Mpc offset. Fitting the 2\{,\}112 Cosmicflows-4
+groups at \(1.5\)--\(40\) Mpc with \(v(R) = hR + kR^2\) diverging from a
+free centre gives \(|\vec c| = 6.1\) Mpc toward \((118°, -24°)\) at
+\(\Delta\chi^2 = 6595\), and independent shells at \(40\)--\(80\) and
+\(80\)--\(150\) Mpc return centres within \(10°\)--\(15°\) of it. Two
+controls dismantle this. \emph{Mock mask:} ten isotropic mocks on CF4's
+exact sky positions and distance errors manufacture false centres
+(\(0.4\)--\(2.5\) Mpc, \(\Delta\chi^2 \approx 9\)--\(61\) per shell)
+that in the outer shells point into the \emph{same longitude band}
+(\(l \approx 93°\)--\(152°\)) as the data. \emph{Structure subtraction:}
+removing the 2M++ reconstruction-predicted peculiar velocities (Carrick
+et al.~2015) from every group drops the inner shell to
+\(\Delta\chi^2 = 182\) (\(|\vec c| = 1.7\) Mpc, within \(8°\) of the CMB
+dipole, plausibly a residual of the reconstruction's external-dipole
+calibration), the \(40\)--\(80\) Mpc shell to the mock noise floor
+(\(23\) vs \(24\)), and the \(80\)--\(150\) Mpc shell to
+\(\sim\!1.5\times\) mock. \textbf{Current answer: no displaced expansion
+centre is detected once mapped structure is subtracted}; any offset is
+\(\lesssim\) a few Mpc, \(\sim\!10^{-4}\) of the distance to last
+scattering.
+
+\textbf{The only kinematic handle: the bulk flow.} The bias-corrected
+Cosmicflows-4 bulk flow (Watkins et al.~2023) is \(419 \pm 36\) km/s at
+\(200\,h^{-1}\) Mpc toward \((298° \pm 5°, -8° \pm 4°)\), rising with
+depth, in nominal \(\sim\!4.8\sigma\) tension with \(\Lambda\)CDM
+(Whitford et al.~2023 argue the errors are understated); Planck's kSZ
+analysis limits coherent flows to \(\lesssim 254\) km/s at \(95\%\) on
+larger scales, so amplitudes \(\gtrsim 600\) km/s are disfavored (P5).
+The flow axis and the CMB dipole \((264°, +48°)\) lie \(40°\)--\(50°\)
+apart, which a single offset vector does not predict; local-attractor
+infall explains the flow without any offset.
+
+\textbf{Hemispherical asymmetry as an off-centre signature?} An
+off-centre observer in a velocity-sorted universe would see a power
+asymmetry along the offset axis. The observed southern one-sidedness
+(Sec. 7) is \(90°\)--\(115°\) from every flow axis, so it is not the
+offset signature; we attribute it instead to the neighbour (H6). The
+offset vector (H5) and the Cold Spot axis (H6) are two distinct
+directions, and cross-boundary infall from the Cold Spot cannot be the
+source of the bulk flow.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+Quantity\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Estimate\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Method\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Status\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Radial zone\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Central furnace region\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Furnace origin of baryons; coherence gradient\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Model expectation, untested\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Offset from centre\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(\lesssim 2\)--\(5\) Mpc; no detection\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+CMB dipole cap; CF4 free-centre fit with mock-mask and 2M++
+controls\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Null\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Offset direction\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Undetermined (CMB dipole \((264°,+48°)\) vs flow \((298°,-8°)\))\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Dipole/flow attribution\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Misaligned by \(40°\)--\(50°\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Bulk flow (P5)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(419 \pm 36\) km/s at \(200\,h^{-1}\) Mpc; \(\gtrsim 600\)
+disfavored\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Cosmicflows-4, kSZ\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Persistence with depth untested\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Coherence gradient\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Interior mixed; border fossil untested\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+SDSS handedness null; P9 curl at the border\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Interior null; border open\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{What would decide it.} (i) The deep flow persisting, not
+converging, at bias-corrected depths \(\gtrsim 200\,h^{-1}\) Mpc; (ii) a
+dipole-locked redshift \emph{quadrupole}, whose sign fixes which end of
+the axis holds the centre; (iii) a mask-marginalized,
+structure-subtracted centre fit on number-count dipoles, pairwise
+velocities, and field-level inference with a free centre parameter, all
+requiring mocks with correlated velocity fields; (iv) the P9 curl test
+at the border. A persistent flow with a coherent quadrupole would place
+us a few Mpc off-centre; continued nulls leave the centre a hypothesis
+without an observable signature at distance-catalogue depth.
+
+\hypertarget{h6-where-is-the-second-big-pool-bang}{%
+\subsection{\texorpdfstring{\textbf{9. H6: Where Is the Second Big Pool
+Bang?}}{9. H6: Where Is the Second Big Pool Bang?}}\label{h6-where-is-the-second-big-pool-bang}}
+
+H6 gathers the neighbour claims of Sec. 7 into a location.
+\textbf{Direction:} the Cold Spot, \((l, b) = (203°, -56°)\), uncertain
+by \(\sim\!2\)--\(3°\) (the half-max radius), in the hemisphere of the
+eight-spot one-sidedness, which we read as the neighbour's tidal and
+Sachs--Wolfe modulation. \textbf{Distance:} at least the comoving
+distance to last scattering, \(\sim\!46\) Gly (\(14\) Gpc), since the
+imprint sits on that surface and no adequate foreground counterpart
+exists; the spectrometer relation gives only a rank, so the upper end is
+unconstrained. \textbf{Mass:}
+\(M_2 \approx 5\times10^{49}\,(D/46\,\text{Gly})\) kg from the
+Sachs--Wolfe inversion, uncertain by an order of magnitude,
+i.e.~\(\sim\!10^{-3}\) of our \(2.2\times10^{52}\) kg; the equal-mass
+value \(1.5\times10^{53}\) kg is an upper bound excluded by the spin
+constraint without \(\lesssim 0.1\%\) boundary transmission.
+\textbf{Kinematics:} the bulk flow points \(90°\)--\(115°\) away from
+the Cold Spot, so the neighbour contributes no detected flow; any
+coherent component along its axis is bounded by kSZ at \(\lesssim 300\)
+km/s. \textbf{Our position relative to it:} \(\gtrsim 46\) Gly comoving
+from its boundary along the axis toward \((203°, -56°)\); the internal
+offset of H5 (\(\lesssim\) few Mpc) is \(\sim\!10^{-4}\) of that and
+negligible.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+Quantity\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Estimate\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Method\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Status\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Direction\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\((203°, -56°) \pm 3°\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Cold Spot centroid; southern one-sidedness\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Fixed by data; attribution hypothetical\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Distance\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(\gtrsim 46\) Gly comoving\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Last-scattering surface; no foreground counterpart\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Lower bound only\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Mass \(M_2\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(\sim\!5\times10^{49}\) kg (\(\pm 1\) dex)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Sachs--Wolfe inversion of \(-70\,\mu\)K\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Consistent with spin bound\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Induced vorticity\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(\omega/H_0 \sim 10^{-11}\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Tidal torque on \(q \sim 10^{-5}\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Under Saadeh et al.~bound\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Directed flow\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(\lesssim 300\) km/s along axis; none detected\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Cosmicflows-4, kSZ\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Null\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Curl excess at Spot (P9)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Predicted zero (neighbour) vs excess (vortex)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Lensing curl / \(B\)-mode stack\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Cheap estimator null; calibrated test pending\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Polarization ring\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(1\)--\(3\,\mu\)K at \(5°\)--\(15°\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(Q_r\) profile\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Unconstrained by Planck\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{What H6 predicts and what falsifies it.} The neighbour reading
+predicts a \emph{non-rotating} imprint: zero curl at the Cold Spot at
+calibrated sensitivity, a disc-shaped edge profile with the
+Aguirre--Johnson polarization signature, anisotropic sub-solar mergers
+and memory strain from that direction, and no proper motion (any
+intrinsic transverse motion is nanoarcseconds per century). It is
+falsified by a curl detection at the Spot (which transfers the direction
+to H2), by a foreground structure accounting for the full decrement, by
+the absence of the bubble-collision polarization profile at CMB-S4
+sensitivity, or by the one-sidedness proving an estimator or foreground
+artifact in end-to-end simulations. P9 is the decisive near-term test:
+it separates the two readings of the same direction.
+
+\hypertarget{h7-the-pool-model-hypotheses}{%
+\subsection{\texorpdfstring{\textbf{10. H7: The Pool Model
+Hypotheses}}{10. H7: The Pool Model Hypotheses}}\label{h7-the-pool-model-hypotheses}}
+
+The Pool Model gathers the population claims of H3--H6 into explicit
+statements.
+
+\textbf{(a) Universe 1 is one ball on the table.} Vacuum crystallization
+nucleated more than once; our bang is one of several Big Pool Bangs
+separated by domain boundaries, each with its own furnace and ejected
+halo.
+
+\textbf{(b) Each neighbour imprints one spot.} A neighbour's boundary
+imprints a spot on our last-scattering surface with
+\(M \propto (\Delta T/\theta)^{3/2}\) and
+\(D \propto \Delta T^{1/2}\theta^{-3/2}\). The eight most extreme
+large-scale spots on the SMICA map are therefore the candidate neighbour
+list. The inverted ranks below are model-dependent (common formation
+density, pure Sachs--Wolfe imprint), in arbitrary units normalized
+within the sample:
+
+\begin{longtable}[]{@{}lllllll@{}}
+\toprule
+Rank & \((l, b)\) & Sign & \(\Delta T\) (\(\mu\)K) & \(\theta_{1/2}\) &
+Relative \(M\) & Relative \(D\)\tabularnewline
+\midrule
+\endhead
+1 & \((157°, -71°)\) & hot & \(+170\) & \(2.5°\) & \(1.00\) &
+\(1.00\)\tabularnewline
+2 & \((80°, -33°)\) & cold & \(-170\) & \(3.5°\) & \(0.60\) &
+\(0.60\)\tabularnewline
+3 & \((203°, -56°)\) (Cold Spot) & cold & \(-168\) & \(2.5°\) & \(0.99\)
+& \(0.99\)\tabularnewline
+4 & \((155°, -29°)\) & cold & \(-163\) & \(5.5°\) & \(0.29\) &
+\(0.30\)\tabularnewline
+5 & \((305°, -29°)\) & hot & \(+153\) & \(2.5°\) & \(0.86\) &
+\(0.95\)\tabularnewline
+6 & \((211°, -35°)\) & cold & \(-153\) & \(2.5°\) & \(0.86\) &
+\(0.95\)\tabularnewline
+7 & \((170°, -47°)\) & hot & \(+162\) & \(4.5°\) & \(0.39\) &
+\(0.40\)\tabularnewline
+8 & \((184°, -54°)\) & hot & \(+155\) & \(4.5°\) & \(0.36\) &
+\(0.40\)\tabularnewline
+\bottomrule
+\end{longtable}
+
+Hot spots require a boundary imprint of the opposite sign (an overdense
+or approaching wall); the model does not yet specify which neighbours
+imprint hot. Two of the hot extremes lie \(11°\)--\(12°\) from the Cold
+Spot and may be pieces of one system.
+
+\textbf{(c) Population predictions.} Neighbours cluster on the sky: they
+should share the southern one-sidedness direction (currently \(8/8\)
+south). Neighbours on a common distance shell should follow the locus
+\(\Delta T \propto \theta^3\) rather than Gaussian-peak (BBKS)
+statistics: the current locus test returns a slope
+\(d\ln|\Delta T|/d\ln\theta = 0.00\) (\(r = -0.01\)), at the 27th
+percentile of the Gaussian null (\(+0.07 \pm 0.10\)) --- null, but
+powerless as implemented, because the \(2°\) smoothing quantizes radii
+to \(2.5°\)--\(5.5°\) and the top-8 selection compresses the amplitude
+spread to \(\sim\!10\%\), so a flat slope is expected under both
+hypotheses. Any genuine neighbour is non-rotating and should show zero
+curl; conversely any spot that is a relic vortex of our own bang (H2)
+should show P9 curl excess --- the population divides on this test. The
+inferred neighbour mass function must match the nucleation spectrum
+inferred from our own ejecta kinematics.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+Quantity\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Estimate\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Method\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Status\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Candidate neighbours\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(\leq 8\) (top-8 extremes; \(6\) if the Cold Spot system is
+merged)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+SMICA extrema, \(2°\) smoothing\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Candidate list\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+One-sidedness\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(8/8\) south; \(0/200\) mocks\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Hemisphere count\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Literature-level significance (\(p \sim 1\)--\(10\%\))\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Locus slope\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.00\) vs \(+3\) (locus) or \(\sim\!0\) (Gaussian)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Log--log fit, 60 Gaussian nulls\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Null, powerless; injection-recovery pending\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+CMB-independent mass counterpart\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(+2.7\sigma\) sign-weighted (WISE\(\times\)SuperCOSMOS); null in
+Quaia\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Galaxy-density stacks\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(1\)--\(2\sigma\)-class hint\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Curl at 8 spots\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+82nd percentile (uncalibrated)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Temperature-only quadratic estimator\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+Null at low sensitivity\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{(d) What falsifies the Pool Model as a whole.} All three of: the
+extreme spots consistent with Gaussian BBKS peaks under a validated
+injection-recovery locus test (a \(\Delta T \propto \theta^3\)
+population injected and demonstrably recoverable, yet absent in data);
+zero curl at calibrated sensitivity at all eight spots \emph{and} no
+bubble-collision polarization profile at any of them at CMB-S4 depth;
+and no CMB-independent mass counterpart at any spot in a pre-registered
+galaxy-density re-run. Under those three nulls the spot population is
+Gaussian, the Cold Spot is a single outlier of unknown origin, and
+H3--H4 and H6--H7 fall together while H1, H2, and H5 stand.
+
+\textbf{(e) Quantitative falsifiers of a surrounding population.} A
+neighbour that imprints a compact spot cannot imprint \emph{only} a
+spot. Modelling each spot as the Sachs--Wolfe signature of a point mass
+at comoving distance \(D = (1+\epsilon)\,d_{\rm LS}\) just beyond the
+last-scattering sphere, the profile is
+\(\Delta T(\theta) \propto [\epsilon^2 + 2(1+\epsilon)(1-\cos\theta)]^{-1/2}\),
+so the half-maximum angle fixes \(\epsilon = \theta_{1/2}/\sqrt{3}\):
+the eight extremes require \(\epsilon = 0.025\)--\(0.055\), i.e.~sources
+\(1\)--\(2.5\) Gly (comoving) beyond last scattering, and by the
+Sachs--Wolfe amplitude a mass \(M \approx 3\times10^{48}\) kg for the
+Cold Spot (within the \(\pm1\) dex of Sec. 9). Three consequences follow
+with no free parameters.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \emph{A low-multipole tail (P10).} The \(1/r\) potential of each
+  source extends over the whole sky at \(\sim\!2\%\) of its peak:
+  \(3\)--\(6\,\mu\)K at \(90°\) and \(2\)--\(4\,\mu\)K at the antipode.
+  Summing the eight tails predicts a fixed \(\ell = 1\)--\(3\) template
+  with rms \(4.1\,\mu\)K at \(\ell=2\) and \(4.5\,\mu\)K at \(\ell=3\),
+  i.e.~\(\sim\!20\%\) of the observed quadrupole power
+  (\(C_2 \approx 210\,\mu\)K\(^2\)) and \(\sim\!8\%\) of the octopole.
+  This is allowed, and it is a prediction: the template must correlate
+  positively with the observed \(\ell = 2, 3\) maps. A first unmasked
+  SMICA check gives \(r = +0.15\) at \(\ell=2\) and \(r = -0.27\) at
+  \(\ell=3\), and the template's quadrupole and octopole axes lie
+  \(78°\) and \(52°\) from the observed axes --- no support, not yet a
+  rejection, since the unmasked low-\(\ell\) map is
+  foreground-contaminated. A masked, component-separated low-\(\ell\)
+  comparison (Planck Commander \(\ell \le 3\)) is the pre-registered
+  test: a correlation coefficient consistent with zero or negative at
+  both multipoles, with the template amplitude fixed by the spots,
+  falsifies the population reading of the extremes.
+\item
+  \emph{A tidal bulk-flow direction (P11).} The same masses pull on the
+  local volume; the predicted flow direction is the mass-weighted vector
+  sum of the spot directions with weights
+  \(\Delta T\,\epsilon/(1+\epsilon)^2\). Taking cold spots as attractive
+  (positive mass, the only sign the Sachs--Wolfe model supplies), the
+  prediction is \((l,b) = (110°, +24°)\), which is \(161°\) from the
+  CosmicFlows-4 bulk flow at \((297°, -6°)\): anti-aligned. Reversing
+  the sign convention (hot attractive) gives \((290°, -24°)\), \(19°\)
+  from CF4. The model therefore either fails this test or requires hot
+  extremes to be the attractive ones, which is the unspecified sign
+  mechanism noted under the table above. We pre-register the test as:
+  once the sign mechanism is fixed \emph{by the model}, the predicted
+  direction must fall within \(30°\) of the measured bulk flow; the sign
+  may not be chosen from the data.
+\item
+  \emph{Expansion-shear anisotropy.} The Cold Spot source alone exerts a
+  tidal field \(GM/D^3 \approx 2\times10^{-42}\) s\(^{-2}\), a
+  fractional expansion anisotropy of \(\sim\!4\times10^{-7}\) of
+  \(H_0^2\): undetectable in supernova anisotropy searches (percent
+  level) and below the low-\(\ell\) Grishchuk--Zel'dovich limit by
+  construction, so this is a consistency check the picture passes rather
+  than a discriminant.
+\end{enumerate}
+
+Finally, a genuinely \emph{surrounding} population should populate both
+hemispheres. The present \(8/8\) southern count says the candidate
+population is one-sided; if the extremes are neighbours they are
+clustered on one side of us, not around us. The pre-registered extension
+is the hemispheric balance of the next twenty extremes ranked
+\(9\)--\(28\): a surrounding population predicts isotropy, a one-sided
+population predicts a persistent southern excess, and a Gaussian sky
+predicts isotropy with the top-8 count a fluctuation.
+
+\hypertarget{falsifiable-predictions-and-required-instrumentation}{%
+\subsection{\texorpdfstring{\textbf{11. Falsifiable Predictions and
+Required
+Instrumentation}}{11. Falsifiable Predictions and Required Instrumentation}}\label{falsifiable-predictions-and-required-instrumentation}}
+
+\textbf{Hypothesis hierarchy.} \textbf{H1 --- ``The Big Pool Bang''
+(core, must hold):} bounce plus chaotic ejection producing the
+dark-matter component (P6, P3); the framework does not supply dark
+energy (Sec. 5). \textbf{H2 --- ``The Cold Eye of Sauron'' (bonus):} the
+Cold Spot as a frozen vortex and the Axis-of-Evil alignment (P1, P2,
+P9). \textbf{H3 --- ``Big Pool Bang Multiverse 2'' (bonus):} a
+neighbouring universe in the Cold Spot direction (P3, P4). \textbf{H4
+--- ``The Dark Comic Background'' (generalizes H3):} a population of
+neighbours (P7). \textbf{H5:} our position inside Universe 1 (P5, P8).
+\textbf{H6:} the location of the second Big Pool Bang (P4, P9).
+\textbf{H7 --- ``The Pool Model'':} the population statements of Sec. 10
+(P7, P9). H2--H7 are separable: any can fail without falsifying the core
+mechanism, and each can hold without the others.
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright
+\#\strut
+\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
+Prediction\strut
+\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
+Observable and required threshold\strut
+\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
+Instrument\strut
+\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
+Status\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P1\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Cold Spot ring. Thermal ring of \(+20\)--\(50\,\mu\)K at \(5°\)--\(7°\):
+\textbf{failed} in Planck 2018 (Sec. 6). Surviving prediction: radial
+\(E\)-mode ring of \(1\)--\(3\,\mu\)K at \(5°\)--\(15°\)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Polarization sensitivity \(\lesssim 1\,\mu\)K·arcmin at
+\(\ell \sim 20\)--\(100\) over a \(\gtrsim 30°\) patch\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+CMB-S4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Thermal: failed. Polarization: open\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P2\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Cyclonic \(B\)-mode pattern aligned with the Axis of Evil\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Degree-scale \(B\)-modes, \(r\)-equivalent \(\sim\!10^{-3}\)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+CMB-S4, LiteBIRD\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Open\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P3\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Sub-solar mergers (\(0.1\)--\(1.0\,M_\odot\)) clustered toward the Cold
+Spot\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Strain \(\sim\!10^{-24}/\sqrt{\text{Hz}}\) at \(10\)--\(10^3\) Hz;
+localization \(\lesssim 10\,\text{deg}^2\)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+LIGO/Virgo/KAGRA O5, Einstein Telescope, Cosmic Explorer\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Open\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Gravitational-wave memory (step strain
+\(\Delta h \sim 10^{-22}\)--\(10^{-21}\)) from cross-boundary infall,
+plus a first-order-transition stochastic background (broken power law
+peaked at the transition scale). Ground detectors are blind below \(10\)
+Hz (seismic wall), so single-event memory needs sub-Hz response\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+\(\Delta h \lesssim 10^{-22}\) below \(10\) Hz; memory via event
+stacking meanwhile\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Einstein Telescope (underground, to \(\sim\!3\) Hz), LISA (mHz), pulsar
+timing arrays (nHz)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Open\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P5\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Coherent bulk flow of \(\sim\!400\) km/s persisting (not converging) at
+bias-corrected depths \(\gtrsim 200\,h^{-1}\) Mpc toward
+\(l \approx 298°\); \(\gtrsim 600\) km/s disfavored by the Planck kSZ
+limit\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Peculiar-velocity survey to \(z \sim 1\) with \(\lesssim 300\) km/s per
+cluster\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Rubin/LSST + Euclid + kSZ\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Current data lean toward persistence; errors disputed\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P6\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+No particle dark-matter candidate (DM = Planck relics)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Continued nulls approaching the neutrino floor\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+LZ, XENONnT\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Ongoing\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P7\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+A sub-threshold population of Cold-Spot-class anomaly spots (Planck
+already limits any above-threshold population)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Sub-threshold spot statistics; per-candidate polarization at
+\(\lesssim 1\,\mu\)K·arcmin\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+LiteBIRD, CMB-S4\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Constrained; open below threshold\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P8\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Spin surcharge: filaments and clusters carry primordial angular momentum
+atop tidal spin, excess largest at high \(z\); randomly oriented (zero
+net), consistent with \(\omega/H_0 \lesssim 10^{-9}\). Wang et
+al.~(2021) filament spin is the \(z \approx 0\) anchor\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Filament-spin stacking at \(z \sim 1\) vs \(z \sim 0\) against
+\(\Lambda\)CDM torque mocks\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+DESI, Euclid, 4MOST\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Open\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P9\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Localized curl excess (lensing curl and \(B\)-mode variance) at the
+extreme-spot positions if they are relic vortices, zero mean globally; a
+calibrated stacked null at the Cold Spot retires the vortex reading in
+favor of the neighbour reading (Appendix A)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Planck PR4 curl reconstruction at full depth; degree-scale \(B\)-modes
+at \(\lesssim 1\,\mu\)K·arcmin\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Planck PR4 (archival), CMB-S4, LiteBIRD\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Cheap estimator null; calibrated test pending\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P10\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Low-multipole tail of the spot population: a fixed \(\ell = 1\)--\(3\)
+template (rms \(4\,\mu\)K at \(\ell = 2\), \(4.5\,\mu\)K at
+\(\ell = 3\)) summed from the eight point-mass profiles must correlate
+positively with the observed \(\ell = 2, 3\) maps (Sec. 10e)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Masked Commander low-\(\ell\) maps; correlation coefficient with the
+template at fixed amplitude\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Planck 2018/PR4 (archival)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Unmasked first look: \(r = +0.15\) (\(\ell=2\)), \(-0.27\) (\(\ell=3\));
+no support\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+P11\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Tidal bulk-flow direction: the mass-weighted vector sum of the spot
+directions must fall within \(30°\) of the measured bulk flow once the
+model fixes the attractive sign (Sec. 10e)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+CosmicFlows-4 bulk-flow direction \((297°, -6°)\)\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+CF4 (archival); DESI peculiar velocities\strut
+\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
+Cold-attractive: \(161°\) off (fails); hot-attractive: \(19°\); sign
+mechanism unspecified\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Detection of a particle dark-matter candidate, or an expansion history
+irreconcilable with the bounce-and-ejection mechanism, falsifies H1.
+Absence of the polarization ring at CMB-S4 sensitivity eliminates H2;
+absence of anisotropic sub-solar mergers and memory strain at ET/LISA
+sensitivity eliminates H3 and H6; a null in deeper spot statistics
+eliminates H4 and H7; H5 has no positive detection to lose. The
+polarization ring and single-event memory strain are out of reach until
+Simons Observatory / CMB-S4 and ET/LISA respectively, which set the
+2030s decision timeline.
+
+\hypertarget{limitations-and-open-problems}{%
+\subsection{\texorpdfstring{\textbf{12. Limitations and Open
+Problems}}{12. Limitations and Open Problems}}\label{limitations-and-open-problems}}
+
+\begin{quote}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Hard-sphere ansatz.} Treating Planck relics as incompressible
+  spheres is a modeling assumption motivated by the
+  Compton--Schwarzschild coincidence, not a quantum-gravity result.
+\item
+  \textbf{Bounce mechanism and horizon structure.} The rebound requires
+  the LQC-form modified Friedmann equation; the identification
+  \(\rho_c = \eta_{\text{rcp}}\rho_P\) is a conjecture. A finite ball at
+  this density is forty orders inside its Schwarzschild radius, so the
+  bounce is meaningful only for a whole or super-horizon patch, and a
+  trapped-surface timing analysis, together with the multi-bubble
+  assembly timescale (\(\gtrsim 10^{20}\,t_P = 5.4\times10^{-24}\) s),
+  remains to be done.
+\item
+  \textbf{Spectral index.} \(\nu_t\) and the relation
+  \(n_s - 1 = -\nu_t/3\) are fitted inputs; the compatibility of a
+  Kolmogorov cascade with near scale invariance is unproven.
+\item
+  \textbf{Dark-matter fraction and temperature.} The turbulent kick
+  distribution at \((\bar{f}, \sigma_{\text{rel}}) = (0.7, 1.0)\) yields
+  \(88\% \pm 4\%\) ejection, consistent with the observed fraction, but
+  the cascade model reaches \(\sigma_{\text{rel}} \approx 1\) only
+  marginally and the end-to-end chain is untested. The ejecta are
+  relativistic, hence hot rather than cold dark matter unless a
+  redshifting or cooling argument reduces their free-streaming length by
+  matter--radiation equality. Planck-relic dark matter must also face
+  femtolensing, capture, and abundance constraints.
+\item
+  \textbf{Expansion history.} Neither the Newtonian toy nor the
+  relativistic LTB lightcone produces apparent acceleration
+  (\(q_0^{\text{eff}} = +0.16\) against \(\approx -0.55\)), the toy's
+  \(w(z)\) drift runs opposite to the DES+DESI direction, and the kSZ
+  gate caps any ejecta contribution at \(\sim\!1\%\) of dark energy. The
+  adopted expansion history (Sec. 5.2) is therefore the pool model plus
+  a constant tension of space; the framework does not predict the value
+  of that tension and inherits the \(10^{-123}\) fine-tuning of
+  \(\Lambda\)CDM. It is also not yet reconciled with BBN abundances or
+  the CMB acoustic peaks.
+\item
+  \textbf{Causal and relativistic structure.} The jammed patch is
+  \(\sim\!10^{20}\) Planck lengths across, so homogeneity must be
+  assumed (the horizon problem stands). The ejection phase proceeds
+  where Newtonian escape velocity vastly exceeds \(c\); the \(N\)-body
+  mechanism lacks a relativistic formulation, which is prerequisite for
+  H1 to be a physical theory rather than an analogy.
+\item
+  \textbf{Relic-to-plasma conversion.} The furnace must convert relics
+  to Standard-Model plasma with the observed baryon asymmetry and
+  photon-to-baryon ratio while ejected relics stay stable; no channel is
+  specified.
+\end{enumerate}
+\end{quote}
+
+Each item maps onto the observational program of Sec. 11; the theory is
+offered as a falsifiable mechanical alternative, not a completed
+replacement for \(\Lambda\)CDM.
+
+\hypertarget{epilogue-three-questions-three-answers}{%
+\subsection{\texorpdfstring{\textbf{Epilogue: Three Questions, Three
+Answers}}{Epilogue: Three Questions, Three Answers}}\label{epilogue-three-questions-three-answers}}
+
+We set out with three questions and a pool table. Here is where the
+balls came to rest.
+
+\textbf{How does it work?} Picture the moment before the first moment: a
+false vacuum, tense as a drawn bow. Somewhere a bubble of true vacuum
+nucleates, its wall sweeping outward, catalysing more bubbles, until the
+whole patch is a jammed crush of \(10^{60}\) Planck-mass spheres pressed
+to the random-close-packing limit. Nothing can fall further. A
+loop-quantum bounce fires, the pile rebounds, and the rebound is
+chaotic: \(88\% \pm 4\%\) of the spheres are hurled outward, the fastest
+furthest, sorting themselves into shells like shot from a gun. That
+flying debris is our dark matter, and its velocity ordering is our
+Hubble flow. But the debris does not push the universe faster; nothing
+outside a volume ever can, and nothing inside it pushes either. The
+acceleration we measure comes from a constant tension of space,
+\(w = -1\), which we adopt and cannot yet derive. So the model works as
+far as the matter goes, hands the expansion to a tension it does not
+explain, and carries three confessed wounds: the ejecta are born
+relativistic and must somehow cool, the thermal ring we predicted around
+the Cold Spot is not there, and the bounce is only meaningful if the
+jammed patch was the whole universe rather than a ball inside its own
+horizon.
+
+\textbf{Where are we?} Inside that debris cloud, somewhere between the
+surviving core and the outermost shell. Only the outermost layers keep
+any memory of the initial geometry; everything deeper has been mixed. We
+looked for our own displacement from the centre in the galaxy velocity
+field, and after the mock-mask and 2M++ controls the answer is: no
+measurable offset, a few megaparsecs at most, direction undetermined.
+What we do have is a bulk flow of about \(400\) km s\(^{-1}\) that the
+kinetic Sunyaev--Zel'dovich data cap near \(600\), and a sky whose
+extreme spots all lie in the southern hemisphere. The honest reading is
+that we are not visibly off-centre, and that the lopsidedness of the sky
+is more plausibly the work of a neighbour than of our own position.
+Where we are remains the least answered of the three questions, and the
+paper says so.
+
+\textbf{Where is the second Big Bang?} Follow the coldest patch of the
+oldest light: galactic longitude \(203°\), latitude \(-56°\), the Cold
+Spot. If it is the fingerprint of a neighbouring Big Pool Bang pressing
+on our last-scattering surface, then that neighbour sits just beyond it,
+about one to two billion light-years past the edge of everything we can
+see, with a mass of order \(10^{48}\) to \(10^{50}\) kg. Seven other
+extreme spots line up on the same side of the sky, a candidate pool of
+neighbours clustered rather than surrounding us. The neighbour reading
+makes promises it can be held to. It must leave a curl-mode fingerprint
+at the spots, or not (P9). Its \(1/r\) potential must leak a few
+microkelvin across the whole sky in a pattern fixed by the spots (P10);
+the first unmasked look found no correlation. Its pull must point along
+the bulk flow (P11); with cold spots attractive it points the wrong way,
+and the model is not allowed to flip the sign to suit the data. Each of
+these is cheap, archival, and decisive. The neighbour hypothesis will
+not survive as a story; it will survive, or fall, as a set of numbers.
+
+That is the adventure in one paragraph: a jammed crystal that bounced, a
+cloud of debris we live inside, and a cold fingerprint on the far wall
+that may belong to someone else. The next moves are already on the
+table.
+
+\hypertarget{appendix-a.-exploratory-null-results-and-a-pre-registered-test}{%
+\subsection{\texorpdfstring{\textbf{Appendix A. Exploratory Null Results
+and a Pre-registered
+Test}}{Appendix A. Exploratory Null Results and a Pre-registered Test}}\label{appendix-a.-exploratory-null-results-and-a-pre-registered-test}}
+
+This appendix records the exploratory battery run on the eight most
+extreme large-scale spots of the Planck SMICA map
+(\(N_{\text{side}} = 128\), \(|b| > 25°\), \(2°\) smoothing; per-spot
+amplitude \(\Delta T\) and half-maximum radius \(\theta\); positions in
+Sec. 10). Nulls are 60--300 Gaussian realizations drawn from the map's
+own pseudo-\(C_\ell\) and passed through the identical pipeline unless
+stated otherwise.
+
+\textbf{Locus test.} Log--log fit of \(|\Delta T|\) against \(\theta\):
+slope \(-0.00\), \(r = -0.01\), 27th percentile of the Gaussian null
+(\(+0.07 \pm 0.10\)). No amplitude--size correlation is detected, but
+the test is powerless as implemented (radii quantized to
+\(2.5°\)--\(5.5°\), amplitude spread \(\sim\!10\%\)). It is reported as
+unresolved pending injection-recovery validation, not as an exclusion.
+Neighbours at a range of distances would populate a diffuse cloud rather
+than a locus, and one genuine neighbour among seven Gaussian impostors
+would not move the fit.
+
+\textbf{Internal dipoles and spin budget.} Monopole-plus-dipole fits
+within \(6°\) in the local tangent frame: the eight extremes split
+\(4/4\) hot/cold with rank-matched amplitudes summing to \(-11\,\mu\)K
+against a mean \(|\Delta T| \approx 162\,\mu\)K (7\% of Gaussian skies
+as balanced); opposite-sign spots lie \(4.0°\) closer than same-sign
+(null \(+5.2° \pm 16.3°\), \(p = 0.30\)); nearest-neighbour spacing is
+no more regular than Gaussian. Converting dipoles to spin-axis proxies
+(\(\mathbf{L} \propto \hat{c} \times \mathbf{d}\)), the Cold Spot's
+internal dipole (\(16.4\,\mu\)K/deg) is the largest by a factor \(2.3\)
+and the others weakly co-align. These fits are dominated by
+\(\ell \sim 2\)--\(20\) gradients that Gaussian peaks generically carry
+and that are correlated across co-hemispheric spots, so they are upper
+bounds on rotation, not spin measurements; a gradient-subtracted re-fit
+is required before any spin fraction can be quoted.
+
+\textbf{Spiral winding.} The azimuthal phase of the \(m = 1\) mode in
+\(1.5°\) rings from \(1.5°\) to \(15°\) around the Cold Spot is locked
+ring-to-ring with coherence \(0.988\) --- above all 300 random positions
+(null \(0.72 \pm 0.18\)) --- and drifts by \(\sim\!3°\) of phase per
+degree of radius (\(\sim\!40°\) total twist). A static background
+gradient gives high coherence but zero winding; only the winding is
+spin-specific. The \(m = 2, 3\) modes are unremarkable, and this is a
+post-hoc test.
+
+\textbf{Curl search.} The public PR4 lensing release contains only
+gradient modes, so we implemented an approximate temperature-only
+quadratic estimator (\(N_{\text{side}} = 256\), \(\ell \leq 512\),
+spin-1 curl projection, mean field from 40 Gaussian simulations;
+unnormalized, valid only as a relative comparison). Stacking
+curl-potential variance in \(6°\) discs: the eight spots sit at the 82nd
+percentile of 60 simulated skies and the Cold Spot at the \textbf{38th}
+--- indistinguishable from a random position. This does not trigger the
+retirement clause of P9, which is bound to a sensitivity reaching the
+temperature-dipole-implied rotation that this reduced-resolution
+estimator does not attain (Planck's full-depth reconstruction uses
+\(\ell \leq 2048\) with polarization).
+
+\textbf{Polarization first look.} On the SMICA \(Q/U\) maps
+(\(N_{\text{side}} = 256\), \(\ell \leq 512\), \(E/B\) decomposition,
+\(1°\) smoothing): stacked \(B\)-mode variance in \(6°\) discs at the
+eight spots is at the 66th percentile of random positions, \(E\)-mode
+variance at the 35th, and the Cold Spot's radial-\(E\) profile is
+consistent with zero in every \(2°\) ring to \(20°\) with per-ring
+errors of \(0.6\)--\(2.7\,\mu\)K --- the predicted \(1\)--\(3\,\mu\)K
+ring (P1) is neither detected nor excluded.
+
+\textbf{Lensing convergence.} The sign-weighted PR4 \(\kappa\) stack on
+the eight positions is \(+0.006\) against a random-position null of
+\(0.000 \pm 0.013\) (4/8 sign matches): no integrated mass scars. The
+Cold Spot's inner-\(2°\) \(\kappa = -0.070\) vs null
+\(+0.013 \pm 0.042\) (\(-2\sigma\)) has the sign of its known shallow
+foreground supervoid; the \(8°\)--\(20°\) annulus never exceeds
+\(+0.6\sigma\), so there is no mass ``belt''. A stack on
+\(\sim\!27{,}000\) ordinary small spots (\(1°\) smoothing,
+\(|T| > 1.5\sigma\)) shows cold spots on \(\kappa\) deficits
+(\(-7.2\sigma\)) and hot on excesses (\(+2.2\sigma\)), but \(\kappa\) is
+reconstructed from the same temperature data and quadratic estimators
+leak temperature extrema into the mass map; whether this is leakage or
+genuine ISW\(\times\)lensing is undiscriminated, and a polarization-only
+\(\kappa\) stack is the decisive check we have not performed.
+
+\textbf{CMB-independent tracers.} Against the Quaia Gaia--unWISE quasar
+catalogue (756k quasars, \(z \sim 1\)--\(3\), selection-function
+corrected) the small-spot correlation vanishes (cold \(-1.1\sigma\), hot
+\(-0.3\sigma\)) and the eight extremes are within \(\sim\!1\sigma\) of
+random (Cold Spot \(-0.018\), \(0.6\sigma\)); this is not a sensitive
+null, since Quaia's kernel barely overlaps the ISW kernel. Against
+WISE\(\times\)SuperCOSMOS (17.7M galaxies, \(z = 0.1\)--\(0.4\),
+high-passed at \(10°\)): small spots remain null (cold \(-0.7\sigma\),
+hot \(+0.2\sigma\)), while the extremes show seven of eight sign matches
+and a sign-weighted stack of \(\approx +2.7\sigma\) against a
+correlated-noise null from 300 random \(5°\) discs. Qualifications: the
+result rests on three sightlines (\(|z| \approx 2.0\)--\(2.3\)); the
+nominal binomial \(3.5\%\) ignores the three-tracer, multi-statistic
+search (global \(p \sim 10\)--\(30\%\)); extremeness-conditioning
+inflates the recovered correlation (Eddington-type bias); the \(10°\)
+high-pass self-subtracts genuine \(\gtrsim 10°\) supervoids; and
+extinction/stellar residuals at \(|b| = 25\)--\(40°\) are of order the
+per-spot signals. Verdict: a \(1\)--\(2\sigma\)-class hint that the
+extremes are partly sourced by \(z \sim 0.1\)--\(0.4\) superstructures,
+to be confirmed or retired by a pre-registered re-run at two baseline
+scales with \(|b| > 30°\) and extinction regression. The 2M++
+cross-match of the eight sightlines (\(< 180\,h^{-1}\) Mpc) matches spot
+signs at coin-flip rates (5 of 8).
+
+\textbf{JWST handedness.} The JADES field at \((224°, -54°)\), \(8.6°\)
+from the Cold Spot, shows a claimed \(2\!:\!1\) handedness asymmetry in
+263 high-redshift galaxies (Shamir 2025). The sample is small, the
+method contested, and a Doppler boost from the Milky Way's rotation is a
+mundane candidate. The discriminating measurement is a control field ---
+the identical pipeline on COSMOS or GOODS-N (\(> 100°\) away): a
+systematic reproduces the asymmetry everywhere; a Cold Spot spin column
+produces it only on the column. The local anchor is already measured:
+the same-handedness angular correlation over 77\{,\}840 SDSS galaxies
+(11.2M pairs, \(0.05°\)--\(4°\)) is zero in every bin, with a
+\(1.9\sigma\) global excess.
+
+\textbf{Statistical accounting.} Across the battery (locus slope,
+hemisphere count, hot/cold balance, pairing distance, lattice
+regularity, dipole magnitudes, cancellation ratio, winding coherence,
+\(\kappa\) stack, curl percentile, tracer stacks) the individual results
+are \(p \sim 0.06\)--\(0.7\); under any global look-elsewhere correction
+the sub-\(2\sigma\) items are jointly consistent with noise, and we say
+so plainly. Further method limits: the Gaussian nulls use the unmasked
+pseudo-\(C_\ell\) without mask deconvolution, anisotropic noise, or
+foreground residuals (end-to-end NPIPE simulations are the required
+upgrade for any sub-percent claim), and the spots were selected on the
+same map on which all statistics were evaluated, so the hypotheses were
+partly formulated post hoc. What survives is qualitative: the
+extreme-spot sky is one-sided at literature-level significance, the Cold
+Spot is the outlier in every channel examined, and nothing requires a
+population of additional objects.
+
+\textbf{Pre-registered commitment (P9).} The load-bearing, falsifiable
+claim of the vortex reading is the curl test. We commit in advance that
+a clean stacked curl-mode null at the Cold Spot position, at a
+sensitivity reaching the temperature-dipole-implied rotation,
+\emph{retires} the vortex interpretation of that direction in favor of
+the non-rotating neighbour reading (H3/H6) --- not merely disfavors it.
+If curl variance is instead detected localized there, the vortex reading
+stands and the Cold Spot becomes a relic of our own bang's border shell
+rather than a neighbour's imprint.
+
+\hypertarget{appendix-b.-a-fixed-grid-of-surrounding-bangs}{%
+\subsection{\texorpdfstring{\textbf{Appendix B. A Fixed Grid of
+Surrounding
+Bangs}}{Appendix B. A Fixed Grid of Surrounding Bangs}}\label{appendix-b.-a-fixed-grid-of-surrounding-bangs}}
+
+The Pool Model in its most symmetric form places Big Pool Bangs on a
+fixed lattice with our own at one site. We ask whether the neighbours'
+pull on our ejecta can contribute to the observed late-time
+acceleration. Point masses of equal mass were placed on a cubic grid of
+unit spacing (26 neighbours for \(3\times3\times3\), 124 for
+\(5\times5\times5\)); test galaxies were placed at distance \(r\) from
+us in random directions and the vector sum of the neighbours'
+inverse-square pulls was evaluated. Units: the pull of one neighbour on
+us.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+\(r\) (grid units)\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Sky-averaged outward pull\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Toward a neighbour (axis)\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+Toward a gap (diagonal)\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.1\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.0000\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(+0.012\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(-0.008\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.2\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.000\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(+0.10\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(-0.06\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.3\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.000\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(+0.34\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(-0.20\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.4\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.00\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(+0.85\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(-0.44\)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.45\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(0.00\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(+1.26\)\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+\(-0.60\)\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+The results are identical for both grid sizes. Galaxies lying toward a
+neighbour are pulled outward with a pull that grows steeply with \(r\);
+galaxies lying toward the gaps between neighbours are pulled inward; the
+sky average is zero at every radius. This is Gauss's law, not a property
+of the arrangement: the sky-averaged radial acceleration at radius \(r\)
+is \(G M_{\rm enc}(r)/r^2\), and external sources enclose nothing. Only
+mass, or negative pressure, \emph{inside} the observed volume can change
+the isotropic expansion rate. The lattice therefore predicts (i) zero
+contribution to the monopole acceleration, and (ii) a
+direction-dependent expansion rate with the cubic-harmonic
+(\(\ell = 4\)) pattern of the lattice, fast toward the six nearest
+neighbours and slow toward the eight diagonal gaps. Observation (ii) is
+a further falsifier for H7: supernova and BAO expansion-rate anisotropy
+is limited to the few-percent level with no cubic pattern, while the
+amplitude implied by the neighbour masses and distances of Sec. 10e is
+\(\sim\!10^{-7}\) at the \(r \approx 0.3\) reached by the supernova
+sample. The one form in which surrounding mass does raise the local
+expansion rate isotropically is a local underdensity, where the effect
+comes from the mass \emph{missing inside}: the observed
+Keenan--Barger--Cowie underdensity (\(\delta \approx -0.3\) within
+\(\sim\!300\) Mpc) raises the local \(H_0\) by a few percent, a
+candidate contribution to the Hubble tension, while a Gpc-scale void
+deep enough to mimic \(\Lambda\) is excluded by the kSZ gate of Sec. 5.
+These conclusions are the basis for the adopted expansion history of
+Sec. 5.2.
+
+\end{document}
