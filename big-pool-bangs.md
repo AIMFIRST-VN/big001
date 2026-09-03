@@ -198,6 +198,18 @@ H5 (Our Position – Where Is Nemo) was conceived as the discriminator between t
 
 **A void compass.** Because the cosmic web grows from seeds whose statistics the CMB fixes, the void population can serve as a compass for H5 (Our Position – Where Is Nemo): under H8 a radial gradient in grinding completeness (Sec. 5.4) makes structure grow slightly differently toward and away from the kernel's origin, so void abundance and void size should carry a dipole whose axis points at the origin and whose sign is tied to P12 (Kernel Gradient). We ran two cheap versions (`void_dipole.py`). (a) In the WISE$\times$SuperCOSMOS $z = 0.1$–$0.4$ density map, the dipole of the underdense-cell fraction ($\delta < -0.3$) is significant against a rotation null only when cells down to $|b| = 30°$ are included ($p < 0.01$, axis $(182°, -16°)$); it vanishes at $|b| > 45°$ ($p = 0.28$) and $|b| > 60°$ ($p = 0.43$). That is a low-latitude systematic (extinction or stellar contamination), and the result is a null. (b) In the 2M++ three-dimensional field, the centroid of void cells ($\delta < -0.5$ or $-0.7$) within $100$–$200\,h^{-1}$ Mpc is offset by $10$–$20\,h^{-1}$ Mpc toward $(l,b) \approx (295°$–$322°, -15°$ to $-44°)$, with a hemispheric void-fraction asymmetry of $1.5$–$2\sigma$ against random axes before any look-elsewhere correction; the direction is within $\sim 30°$ of the CosmicFlows-4 bulk flow and is the known excess of southern-cap voids, not a detection. The expected amplitude under H8 is the gradient times our offset, bounded near $10^{-4}$ by the intrinsic-dipole limit of Sec. 5.4, so these nulls are consistent. The pre-registered version of the test is a dipole in void abundance and mean void radius in the DESI and BOSS void catalogues, with the CMB-derived void statistics as the null; a detection of the P12 sign would be the first positive fix on our position, and a detection of the opposite sign would falsify H8. This is recorded as the second observable of P4 (Off-Centre Flow).
 
+**A slope, and the Axis of Evil.** The counted population of Sec. 11f puts the origin of Kernel 0,0,0 typically $0.7\,L$ away from us in some direction $\hat{\mathbf n}$, so H5 (Our Position – Where Is Nemo) is, on the largest scales, a *slope*: a gradient of the rebound across our horizon along $\hat{\mathbf n}$. An adiabatic slope produces no intrinsic dipole — the dipole of a super-horizon adiabatic mode cancels against the Doppler and integrated terms (Turner 1991; Erickcek, Kamionkowski & Carroll 2008) — and only a quadrupole, the Grishchuk–Zel'dovich effect; an isocurvature slope would add a number-count dipole. Where would such a slope show on the sky? Not along $\hat{\mathbf n}$. A gradient-type multipole is $Y_{\ell 0}$ about $\hat{\mathbf n}$, and the axis found by the usual planarity statistic (the axis maximising $\sum_m m^2 |a_{\ell m}|^2$; de Oliveira-Costa et al. 2004; Land & Magueijo 2005) has *zero* weight along $\hat{\mathbf n}$ and maximal weight on every axis perpendicular to it — rotating $Y_{20}$ by $90°$ puts three quarters of its power into $m = \pm 2$, and $Y_{30}$ behaves alike. The "Axis of Evil" of a slope is therefore predicted to lie on the great circle at $90°$ from $\hat{\mathbf n}$, with its azimuth on that circle fixed by ordinary Gaussian power, not by the slope; and the flow of matter, by contrast, should lie *along* $\hat{\mathbf n}$. We have no measured $\hat{\mathbf n}$, only the void-centroid candidate above, $(l,b) \approx (305°, -30°)$, and against it the sky reads as follows (`slope_axes.py`; each entry is one-sided, against a random axis or direction).
+
+| Independent axis | Prediction under a slope | Observed | Chance $p$ |
+|---|---|---|---|
+| Quadrupole–octopole axis $(260°, +60°)$ | on the ring $90°$ from $\hat{\mathbf n}$ | $83°$ from $\hat{\mathbf n}$ | $0.13$ |
+| CosmicFlows-4 bulk flow $(298°, -8°)$ | along $\hat{\mathbf n}$ | $23°$ from $\hat{\mathbf n}$ | $0.04$ |
+| CatWISE quasar-dipole excess $(238°, +29°)$ | along $\hat{\mathbf n}$ only if isocurvature | $87°$ from $\hat{\mathbf n}$ | $0.47$ |
+
+**Table 3b. Alignments of independent axes with the void-centroid slope direction.**
+
+Combining the first two by Fisher's method gives $p = 0.03$ ($1.9\sigma$); adding the quasar dipole, which a slope of adiabatic type does not predict, weakens it to $p = 0.06$ ($1.6\sigma$); adding the void-centroid asymmetry itself at its post-look-elsewhere value ($p \approx 0.3$) gives $1.7\sigma$, and at its optimistic pre-look-elsewhere value ($p = 0.05$) $2.3\sigma$. Three honest weakenings apply. The bulk flow and the 2M++ voids trace the same local structure, so those two are not independent and the combination overstates the case; the ring prediction constrains one angle out of two and cannot explain why the $\ell = 2$ and $\ell = 3$ axes coincide *with each other*, which is the actual anomaly; and the kinematic dipole, $12°$ from the quadrupole–octopole axis, is our motion and belongs to no slope. The net is $\lesssim 2\sigma$ in favour of a slope toward the southern void excess, with the sign of the slope, and so the sign test of P12 (Kernel Gradient), unresolved; it is recorded as a possible observable, not evidence, and the DESI/BOSS void-dipole test above is the one that can raise it.
+
 ## **8. H2 (Vortex – The Cold Eye of Sauron): The Cold Spot and the Axis of Evil**
 
 The Eridanus Cold Spot (Vielva et al. 2004; Cruz et al. 2005) is the sky's outstanding non-Gaussian feature. On the Planck SMICA map (Planck Collaboration 2020 I, IV, VII) it is centred at galactic $(l, b) = (203°, -56°)$, with a decrement of $-70\,\mu$K at $5°$ smoothing and a peak of $-168\,\mu$K at $2°$ smoothing, and a half-maximum radius of $2.5°$; we use these values throughout.
@@ -420,11 +432,15 @@ Coleman S., De Luccia F., 1980, "Gravitational effects on and of vacuum decay", 
 
 Colin J., Mohayaee R., Rameez M., Sarkar S., 2019, "Evidence for anisotropy of cosmic acceleration", A&A 631, L13 (arXiv:1808.04597).
 
+de Oliveira-Costa A., Tegmark M., Zaldarriaga M., Hamilton A., 2004, "The significance of the largest scale CMB fluctuations in WMAP", Phys. Rev. D 69, 063516 (arXiv:astro-ph/0307282).
+
 Cruz M., Martínez-González E., Vielva P., Cayón L., 2005, "Detection of a non-Gaussian spot in WMAP", MNRAS 356, 29 (arXiv:astro-ph/0405341).
 
 DES Collaboration, 2024, "The Dark Energy Survey: cosmology results with ~1500 new high-redshift Type Ia supernovae using the full 5-year dataset", ApJL 973, L14 (arXiv:2401.02929).
 
 DESI Collaboration, 2025, "DESI DR2 results II: measurements of baryon acoustic oscillations and cosmological constraints" (arXiv:2503.14738).
+
+Erickcek A. L., Kamionkowski M., Carroll S. M., 2008, "A hemispherical power asymmetry from inflation", Phys. Rev. D 78, 123520 (arXiv:0806.0377).
 
 Espinosa J. R., Konstandin T., No J. M., Servant G., 2010, "Energy budget of cosmological first-order phase transitions", JCAP 06, 028 (arXiv:1004.4187).
 
@@ -443,6 +459,8 @@ Kenworthy W. D., Scolnic D., Riess A., 2019, "The local perspective on the Hubbl
 King A. R., Ellis G. F. R., 1973, "Tilted homogeneous cosmological models", Commun. Math. Phys. 31, 209.
 
 Kolmogorov A. N., 1937, "On the statistical theory of metal crystallization", Izvestiya Akademii Nauk SSSR, Seriya Matematicheskaya, 1, 355.
+
+Land K., Magueijo J., 2005, "Examination of evidence for a preferred axis in the cosmic radiation anisotropy", Phys. Rev. Lett. 95, 071301 (arXiv:astro-ph/0502237).
 
 Longo M. J., 2011, "Detection of a dipole in the handedness of spiral galaxies with redshifts z ~ 0.04", Phys. Lett. B 699, 224 (arXiv:1104.2815).
 
@@ -478,7 +496,11 @@ Shamir L., 2025, "Galaxy spin-direction asymmetry in the JWST JADES field", arXi
 
 Storey-Fisher K. et al., 2024, "Quaia, the Gaia–unWISE quasar catalog: an all-sky spectroscopic quasar sample", ApJ 964, 69 (arXiv:2306.17749).
 
+Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S., Colin J., 2021, "A test of the cosmological principle with quasars", ApJ Lett. 908, L51 (arXiv:2009.14826).
+
 Tully R. B. et al., 2023, "Cosmicflows-4", ApJ 944, 94 (arXiv:2209.11238).
+
+Turner M. S., 1991, "Tilted Universe and other remnants of the preinflationary Universe", Phys. Rev. D 44, 3737.
 
 Vielva P., Martínez-González E., Barreiro R. B., Sanz J. L., Cayón L., 2004, "Detection of non-Gaussianity in the WMAP 1-year data using spherical wavelets", ApJ 609, 22 (arXiv:astro-ph/0310273).
 
