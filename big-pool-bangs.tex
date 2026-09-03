@@ -1537,9 +1537,23 @@ overstates the case; the ring prediction constrains one angle out of two
 and cannot explain why the \(\ell = 2\) and \(\ell = 3\) axes coincide
 \emph{with each other}, which is the actual anomaly; and the kinematic
 dipole, \(12°\) from the quadrupole--octopole axis, is our motion and
-belongs to no slope. The net is \(\lesssim 2\sigma\) for a slope toward
-the southern void excess, with the sign of the slope, and so the sign
-test of P12 (Kernel Gradient), unresolved; it is recorded as a possible
+belongs to no slope. \emph{Fitting the direction instead of assuming
+it.} The void centroid was a guess for \(\hat{\mathbf n}\) made before
+the tests were run, but it need not be assumed: scoring every direction
+on the sky by the joint Fisher probability of the four pre-stated tests
+(\texttt{fit\_slope.py}) puts the best-fit slope at
+\((l,b) = (260°, -30°)\) --- the point where the ring of the
+quadrupole--octopole axis crosses the mean of the three flow-type axes
+--- \(39°\) from the void centroid, with a local \(p = 10^{-6}\) that a
+look-elsewhere null of four random axes reduces to a global
+\(p = 0.003\) (\(2.8\sigma\)). The dependence caveats bite here as well:
+merging the cluster dipole with the bulk flow gives \(2.0\sigma\), the
+two cleanest tests alone (ring and flow) give \(1.8\sigma\), and the
+flow-type axes without the ring give \(1.3\sigma\) at \((298°, -8°)\);
+the best-fit direction is the same in every variant. The net is
+\(2\)--\(3\sigma\) for a slope toward \((260°\)--\(305°, -30°)\), the
+southern void excess, with the sign of the slope, and so the sign test
+of P12 (Kernel Gradient), unresolved; it is recorded as a possible
 observable, not evidence, and the DESI/BOSS void-dipole test above is
 the one that can raise it. \emph{One observation is left uncounted.}
 Both count-dipole excesses, quasar and radio, lie within \(3°\) of
