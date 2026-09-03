@@ -31,3 +31,13 @@ for label,sel in (("AoE + CF4",keys[:2]),("AoE + CF4 + quasar",keys),("AoE + CF4
     p,s=fisher(ps); print(f"Fisher {label:58s}: p={p:.3f}  {s:.1f} sigma")
 print("caveats: CF4 flow and 2M++ voids trace the same local structure (not independent); the quasar test needs an\n"
       "isocurvature slope; the ring test has no azimuth prediction and does not explain the l=2/l=3 mutual alignment.")
+
+# --- post-hoc cross-product test (added after the 87-deg quasar result was seen) ---
+cs=u(203,-56)
+x=np.cross(n,cs); d=ang(x,qso)
+p_raw=1-np.cos(np.radians(d)); p_le=min(1,9*p_raw)   # trials: 3 cross products x 3 target axes tried/possible
+print(f"\n(n x ColdSpot) axis vs CatWISE dipole axis: {d:.0f} deg; p_raw={p_raw:.4f}, x9 trials p={p_le:.4f}")
+for label,ps in (("AoE + CF4 + cross (raw)",[tests[keys[0]],tests[keys[1]],p_raw]),("AoE + CF4 + cross (trials x9)",[tests[keys[0]],tests[keys[1]],p_le])):
+    p,s=fisher(ps); print(f"Fisher {label:40s}: p={p:.4f}  {s:.1f} sigma")
+print("caveat: a perpendicular dipole needs a parity-odd (rotation x gradient) term; global rotation is bounded at omega/H < 1e-9,\n"
+      "so the geometry is matched but no mechanism supplies the amplitude.")
