@@ -993,9 +993,32 @@ requires \(\sim\!93\) merge-and-evaporate generations (each halving the
 relic number) while the patch expands. Between the geometric
 cross-section and the required one there is a gap of up to 28 orders of
 magnitude, the leading open problem of this paper (Sec. 13, item 4(a)).
-The reflected-wave recompression of the fluid toy (Sec. 3.2) --- the
-core driven back to high density 5--9 times in 20 dynamical times --- is
-the mechanism any such calculation must include.
+One correction to the two-body estimate is established physics and is
+now included: gravitational focusing. For a Planck relic the escape
+speed at contact is of order \(c\), so the capture cross-section is
+\(\sigma \approx \pi\ell_P^2\,(1 + 2c^2/v^2)\) and grows without bound
+as the relative speed \(v\) falls; for relics kinetically decoupled from
+the bath, \(v \propto 1/a\), and in the radiation era the growth of
+\(\sigma v\) exactly compensates the dilution of \(n\), so \(\Gamma/H\)
+no longer falls as \(a^{-3/2}\) but stays constant --- at \(2\pi f\)
+times an order-unity number, proportional to the surviving fraction
+itself. The depletion is then logarithmic, \(f = 1/(1 + 2\pi\ln a)\)
+(\texttt{sommerfeld\_check.py}): \(f \approx 5\times10^{-3}\) at the GUT
+temperature and \(2.5\times10^{-3}\) at equality. Focusing thus removes
+three of the 28 orders and turns the freeze-out into a slow burn; 25
+orders remain. A second, collective effect of the jammed state is a knob
+rather than a result: in granular media stress concentrates in
+one-dimensional \emph{force chains}, and a chain of \(N\) relics
+collapsing at once yields a black hole of \(N\,m_P\) with evaporation
+time \(\sim N^3 t_P\). Chains up to \(N \sim 10^{14}\)
+(\(2\times10^{6}\) kg) evaporate before nucleosynthesis and are
+harmless; chains near \(N \sim 10^{20}\) (\(2\times10^{12}\) kg)
+evaporate today and are excluded by the diffuse gamma-ray background.
+What fraction of the mass sits in chains is not modelled, and that
+fraction is the whole question. The reflected-wave recompression of the
+fluid toy (Sec. 3.2) --- the core driven back to high density 5--9 times
+in 20 dynamical times --- is the mechanism any such calculation must
+include.
 
 The survivors are cold in every case: a relic that leaves the
 collisional phase with momentum \(\gamma\,m_Pc\) has
@@ -1033,7 +1056,19 @@ within a few Planck times, so homogeneity across causal patches is an
 assumed initial condition --- in Geometry A over a super-horizon,
 unbounded patch; in Geometry B over the finite cloud. A long contracting
 phase before the bounce could in principle enlarge the causal patch, but
-the collapse is not modelled here.
+the collapse is not modelled here. There is one established mechanism
+that would supply the homogeneity without either, and it is already in
+the first move of Sec. 2: a Coleman--De Luccia bubble is
+\(O(4)\)-symmetric, and that symmetry makes the bubble interior
+homogeneous on the hyperbolic slices of constant proper time from the
+nucleation event (Coleman \& De Luccia 1980). If the relic ball is
+deposited by the wall as it sweeps outward at \(c\) --- crystallization
+at the front --- then the ball inherits that homogeneity at birth, patch
+by patch, with no need for the patches to communicate afterwards. This
+is not the divergent correlation length of a continuous transition (our
+nucleation is first-order and its correlation length is the bubble
+size); it is the symmetry of the instanton. The price is set by the same
+symmetry and is stated in Sec. 5.2.
 
 \hypertarget{flatness-not-addressed}{%
 \subsubsection{\texorpdfstring{\textbf{5.2 Flatness --- not
@@ -1052,6 +1087,17 @@ convention. The simulated systems are unbound, \(E > 0\). The energy
 budget of the rebound says nothing about spatial flatness; flatness is
 not addressed by this framework, and the near-zero energy of Kernel
 0,0,0 above is a definition of the kernel, not a derivation of flatness.
+Worse, the bubble symmetry that would solve the horizon problem (Sec.
+5.1) makes the homogeneous slices \emph{open}: without an inflationary
+stretch, which this framework refuses, a bubble interior born
+homogeneous on hyperbolic slices has spatial curvature of order unity
+today, against the measured \(\Omega_k = 0.001 \pm 0.002\) (Planck
+Collaboration 2020 VI). The trade is therefore explicit --- the
+instanton buys homogeneity and sells flatness --- and it is falsifiable
+by sign: it predicts an open geometry, \(\Omega_k > 0\), and a measured
+closed geometry would exclude the bubble-symmetry route outright.
+Whether the jamming bounce resets the slicing is not known; nothing in
+this paper shows that it does.
 
 \hypertarget{spectral-tilt-fitted}{%
 \subsubsection{\texorpdfstring{\textbf{5.3 Spectral tilt ---
@@ -2512,20 +2558,36 @@ Problems}}{13. Limitations and Open Problems}}\label{limitations-and-open-proble
   bias}, and neither is the curvature. The statement that remains is a
   requirement: baryogenesis in this framework needs a condensate with an
   unstable symmetric point and a CP-odd coupling stronger than gravity,
-  and its sign is then a prediction. \textbf{4(c) Kernel homogeneity
-  assumed.} That the kernel interior is homogeneous FLRW with its edge
-  beyond the horizon is an assumption (Sec. 3), tested only by the
-  displaced-centre null, the absence of an acoustic echo, and the
-  few-percent flatness of P12 (Kernel Gradient); whether the
-  kernel--mantle boundary is sharp is not modelled. \textbf{4(d) Relic
-  and causal-patch counts under H8 (Precious Rings -- Dante's
-  Purgatory).} The survivor count \(N \approx 10^{60}\)--\(10^{61}\) per
-  Hubble volume implies \(N/f \approx 10^{88}\) relics and
-  \(\sim\!3\times10^{29}\) causal patches per dimension in the comoving
-  Hubble volume at the bounce for Planck-scale conversion; homogeneity
-  across those patches is assumed. Planck-relic dark matter must also
-  face femtolensing, capture, and abundance constraints, and the
-  relativistic formulation of the ejection remains open.
+  and its sign is then a prediction. One named candidate for the bias
+  exists in the literature and fits the geometry of this paper:
+  gravitational leptogenesis (Alexander, Peskin \& Sheikh-Jabbari 2006),
+  in which the gravitational anomaly in a background of gravitational
+  waves with \emph{net} helicity sources lepton number below the GUT
+  scale, sphalerons converting it to baryons, so that no
+  monopole-producing transition is needed. A net helicity across the
+  whole cell would be a super-horizon-coherent bias --- the property the
+  column mechanism wants --- and the macro-vortex of H2 (Vortex -- The
+  Cold Eye of Sauron) is the only object in the framework that could
+  supply it. Its weakness is the word \emph{net}: random turbulence has
+  zero net helicity, the local same-handedness correlation is zero to a
+  few parts in \(10^3\) and the handedness and polarization axes look
+  random (Appendix A), and the step from a helical background to
+  CP-asymmetric Hawking emission of the merged relics is asserted, not
+  derived. The amplitude has not been computed; the candidate is
+  recorded, not adopted. \textbf{4(c) Kernel homogeneity assumed.} That
+  the kernel interior is homogeneous FLRW with its edge beyond the
+  horizon is an assumption (Sec. 3), tested only by the displaced-centre
+  null, the absence of an acoustic echo, and the few-percent flatness of
+  P12 (Kernel Gradient); whether the kernel--mantle boundary is sharp is
+  not modelled. \textbf{4(d) Relic and causal-patch counts under H8
+  (Precious Rings -- Dante's Purgatory).} The survivor count
+  \(N \approx 10^{60}\)--\(10^{61}\) per Hubble volume implies
+  \(N/f \approx 10^{88}\) relics and \(\sim\!3\times10^{29}\) causal
+  patches per dimension in the comoving Hubble volume at the bounce for
+  Planck-scale conversion; homogeneity across those patches is assumed.
+  Planck-relic dark matter must also face femtolensing, capture, and
+  abundance constraints, and the relativistic formulation of the
+  ejection remains open.
 \item
   \textbf{Expansion history.} No ejection profile produces apparent
   acceleration, the toy's \(w(z)\) drift runs opposite to the DES+DESI
@@ -2863,6 +2925,10 @@ Phys. B 249, 361.
 Aguirre A., Johnson M. C., 2011, ``A status report on the observability
 of cosmic bubble collisions'', Rep.~Prog. Phys. 74, 074901
 (arXiv:0908.4105).
+
+Alexander S. H. S., Peskin M. E., Sheikh-Jabbari M. M., 2006,
+``Leptogenesis from gravity waves in models of inflation'', Phys.
+Rev.~Lett. 96, 081301 (arXiv:hep-th/0403069).
 
 Alnes H., Amarzguioui M., 2006, ``CMB anisotropies seen by an off-center
 observer in a spherically symmetric inhomogeneous universe'', Phys.
