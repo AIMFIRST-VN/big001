@@ -1,0 +1,9 @@
+2M++ mass-centroid offset within R<150 Mpc/h vs Gaussian smoothing radius (null: 25 Gaussian mocks with the data power spectrum)
+  R_s=  0: offset   2.7 Mpc/h toward (244,49);  mocks   2.1+- 0.7, p(>=data)=0.20
+  R_s= 10: offset   2.6 Mpc/h toward (245,45);  mocks   2.0+- 0.6, p(>=data)=0.20  turn from previous R_s: 4 deg
+  R_s= 20: offset   2.3 Mpc/h toward (252,40);  mocks   1.7+- 0.6, p(>=data)=0.16  turn from previous R_s: 7 deg
+  R_s= 40: offset   1.6 Mpc/h toward (262,32);  mocks   1.2+- 0.5, p(>=data)=0.20  turn from previous R_s: 12 deg
+  R_s= 60: offset   1.0 Mpc/h toward (269,22);  mocks   0.8+- 0.4, p(>=data)=0.20  turn from previous R_s: 11 deg
+  R_s= 80: offset   0.6 Mpc/h toward (274,13);  mocks   0.5+- 0.2, p(>=data)=0.32  turn from previous R_s: 11 deg
+
+

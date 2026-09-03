@@ -1405,7 +1405,21 @@ mean void radius in the DESI and BOSS void catalogues, with the
 CMB-derived void statistics as the null; a detection of the P12 sign
 would be the first positive fix on our position, and a detection of the
 opposite sign would falsify H8. This is recorded as the second
-observable of P4 (Off-Centre Flow).
+observable of P4 (Off-Centre Flow). (c) A third cheap version smooths
+the whole 2M++ field rather than thresholding voids --- the ``smudging''
+test: the mass-centroid offset of the density field within
+\(150\,h^{-1}\) Mpc as a function of Gaussian smoothing radius \(R_s\),
+against Gaussian mocks with the data's own power spectrum
+(\texttt{smudge\_centre.py}). A genuine radial gradient would keep its
+direction and amplitude as \(R_s\) grows; local structure's centroid
+shrinks and wanders. The data do the latter: the offset falls from
+\(2.7\,h^{-1}\) Mpc at \(R_s = 0\) toward \((244°, +49°)\) to
+\(0.6\,h^{-1}\) Mpc at \(R_s = 80\,h^{-1}\) Mpc, tracking the mocks at
+every radius (\(p = 0.16\)--\(0.32\)) while the direction drifts by
+\(45°\). That is a null for a gradient in the \emph{mass} field inside
+\(150\,h^{-1}\) Mpc, as H8 and \(\Lambda\)CDM both require; the
+void-centroid and slope signals of this section live at
+\(100\)--\(200\,h^{-1}\) Mpc and beyond, where this test has no reach.
 
 \textbf{A slope, and the Axis of Evil.} The counted population of Sec.
 11f puts the origin of Kernel 0,0,0 typically \(0.7\,L\) away from us in
