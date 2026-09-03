@@ -636,8 +636,16 @@ These give intermediate partitions at once: \(91\%\) unbound at
 \emph{Hybrid}: the same code with shells switching to fluid behaviour
 wherever the local packing fraction exceeds \(\eta_c = 0.1\)--\(0.3\)
 (the void-percolation threshold of a sphere packing, below which a
-full-sized sphere can stream through the gaps); these runs were stopped
-by machine load before completing and are not yet reported.
+full-sized sphere can stream through the gaps); the one run of four that
+completed (100 shells, \(f = 0.5\), \(\sigma = 1\), \(\eta_c = 0.1\),
+\(6\times10^7\) steps) did not conserve energy --- final energies of
+\(10^{21}\) and radii of \(10^{11}\) in units where the ball starts at
+radius \(1\) with energy of order \(1\) --- so its partition and its
+fifteen ``edges'' are numerical, the remaining runs were killed, and the
+hybrid is \emph{withdrawn as a failed toy}: the combination of a jamming
+floor, artificial viscosity and shell crossing injects energy, and it
+must be rewritten with an energy-conserving contact scheme before it can
+say anything.
 
 The conclusion that survives is a definite one and reverses the one we
 withdrew: the ejected fraction is not set by pressure or by the mean
@@ -647,8 +655,8 @@ fraction whose personal kick exceeds their personal escape speed leaves
 --- whereas a fluid with a uniform kick either holds together or goes
 entirely. The \(88\%\) of Sec. 4 is therefore a turbulence number, and a
 ring structure in a rebound must be sought in the
-collisional-to-collisionless transition of the hybrid, which remains to
-be run to completion. Neither the three-tissue partition nor any
+collisional-to-collisionless transition of the hybrid, which has not yet
+been run successfully. Neither the three-tissue partition nor any
 specific edge is supported by a toy at present.
 
 \textbf{Table 2. Controlled toys of the rebound (no kick profile
