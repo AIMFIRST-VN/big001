@@ -103,14 +103,16 @@ bounce replaces the initial singularity and evades the
 Borde--Guth--Vilenkin theorem, but the horizon and flatness problems
 remain open and the red tilt is fitted. The rings come first (Sec. 3, H8
 (Precious Rings -- Dante's Purgatory)): they are phase transitions of
-one material, as the Earth's seismic discontinuities are, and a
-one-dimensional hydrodynamic toy of the rebound unloads the jammed ball
-from the outside in by a rarefaction wave, sorting it into three bands
-whose edges do not move with the kick strength. Beneath the rings is the
-bounce (Sec. 4, H1 (Bounce -- The Big Pool Bang)): a jammed ensemble of
-Planck-mass relics (\(\sim\!10^{60}\)--\(10^{61}\) survivors per present
-Hubble volume), treated as effective hard spheres,\footnote{Code,
-  figures, build instructions and download links for all datasets used:
+one material, as the Earth's seismic discontinuities are, and an
+energy-conserving shell toy of the rebound shows the ordering the rings
+need --- a pressure-held interior below a free-streaming exterior, with
+contact capping ejection near \(60\%\) and the \(88\%\) reached only by
+free-streaming material --- but no three-band structure and no specific
+ring radius. Beneath the rings is the bounce (Sec. 4, H1 (Bounce -- The
+Big Pool Bang)): a jammed ensemble of Planck-mass relics
+(\(\sim\!10^{60}\)--\(10^{61}\) survivors per present Hubble volume),
+treated as effective hard spheres,\footnote{Code, figures, build
+  instructions and download links for all datasets used:
   https://github.com/AIMFIRST-VN/big001} rebounds under a
 loop-quantum-cosmology-type modified Friedmann equation whose critical
 density is conjecturally the jamming density; toy \(N\)-body simulations
@@ -614,146 +616,96 @@ is the pressure'' is withdrawn with the numbers.
 billiard balls, and
 hybrid}}{3.3 The controlled toys: fluid, billiard balls, and hybrid}}\label{the-controlled-toys-fluid-billiard-balls-and-hybrid}}
 
-Three toys were run with the artefacts of Sec. 3.2 removed (Table 2).
-\emph{Fluid} (\texttt{rings\_hydro2.py}): 100 shells, kick at a fixed
-fraction \(f\) of the local escape speed with no noise,
-pressure-to-gravity ratio \(\beta\), bound state judged in the
-self-consistent final potential. A collective kick of this kind carries
-kinetic energy \(2f^2\) times the binding energy, so the system's total
-energy crosses zero at \(f = 0.71\), and the result is
-\emph{all-or-nothing}: \(0\%\) unbound at \(f = 0.6\) with no pressure,
-\(100\%\) with \(5\%\) pressure; \(98\%\) at \(f = 0.7\) with no
-pressure, \(1\%\) with \(5\%\) pressure. Near the threshold a \(5\%\)
-pressure flips the whole ball either way. A uniformly kicked fluid ball
-has no stable intermediate partition, and the density edges it shows
-(four to ten per run, one always at \(3\%\) of the mass) are not
-reproducible between runs and include an inner-boundary artefact.
-\emph{Billiard balls} (\texttt{rings\_hybrid.py} with the fluid switch
-off): 200 shells that may cross, gravity from the enclosed mass, kick
-\(f\,v_{\rm esc,local}(1 + \sigma\xi)\) with per-shell noise \(\xi\).
-These give intermediate partitions at once: \(91\%\) unbound at
-\(f = 0.5\), \(\sigma = 1\); \(66\%\) at \(f = 0.7\), \(\sigma = 0.5\).
-\emph{Hybrid}: the same code with shells switching to fluid behaviour
-wherever the local packing fraction exceeds \(\eta_c = 0.1\)--\(0.3\)
-(the void-percolation threshold of a sphere packing, below which a
-full-sized sphere can stream through the gaps); the one run of four that
-completed (100 shells, \(f = 0.5\), \(\sigma = 1\), \(\eta_c = 0.1\),
-\(6\times10^7\) steps) did not conserve energy --- final energies of
-\(10^{21}\) and radii of \(10^{11}\) in units where the ball starts at
-radius \(1\) with energy of order \(1\) --- so its partition and its
-fifteen ``edges'' are numerical, the remaining runs were killed, and the
-hybrid is \emph{withdrawn as a failed toy}: the combination of a jamming
-floor, artificial viscosity and shell crossing injects energy, and it
-must be rewritten with an energy-conserving contact scheme before it can
-say anything.
+Two generations of toys were run with the artefacts of Sec. 3.2 removed.
+The first generation --- a Lagrangian fluid with an equation of state
+(\texttt{rings\_hydro2.py}) and a shell-crossing code with a jamming
+floor and artificial viscosity (\texttt{rings\_hybrid.py}) --- is
+\emph{superseded}: the second code was caught not conserving energy (a
+completed run ended with energies of \(10^{21}\) and radii of
+\(10^{11}\) in units where the ball starts at radius \(1\) with energy
+of order \(1\)), and the first was never checked. Every number below
+comes from a rewritten toy whose energy conservation is reported in
+every run (\texttt{rings\_contact.py}): \(200\) equal-mass spherical
+shells, each with a radial velocity and a tangential specific angular
+momentum (Hénon shells), integrated with a fixed-step symplectic
+leapfrog in the softened potential of the enclosed mass; \emph{contact}
+is an exact elastic exchange of radial velocities between two shells
+that approach within one jammed shell thickness where the local packing
+exceeds \(\eta_c\), followed by a random rotation of each shell's radial
+and tangential velocity that conserves its kinetic energy --- collisions
+turn radial motion into pressure with no artificial viscosity and no
+floor. Kick \(f\,v_{\rm esc,local}(r)\,(1+\sigma\xi)\) with per-shell
+Gaussian noise \(\xi\); \(336\) runs over \(f = 0.3\)--\(0.9\),
+\(\sigma = 0\)--\(1\), \(\eta_c = 0.03\), \(0.1\), \(0.3\) and a
+ballistic null (\(\eta_c \to \infty\), no contact ever), three seeds
+each, \(20\) dynamical times; energy drift below \(1\%\) in \(317\) runs
+and below \(5\%\) in all (\texttt{contact\_grid\_results.txt}). Bound
+state is judged in the self-consistent final potential.
 
-The conclusion that survives is a definite one and reverses the one we
-withdrew: the ejected fraction is not set by pressure or by the mean
-kick but by the \emph{spread} of individual kicks. A collisionless
-population with velocity dispersion partitions itself smoothly --- the
-fraction whose personal kick exceeds their personal escape speed leaves
---- whereas a fluid with a uniform kick either holds together or goes
-entirely. The \(88\%\) of Sec. 4 is therefore a turbulence number, and a
-ring structure in a rebound must be sought in the
-collisional-to-collisionless transition of the hybrid, which has not yet
-been run successfully. Neither the three-tissue partition nor any
-specific edge is supported by a toy at present.
+Four results (Table 2). (i) \emph{The contact threshold is irrelevant}:
+\(\eta_c = 0.03\), \(0.1\) and \(0.3\) give identical runs to three
+decimals, because the jammed core always exceeds \(0.3\) and the
+escaping tail never reaches \(0.03\); the ``hybrid'' question reduces to
+contact or no contact. (ii) \emph{Both regimes partition smoothly.} The
+all-or-nothing behaviour of the first-generation fluid was that code's
+property, not the physics: with contact the ejected fraction rises
+steadily with both the kick and its spread, from \(0\%\) at
+\(f \le 0.5\) without noise to \(44\%\) at \(f = 0.9\) without noise and
+\(58\%\) at \(f = 0.9\), \(\sigma = 1\). (iii) \emph{Contact caps
+ejection near \(60\%\); the \(88\%\) needs free streaming.} No contact
+run in the grid exceeds \(67\%\) (one seed), whereas the ballistic null
+reaches \(88\%\) at \(f = 0.8\), \(\sigma = 0.3\) and \(100\%\) at
+\(f \ge 0.8\) without noise; noise \emph{reduces} ballistic ejection
+above threshold (a fraction of shells is kicked inward) and raises it
+below. The turbulent \(88\%\) of Sec. 4 is therefore a statement about
+the outer, collisionless material, as H8 (Precious Rings -- Dante's
+Purgatory) requires, and pressure in the contact region is what holds
+the kernel and mantle back. (iv) \emph{Ballistic shells eject a third of
+the mass even for a small kick.} With no contact, a ball kicked at
+\(0.3\)--\(0.5\,v_{\rm esc}\) without noise re-collapses through its
+centre and violent relaxation throws \(36\%\) of the shells out; with
+contact the same kick ejects nothing. A cold collisionless rebound is
+not a gentle one.
 
-\textbf{Table 2. Controlled toys of the rebound (no kick profile
-artefact; bound state from the self-consistent final potential).}
+The edges tell a plainer story than the one we withdrew. The density
+profile of every contact run shows an edge at \(5\%\) of the mass (the
+innermost bin against the softened centre, an artefact) and edges at
+\(85\)--\(95\%\) (the escaping tail stretching, expected); the one
+interior edge that repeats across seeds, at \(\sim 80\%\) of the mass
+for \(f = 0.7\), is the bound--unbound boundary. That is \emph{two}
+tissues, a bound body and an escaping tail, not three rings; the
+ballistic runs show \(6\)--\(9\) edges that move with the seed, the
+spikes of crossing shells. Neither the three-tissue partition nor any
+specific ring radius is supported by a toy; what is supported is the
+ordering H8 (Precious Rings -- Dante's Purgatory) needs --- a
+pressure-held interior below a free-streaming exterior --- and the
+number \(88\%\) belongs to the exterior alone.
+
+\textbf{Table 2. Energy-conserving rebound toy
+(\texttt{rings\_contact.py}; 200 shells, 3 seeds; unbound fraction in
+the self-consistent final potential; ballistic null has no contact).}
 
 \begin{longtable}[]{@{}lllll@{}}
 \toprule
-\begin{minipage}[b]{0.17\columnwidth}\raggedright
-Toy\strut
-\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
-Kick\strut
-\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
-Pressure\strut
-\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
-Unbound\strut
-\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
-Note\strut
-\end{minipage}\tabularnewline
+Kick \(f\) & Noise \(\sigma\) & Contact (any \(\eta_c \le 0.3\)) &
+Ballistic null & Note\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Fluid, 100 shells\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0.6\,v_{\rm esc,local}\), no noise\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-none\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0\%\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-KE/\(|U| = 0.72\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Fluid\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0.6\), no noise\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(5\%\) of gravity\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(100\%\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-flips on pressure\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Fluid\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0.7\), no noise\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-none\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(98\%\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-KE/\(|U| = 0.98\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Fluid\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0.7\), no noise\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(5\%\) of gravity\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(1\%\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-flips the other way\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Billiard balls, 200 shells\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0.5\), noise \(\sigma = 1\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-none\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(91\%\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-intermediate partition\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Billiard balls\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(0.7\), noise \(\sigma = 0.5\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-none\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-\(66\%\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-intermediate partition\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-Hybrid, \(\eta_c = 0.1\)--\(0.3\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-as above\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-fluid where \(\eta > \eta_c\)\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-not completed\strut
-\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
-stopped by machine load\strut
-\end{minipage}\tabularnewline
+\(0.3\) & \(0\) & \(0\%\) & \(36\%\) & cold re-collapse ejects without
+contact\tabularnewline
+\(0.5\) & \(0\) & \(0\%\) & \(36\%\) &\tabularnewline
+\(0.5\) & \(1\) & \(19\%\) & \(25\%\) &\tabularnewline
+\(0.7\) & \(0\) & \(14\%\) & \(14\%\) & contact irrelevant at
+threshold\tabularnewline
+\(0.7\) & \(0.5\) & \(27\%\) & \(40\%\) &\tabularnewline
+\(0.7\) & \(1\) & \(41\%\) & \(51\%\) &\tabularnewline
+\(0.8\) & \(0\) & \(29\%\) & \(100\%\) & ballistic:
+\(E > 0\)\tabularnewline
+\(0.8\) & \(0.3\) & \(32\%\) & \(88\%\) & the Sec. 4 number, free
+streaming only\tabularnewline
+\(0.9\) & \(0\) & \(44\%\) & \(100\%\) &\tabularnewline
+\(0.9\) & \(1\) & \(58\%\) & \(68\%\) & contact maximum in the
+grid\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1023,10 +975,12 @@ time \(\sim N^3 t_P\). Chains up to \(N \sim 10^{14}\)
 harmless; chains near \(N \sim 10^{20}\) (\(2\times10^{12}\) kg)
 evaporate today and are excluded by the diffuse gamma-ray background.
 What fraction of the mass sits in chains is not modelled, and that
-fraction is the whole question. The reflected-wave recompression of the
-fluid toy (Sec. 3.2) --- the core driven back to high density 5--9 times
-in 20 dynamical times --- is the mechanism any such calculation must
-include.
+fraction is the whole question. Repeated recompression of the contact
+region by material falling back --- present in the energy-conserving toy
+of Sec. 3.3, where shells kicked below threshold re-collapse through the
+core --- is the mechanism any such calculation must include; the first
+toy's count of \(5\)--\(9\) recompressions was withdrawn with it (Sec.
+3.2).
 
 The survivors are cold in every case: a relic that leaves the
 collisional phase with momentum \(\gamma\,m_Pc\) has
@@ -2710,36 +2664,37 @@ crush of Planck-mass spheres pressed to the random-close-packing limit
 --- some \(10^{88}\) of them in what will become each Hubble volume, if
 the grinding went all the way to the Planck scale. Nothing can fall
 further. A loop-quantum bounce fires and the pile rebounds --- not as an
-explosion but as an unloading: a rarefaction wave runs in from the
-surface and releases the ball layer by layer, the skin first and
-fastest, then the flesh, while the core is held by pressure and pounded
-by the reflected waves. That is H8 (Precious Rings -- Dante's
-Purgatory): one kind of ball, one number for each, and a different law
-on every ring, the ring order being the original depth. In the core the
-balls collide: two Planck relics that merge are heavier than a relic is
-allowed to be, and the merger boils away into light, over and over,
-until the mergers stop keeping pace with the expansion --- a depletion
-with no way back --- and what is left is a bath of light with a cold
-trace of surviving spheres in it. That bath is the hot Big Bang; those
-survivors, the seeds, are our dark matter. No inflaton, no reheating, no
-residual vacuum: the light came from the relics. The flesh is a dark
-mantle that remembers nothing. The skin --- \(88\%\) of the mass in both
-toys --- is the dark rings around us: sorted by speed, the only ring
-that still keeps the geometry and spin of the bang, and the one we will
-never see except as a fossil in the initial conditions. Inside the core
-the crush is \emph{assumed} to have been everywhere and to have no
-centre we can reach: Geometry A, homogeneous, its edge beyond the
-horizon. Seen as a whole, the rings are one centred event: Geometry B,
-in which the fastest went furthest and that ordering \emph{is} a
-ballistic Hubble-like law, \(v = r/t\), plus the tension below --- at
-the price of having, as yet, no bounce mechanism for a finite cloud that
-sits \(10^{40}\) inside its own horizon. Either way the debris does not
-push the universe faster; nothing outside a volume ever can, and nothing
-inside it pushes unless it has negative pressure. The acceleration we
-measure comes from a constant tension of space, \(w = -1\), adopted and
-not derived. So the model works as far as the matter goes, hands the
-expansion to a tension it does not explain, and carries its open
-problems in the open: the number of survivors is one relation,
+explosion but as a sorting: the skin, where nothing touches, streams
+away first and fastest; the flesh rises and falls back; the core is held
+by contact pressure and pounded by what falls back onto it. The
+energy-conserving toy of Sec. 3.3 shows exactly that ordering and
+nothing finer. That is H8 (Precious Rings -- Dante's Purgatory): one
+kind of ball, one number for each, and a different law on every ring,
+the ring order being the original depth. In the core the balls collide:
+two Planck relics that merge are heavier than a relic is allowed to be,
+and the merger boils away into light, over and over, until the mergers
+stop keeping pace with the expansion --- a depletion with no way back
+--- and what is left is a bath of light with a cold trace of surviving
+spheres in it. That bath is the hot Big Bang; those survivors, the
+seeds, are our dark matter. No inflaton, no reheating, no residual
+vacuum: the light came from the relics. The flesh is a dark mantle that
+remembers nothing. The skin --- \(88\%\) of the mass in both toys --- is
+the dark rings around us: sorted by speed, the only ring that still
+keeps the geometry and spin of the bang, and the one we will never see
+except as a fossil in the initial conditions. Inside the core the crush
+is \emph{assumed} to have been everywhere and to have no centre we can
+reach: Geometry A, homogeneous, its edge beyond the horizon. Seen as a
+whole, the rings are one centred event: Geometry B, in which the fastest
+went furthest and that ordering \emph{is} a ballistic Hubble-like law,
+\(v = r/t\), plus the tension below --- at the price of having, as yet,
+no bounce mechanism for a finite cloud that sits \(10^{40}\) inside its
+own horizon. Either way the debris does not push the universe faster;
+nothing outside a volume ever can, and nothing inside it pushes unless
+it has negative pressure. The acceleration we measure comes from a
+constant tension of space, \(w = -1\), adopted and not derived. So the
+model works as far as the matter goes, hands the expansion to a tension
+it does not explain, and carries its open problems in the open: the
+number of survivors is one relation,
 \(f = T_{\text{eq}}/T_{\text{conv}}\), that the grinding must
 \emph{meet} rather than a number it derives, and the geometric
 cross-section misses it by up to twenty-eight orders of magnitude; the
@@ -2851,10 +2806,15 @@ notice.
 with a fluid, our first toy seemed to sort itself into three bands at
 fixed mass fractions and to need twice the escape speed to unbind
 \(88\%\). Our own referee read the code and showed both numbers were the
-kick profile and the band-finder talking, not the fluid. We withdrew
-them (Sec. 3.2) and rebuilt the toy so that the ballistic answer is a
-step and anything else is physics (Sec. 3.3). The surprise here is a
-methodological one: releasing the code is what caught it.
+kick profile and the band-finder talking, not the fluid. The second toy
+then blew up --- energies of \(10^{21}\) in a system that started with
+one --- and was withdrawn as well. Only the third, which reports its own
+energy conservation in every run, is allowed to speak (Sec. 3.3), and
+what it says is smaller: two tissues, not three, and the \(88\%\)
+belongs to the skin. We withdrew them (Sec. 3.2) and rebuilt the toy so
+that the ballistic answer is a step and anything else is physics (Sec.
+3.3). The surprise here is a methodological one: releasing the code is
+what caught it.
 
 \hypertarget{what-we-got-rid-of-the-dark-matter-particle-and-the-inflaton}{%
 \subsubsection{What we got rid of: the dark-matter particle, and the

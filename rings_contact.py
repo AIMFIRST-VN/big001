@@ -58,7 +58,7 @@ while t < tend:
     d_c = m * vol_per_mass / (eta_j * 4 * np.pi * rs**2)
     for parity in (0, 1):
         i = np.arange(parity, N - 1, 2)
-        close = (rs[i + 1] - rs[i] < d_c[i]) & (vs[i] > vs[i + 1]) & (np.maximum(eta[i], eta[i + 1]) > eta_c)
+        close = (rs[i + 1] - rs[i] < d_c[i]) & (vs[i] > vs[i + 1]) & (np.maximum(eta[i], eta[i + 1]) > eta_c) & (eta_c < 1e8)
         k = i[close]
         if k.size:
             vs[k], vs[k + 1] = vs[k + 1].copy(), vs[k].copy()
