@@ -19,20 +19,21 @@ d=90-ang(n,aoe); tests['Axis of Evil on ring (|90-sep|=%.0f deg)'%d]=np.sin(np.r
 # (b) CF4 bulk flow along n: p = P(random direction within theta) = (1-cos theta)/2
 th=angd(n,cf4); tests['CF4 bulk flow within %.0f deg of n'%th]=(1-np.cos(np.radians(th)))/2
 # (c) quasar-dipole excess along n (only if isocurvature): direction test
+hpa=u(227,-27); th=angd(n,hpa); tests['power-asymmetry axis within %.0f deg of n'%th]=(1-np.cos(np.radians(th)))/2
 th=angd(n,qso); tests['CatWISE dipole within %.0f deg of n'%th]=(1-np.cos(np.radians(th)))/2
 def fisher(ps):
     X=-2*np.sum(np.log(ps)); p=chi2.sf(X,2*len(ps)); return p, norm.isf(p)
 print("individual tests (n = 2M++ void centroid):")
 for k,v in tests.items(): print(f"  {k:45s} p={v:.3f}  ({norm.isf(v):.1f} sigma one-sided)")
 keys=list(tests)
-for label,sel in (("AoE + CF4",keys[:2]),("AoE + CF4 + quasar",keys),("AoE + CF4 + void centroid (p=0.05, pre look-elsewhere)",keys[:2]+['void']),
+for label,sel in (("AoE + CF4",keys[:2]),("AoE + CF4 + power asymmetry",keys[:3]),("AoE + CF4 + PA + quasar",keys),("AoE + CF4 + void centroid (p=0.05, pre look-elsewhere)",keys[:2]+['void']),
                   ("AoE + CF4 + void centroid (p=0.3, post look-elsewhere)",keys[:2]+['void2'])):
     ps=[tests[k] if k in tests else (0.05 if k=='void' else 0.3) for k in sel]
     p,s=fisher(ps); print(f"Fisher {label:58s}: p={p:.3f}  {s:.1f} sigma")
 print("caveats: CF4 flow and 2M++ voids trace the same local structure (not independent); the quasar test needs an\n"
       "isocurvature slope; the ring test has no azimuth prediction and does not explain the l=2/l=3 mutual alignment.")
 
-# --- post-hoc cross-product test (added after the 87-deg quasar result was seen) ---
+# --- post-hoc cross-product NOTE (not counted in the paper) (added after the 87-deg quasar result was seen) ---
 cs=u(203,-56)
 x=np.cross(n,cs); x/=np.linalg.norm(x); d=ang(x,qso)
 p_raw=1-np.cos(np.radians(d)); p_le=min(1,9*p_raw)   # trials: 3 cross products x 3 target axes tried/possible
