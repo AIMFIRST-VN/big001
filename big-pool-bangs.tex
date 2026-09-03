@@ -2466,13 +2466,57 @@ Problems}}{13. Limitations and Open Problems}}\label{limitations-and-open-proble
   done. \textbf{4(b) Baryogenesis.} The bath is CP-symmetric, so the
   baryon asymmetry must be imported and the local dark-matter-to-baryon
   ratio of \(5.4\) is not derived; a GUT-scale transition in the bath
-  would reintroduce the monopole problem without inflation. \textbf{4(c)
-  Kernel homogeneity assumed.} That the kernel interior is homogeneous
-  FLRW with its edge beyond the horizon is an assumption (Sec. 3),
-  tested only by the displaced-centre null, the absence of an acoustic
-  echo, and the few-percent flatness of P12 (Kernel Gradient); whether
-  the kernel--mantle boundary is sharp is not modelled. \textbf{4(d)
-  Relic and causal-patch counts under H8 (Precious Rings -- Dante's
+  would reintroduce the monopole problem without inflation. Two roads
+  were examined and are recorded here. \emph{Exclusive branches.} Either
+  CP is violated explicitly in the relic sector, in which case every
+  cell is matter and the asymmetry must be computed from an operator the
+  framework does not yet contain; or CP is exact and each seed picks its
+  sign at random, in which case a cell must be at least eight horizons
+  across to satisfy the Cohen--De Rújula--Glashow bound and the sign
+  must be chosen sub-horizon by a fluctuation, which leaves the whole
+  cell with no reason to agree on it (the \emph{coherence problem}), and
+  annihilation at the walls cannot rescue a mixed cell
+  (\texttt{contact\_annihilation.py}: \(17.5\%\) of an immobile random
+  lattice survives in same-sign clusters, and \(1\%\) after thirty
+  reshuffles, against the \(10^{-28}\) that a residual
+  \(\eta \sim 10^{-10}\) would need). \emph{One mechanism, two regimes.}
+  The branches unify if the symmetric state after the bounce is an
+  \emph{unstable} point --- a column on a joint that must fall one way
+  or the other --- rather than a stable one perturbed linearly: in an
+  Affleck--Dine-type condensate (Affleck \& Dine 1985) or a biased
+  domain-wall system the asymmetry is set by how far the column falls,
+  not by the size of the push, so the objection that gravitational
+  baryogenesis (Davoudiasl et al.~2004) is too large at Planck
+  temperature is removed, and the sign is fixed once, at the first
+  instability after the bounce, where \(\dot R < 0\) for the standard
+  loop branch (\texttt{grav\_baryo\_sign.py}), and never flips again.
+  What the push must beat is the noise: the column falls in each horizon
+  patch independently, and all patches fall the same way only if the
+  coherent CP-odd bias summed over a patch exceeds the thermal kick on
+  one degree of freedom, \(N_{\rm patch}\,\mu_{\rm bias} > T\) with
+  \(N_{\rm patch} \sim (M_P/T)^3\). Bias above noise gives the
+  all-matter branch with coherence for free; bias below noise gives
+  random domains, the branch already rejected. For the framework's own
+  coherent bias, the homogeneous \(\dot R\) after the bounce (which
+  vanishes classically in the radiation era and survives only through
+  the \(\rho^2/\rho_c\) correction), the ratio is
+  \(N_{\rm patch}\mu/T \sim (T/M_P)^6\): marginal at the bounce,
+  hopeless below it. A spatial slope of the rebound across the cell
+  (Sec. 7) is coherent over the whole cell, which is the property the
+  mechanism wants, but a scalar cannot couple to a vector at first
+  order; its only scalar route is through the flow along the gradient,
+  suppressed by the cell-to-horizon ratio at the fall time to some
+  \(10^{-30}\) of the homogeneous term, so \emph{the slope is not the
+  bias}, and neither is the curvature. The statement that remains is a
+  requirement: baryogenesis in this framework needs a condensate with an
+  unstable symmetric point and a CP-odd coupling stronger than gravity,
+  and its sign is then a prediction. \textbf{4(c) Kernel homogeneity
+  assumed.} That the kernel interior is homogeneous FLRW with its edge
+  beyond the horizon is an assumption (Sec. 3), tested only by the
+  displaced-centre null, the absence of an acoustic echo, and the
+  few-percent flatness of P12 (Kernel Gradient); whether the
+  kernel--mantle boundary is sharp is not modelled. \textbf{4(d) Relic
+  and causal-patch counts under H8 (Precious Rings -- Dante's
   Purgatory).} The survivor count \(N \approx 10^{60}\)--\(10^{61}\) per
   Hubble volume implies \(N/f \approx 10^{88}\) relics and
   \(\sim\!3\times10^{29}\) causal patches per dimension in the comoving
@@ -2811,6 +2855,9 @@ so that a measurement can remove it.
 \hypertarget{references}{%
 \subsection{\texorpdfstring{\textbf{References}}{References}}\label{references}}
 
+Affleck I., Dine M., 1985, ``A new mechanism for baryogenesis'', Nucl.
+Phys. B 249, 361.
+
 Aguirre A., Johnson M. C., 2011, ``A status report on the observability
 of cosmic bubble collisions'', Rep.~Prog. Phys. 74, 074901
 (arXiv:0908.4105).
@@ -2857,6 +2904,9 @@ with predictions from the 2M++ density field'', MNRAS 450, 317
 Carron J., Mirmelstein M., Lewis A., 2022, ``CMB lensing from Planck PR4
 maps'', JCAP 09, 039 (arXiv:2206.07773).
 
+Cohen A. G., De Rújula A., Glashow S. L., 1998, ``A matter--antimatter
+universe?'', ApJ 495, 539 (arXiv:astro-ph/9707087).
+
 Coleman S., De Luccia F., 1980, ``Gravitational effects on and of vacuum
 decay'', Phys. Rev.~D 21, 3305.
 
@@ -2869,6 +2919,10 @@ Phys. Rev.~D 69, 063516 (arXiv:astro-ph/0307282).
 
 Cruz M., Martínez-González E., Vielva P., Cayón L., 2005, ``Detection of
 a non-Gaussian spot in WMAP'', MNRAS 356, 29 (arXiv:astro-ph/0405341).
+
+Davoudiasl H., Kitano R., Kribs G. D., Murayama H., Steinhardt P. J.,
+2004, ``Gravitational baryogenesis'', Phys. Rev.~Lett. 93, 201301
+(arXiv:hep-ph/0403019).
 
 DES Collaboration, 2024, ``The Dark Energy Survey: cosmology results
 with \textasciitilde1500 new high-redshift Type Ia supernovae using the
