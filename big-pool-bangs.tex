@@ -2221,7 +2221,8 @@ Sub-threshold spot statistics; per-candidate polarization at
 \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
 LiteBIRD, CMB-S4; Planck (archival)\strut
 \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-Constrained; open below threshold\strut
+Constrained; open below threshold; no size--amplitude evolutionary track
+(Appendix A)\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.11\columnwidth}\raggedright
 P7 (Spin Surcharge)\strut
@@ -3295,6 +3296,29 @@ the mantle erase them --- with the consequence that the coherent
 material is outside our horizon and the material we can survey is the
 mixed material; the local nulls are what it predicts. It has no
 validated observable of its own inside Kernel 0,0,0.
+
+\textbf{Population as a clock (P6 (Spot Population) sub-test).} The CMB
+is one frame, so no spot can be watched evolving; but a population of
+objects of different ages carries its evolution in its distribution, as
+a stellar population does. If the extreme spots were vortices or
+neighbour imprints of different ages (Sec. 11f gives them an age
+spread), and if they decay as Jupiter's Great Red Spot does --- smaller
+and fainter together --- their sizes and amplitudes would lie on a track
+a Gaussian sky does not follow. We measured the half-max radius and
+amplitude of the \(K = 30\), \(50\) and \(100\) most extreme peaks of
+the SMICA map at \(|b| > 20°\), smoothed to \(0.5°\), \(1°\) and \(2°\),
+and compared the width--amplitude Spearman correlation and the slope of
+log-width on amplitude with \(2000\) Gaussian mocks of the map's own
+spectrum under the same selection (\texttt{spot\_population.py},
+\texttt{spot\_population\_results.txt}). Eight of nine configurations
+are consistent with the mocks (\(p = 0.23\)--\(1.0\), two-sided); one
+(\(K = 50\), \(0.5°\)) gives \(p = 0.03\) in the \emph{opposite} sense
+to a decay track (larger spots fainter), which is the expected best of
+nine trials. The widths at \(0.5°\) smoothing are pixel-limited at this
+resolution (\(N_{\rm side} = 128\)), so the test should be repeated at
+full Planck resolution before it is called closed; as it stands the spot
+population shows no evolutionary track and is Gaussian in this
+statistic.
 
 \textbf{Statistical accounting.} Across the battery (locus slope,
 hemisphere count, hot/cold balance, pairing distance, lattice
