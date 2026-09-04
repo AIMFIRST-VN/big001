@@ -11,8 +11,8 @@ arr = t[:, None] + np.linalg.norm(x[:, None, :] - x[None, :, :], axis=2)
 cond = arr > t[None, :]; np.fill_diagonal(cond, True); real = np.all(cond, axis=0)
 xr, tr = x[real], t[real]; m = len(xr)
 P = rng.uniform(-box + 1.0, box - 1.0, (400000, 3))   # interior sample points (edge cells excluded)
-A = tr[None, :] + np.linalg.norm(P[:, None, :] - xr[None, :, :], axis=2)
-win = np.argmin(A, axis=1)
+win = np.concatenate([np.argmin(tr[None, :] + np.linalg.norm(Pc[:, None, :] - xr[None, :, :], axis=2), axis=1)
+                      for Pc in np.array_split(P, 40)])   # chunked: ~120 MB peak instead of ~5 GB
 inner = np.all(np.abs(xr) < box - 1.0, axis=1)
 vol = np.bincount(win, minlength=m) * ((2 * box - 2.0)**3 / len(P))
 v = vol[inner & (vol > 0)]; age = tr[inner & (vol > 0)]

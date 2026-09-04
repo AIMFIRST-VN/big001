@@ -13,3 +13,7 @@ __pycache__/
 bpb_build*.md
 twompp_README.txt
 v6parts/
+.v63_diff.txt
+contact_out/
+spots_out/
+jm_sizes_out/

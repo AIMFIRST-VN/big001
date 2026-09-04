@@ -26,6 +26,12 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `rings_hydro2.py` | Controlled 1-D hydro toy: kick at a fixed fraction of the local escape speed, pressure-to-gravity ratio beta, fixed-contrast edge finder, pressureless run as ballistic null |
 | `jm_cells.py` | Johnson–Mehl nucleation-and-growth Monte Carlo for the pool of bangs: nearest-wall distance, neighbour count, age differences, observer offset; results in `jm_cells_results.txt` |
 | `rings_hybrid.py` | Hybrid 1-D toy: shells are fluid where the local packing fraction exceeds a threshold and billiard balls elsewhere |
+| `jm_spots.py` | Same tessellation: can eight compact extremes be eight neighbouring walls? (no; `jm_spots_results.txt`) |
+| `jm_sizes.py` | Cell-size distribution of the pool (small bangs, observer weighting); ten seeds pooled in `jm_sizes_results.txt` |
+| `rings_contact.py` | Energy-conserving rebound toy (Hénon shells, elastic contact); grid results in `contact_grid_results.txt` |
+| `spot_population.py`, `run_spots.sh` | Spot population as a clock: width–amplitude track vs Gaussian mocks (`spot_population_results.txt`) |
+| `slope_axes.py`, `fit_slope.py` | Slope / Axis-of-Evil axis comparison and joint direction fit (Sec. 7) |
+| `contact_annihilation.py`, `grav_baryo_sign.py` | Baryogenesis checks: wall-annihilation percolation; sign of dR/dt after the bounce (Sec. 13, 4b) |
 | `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |
 

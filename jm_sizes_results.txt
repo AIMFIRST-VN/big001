@@ -1,0 +1,70 @@
+real seeds 462 (of 3094 attempted; the rest fell in already-transformed space); interior cells 176; mean cell volume 1.029 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.012 0.175 0.744 1.655 3.079];  fraction of cells with V < 0.1 L^3: 0.16, < 0.01: 0.045
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.005, < 0.5: 0.075
+  seeds born at t in [0,0.3) L/c:   72 cells, median volume 1.841 L^3
+  seeds born at t in [0.3,0.6) L/c:   57 cells, median volume 0.530 L^3
+  seeds born at t in [0.6,1.0) L/c:   33 cells, median volume 0.161 L^3
+  seeds born at t in [1.0,2.0) L/c:   14 cells, median volume 0.010 L^3
+real seeds 474 (of 3074 attempted; the rest fell in already-transformed space); interior cells 182; mean cell volume 0.970 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [2.000e-03 1.170e-01 5.970e-01 1.536e+00 3.294e+00];  fraction of cells with V < 0.1 L^3: 0.21, < 0.01: 0.104
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.007, < 0.5: 0.075
+  seeds born at t in [0,0.3) L/c:   57 cells, median volume 1.907 L^3
+  seeds born at t in [0.3,0.6) L/c:   66 cells, median volume 0.696 L^3
+  seeds born at t in [0.6,1.0) L/c:   50 cells, median volume 0.071 L^3
+  seeds born at t in [1.0,2.0) L/c:    9 cells, median volume 0.002 L^3
+real seeds 488 (of 3032 attempted; the rest fell in already-transformed space); interior cells 194; mean cell volume 0.900 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.008 0.141 0.658 1.226 2.957];  fraction of cells with V < 0.1 L^3: 0.23, < 0.01: 0.062
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.011, < 0.5: 0.073
+  seeds born at t in [0,0.3) L/c:   71 cells, median volume 1.359 L^3
+  seeds born at t in [0.3,0.6) L/c:   63 cells, median volume 0.735 L^3
+  seeds born at t in [0.6,1.0) L/c:   53 cells, median volume 0.086 L^3
+  seeds born at t in [1.0,2.0) L/c:    7 cells, median volume 0.015 L^3
+real seeds 468 (of 2980 attempted; the rest fell in already-transformed space); interior cells 178; mean cell volume 1.022 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.021 0.163 0.573 1.528 3.43 ];  fraction of cells with V < 0.1 L^3: 0.19, < 0.01: 0.039
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.009, < 0.5: 0.089
+  seeds born at t in [0,0.3) L/c:   55 cells, median volume 2.200 L^3
+  seeds born at t in [0.3,0.6) L/c:   58 cells, median volume 0.656 L^3
+  seeds born at t in [0.6,1.0) L/c:   58 cells, median volume 0.119 L^3
+  seeds born at t in [1.0,2.0) L/c:    7 cells, median volume 0.038 L^3
+real seeds 513 (of 3188 attempted; the rest fell in already-transformed space); interior cells 207; mean cell volume 0.896 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.005 0.087 0.587 1.356 2.96 ];  fraction of cells with V < 0.1 L^3: 0.26, < 0.01: 0.087
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.011, < 0.5: 0.078
+  seeds born at t in [0,0.3) L/c:   72 cells, median volume 1.681 L^3
+  seeds born at t in [0.3,0.6) L/c:   59 cells, median volume 0.611 L^3
+  seeds born at t in [0.6,1.0) L/c:   52 cells, median volume 0.090 L^3
+  seeds born at t in [1.0,2.0) L/c:   24 cells, median volume 0.011 L^3
+real seeds 478 (of 3126 attempted; the rest fell in already-transformed space); interior cells 175; mean cell volume 1.063 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.016 0.21  0.659 1.508 3.318];  fraction of cells with V < 0.1 L^3: 0.17, < 0.01: 0.029
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.006, < 0.5: 0.079
+  seeds born at t in [0,0.3) L/c:   69 cells, median volume 1.773 L^3
+  seeds born at t in [0.3,0.6) L/c:   49 cells, median volume 0.610 L^3
+  seeds born at t in [0.6,1.0) L/c:   47 cells, median volume 0.129 L^3
+  seeds born at t in [1.0,2.0) L/c:   10 cells, median volume 0.038 L^3
+real seeds 505 (of 3078 attempted; the rest fell in already-transformed space); interior cells 208; mean cell volume 0.871 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.013 0.116 0.503 1.233 3.167];  fraction of cells with V < 0.1 L^3: 0.24, < 0.01: 0.043
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.011, < 0.5: 0.086
+  seeds born at t in [0,0.3) L/c:   52 cells, median volume 2.177 L^3
+  seeds born at t in [0.3,0.6) L/c:   78 cells, median volume 0.661 L^3
+  seeds born at t in [0.6,1.0) L/c:   66 cells, median volume 0.108 L^3
+  seeds born at t in [1.0,2.0) L/c:   12 cells, median volume 0.021 L^3
+real seeds 489 (of 3092 attempted; the rest fell in already-transformed space); interior cells 190; mean cell volume 0.942 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.008 0.124 0.561 1.467 3.068];  fraction of cells with V < 0.1 L^3: 0.22, < 0.01: 0.058
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.009, < 0.5: 0.082
+  seeds born at t in [0,0.3) L/c:   56 cells, median volume 2.050 L^3
+  seeds born at t in [0.3,0.6) L/c:   52 cells, median volume 0.870 L^3
+  seeds born at t in [0.6,1.0) L/c:   67 cells, median volume 0.143 L^3
+  seeds born at t in [1.0,2.0) L/c:   15 cells, median volume 0.017 L^3
+real seeds 461 (of 3042 attempted; the rest fell in already-transformed space); interior cells 196; mean cell volume 0.930 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.016 0.135 0.573 1.446 2.833];  fraction of cells with V < 0.1 L^3: 0.21, < 0.01: 0.036
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.010, < 0.5: 0.089
+  seeds born at t in [0,0.3) L/c:   62 cells, median volume 1.914 L^3
+  seeds born at t in [0.3,0.6) L/c:   54 cells, median volume 0.653 L^3
+  seeds born at t in [0.6,1.0) L/c:   71 cells, median volume 0.141 L^3
+  seeds born at t in [1.0,2.0) L/c:    9 cells, median volume 0.016 L^3
+real seeds 508 (of 3144 attempted; the rest fell in already-transformed space); interior cells 201; mean cell volume 0.863 L^3
+per-cell volume / L^3: 5/25/50/75/95% = [0.008 0.137 0.5   1.189 3.069];  fraction of cells with V < 0.1 L^3: 0.20, < 0.01: 0.060
+volume-weighted (random observer): P(own cell V < 0.1 L^3) = 0.010, < 0.5: 0.101
+  seeds born at t in [0,0.3) L/c:   52 cells, median volume 2.041 L^3
+  seeds born at t in [0.3,0.6) L/c:   78 cells, median volume 0.599 L^3
+  seeds born at t in [0.6,1.0) L/c:   61 cells, median volume 0.134 L^3
+  seeds born at t in [1.0,2.0) L/c:   10 cells, median volume 0.060 L^3
