@@ -32,6 +32,7 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `spot_population.py`, `run_spots.sh` | Spot population as a clock: width–amplitude track vs Gaussian mocks (`spot_population_results.txt`) |
 | `slope_axes.py`, `fit_slope.py` | Slope / Axis-of-Evil axis comparison and joint direction fit (Sec. 7) |
 | `contact_annihilation.py`, `grav_baryo_sign.py` | Baryogenesis checks: wall-annihilation percolation; sign of dR/dt after the bounce (Sec. 13, 4b) |
+| `frag_ps.py`, `frag_ps2.py`, `frag_blue.py` | Fragment-and-detonate toy (road (iii), Sec. 13): horizon-crossing Press–Schechter of the kernel, Planck-star clock, survivor/tail/injection bookkeeping; results in `frag_*_results.txt`; referee reports in `notes/` |
 | `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |
 
