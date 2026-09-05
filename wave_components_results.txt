@@ -1,0 +1,9 @@
+acoustic component: rms wiggle 2.5% of the smooth spectrum over k=0.03-0.3, first crest at k=0.139 h/Mpc; energy share of the wiggles ~ 0.06% of the power in that band
+component | energy share | epoch (time spread) | frequency spread
+growing mode (swell)        | ~100%       | set at the bounce, grows always     | all k, peak at k_eq
+acoustic (BAO)              | few % modulation, <0.1% energy | frozen at z~1060 (drag), width ~ Silk scale | k_BAO = 2pi/147 Mpc and harmonics
+isocurvature (2nd system)   | < 3% (bound) | would be set at the bounce           | scale-dependent; not detected
+tensor (gravitational waves)| < 1.8% (r<0.036)| bounce/horizon exit              | red, l<100; not detected
+vector (vorticity)          | decaying; omega/H < 1e-9 | storm only               | not detected
+neighbour tail (P9)         | ~20% of C_2, 8% of C_3 (template) | fossil, laid before the bounce ends | l<=3 only
+secondaries (lensing, SZ, ISW) | few % of CMB power at l>1000 | z<10                | high l
