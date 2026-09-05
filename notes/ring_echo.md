@@ -56,7 +56,26 @@ P0_model(k) = W[ (1 + A2 S(k)) B² P_nw(k) {1 + (O_lin(k/α_z) − 1) e^{−k²�
 
 The envelope is set by the most damped case (Σ2 = 20 Mpc/h); for an undamped or lightly damped ringing (Σ2 ≤ 5) the limit is A2 < 1–2% over 60–250 Mpc/h and < 4% over 30–60 Mpc/h (per-Σ2 columns in `ring_echo_results.txt`, lower-right panel of the figure). For comparison the BAO amplitude in the same units is O_lin − 1 ≈ 5–7% at k ~ 0.05–0.1 h/Mpc before damping. A second ringing at ring-crossing scales of 60–300 Mpc/h with more than about 4–6% amplitude (roughly the BAO's own amplitude) is excluded; for 30–60 Mpc/h the bound is ~10%, and at 20–30 Mpc/h the data have no power (fewer than two bins per oscillation are needed only at the top of the k range, but the eBOSS errors there are 2% and BOSS does not reach it).
 
-Per-dataset scans (eBOSS alone, BOSS alone) give maximum Δχ² of 9.8 each at different scales (600 and 287 Mpc/h), i.e. the joint hint at 204 Mpc/h is not shared by the two surveys individually.
+Per-dataset scans (eBOSS alone, BOSS alone) give maximum Δχ² of 9.8 each at different scales (600 and 287 Mpc/h), i.e. the joint hint at 204 Mpc/h is not shared by the two surveys individually. Note that 204 Mpc/h is 2 r_d: this hint is a second harmonic of the BAO (next section).
+
+## Crest ripples locked to the BAO (harmonics at 2 k_BAO and 3 k_BAO)
+
+Added on request: sinusoids sin(n k r_d/α_z + φ_n) e^{−k²Σ2²/2}, n = 2, 3, with the BAO scale per redshift bin taken from the null fit (r_d/α_z = 98.6, 98.0, 101.2, 100.2 Mpc/h), free amplitude and phase, Σ2 ∈ {0, 5, 10, 20} Mpc/h and the fitted Σ_nl, linearised about the null fit like the scan. Same thresholds.
+
+| n | Σ2 [Mpc/h] | A_n | Δχ² | 95% limit |
+|---|---|---|---|---|
+| 2 | 0 | 1.06 ± 0.32% | 10.9 | 1.6% |
+| 2 | 5 | 1.40 ± 0.42% | 10.9 | 2.1% |
+| 2 | 10 | 2.0 ± 0.7% | 9.0 | 3.1% |
+| 2 | 20 | 3.1 ± 1.5% | 4.2 | 5.7% |
+| 3 | 0 | 0.71 ± 0.36% | 3.9 | 1.3% |
+| 3 | 5 | 1.05 ± 0.50% | 4.7 | 1.9% |
+| 3 | 10 | 2.7 ± 1.0% | 8.3 | 4.3% |
+| 3 | 20 | 8 ± 3% | 9.0 | 13% |
+
+Joint n = 2 + 3 fit (4 dof): Δχ² = 14–17 depending on Σ2 (p = 0.002–0.015 local). Maximum single-harmonic Δχ² = 11.1 (n = 2), below the detection threshold; local 2-dof p = 0.004, about 0.04 after the ten trials of this table.
+
+The n = 2 term is the same feature the free-period scan found: its best point, L2 = 204 Mpc/h with A2 = 1.2%, is 2 r_d ≈ 200 Mpc/h. So the one hint in the whole search is a ~1% ripple at twice the BAO frequency, undamped or lightly damped, at 3.3σ local and ~2σ after look-elsewhere. Against the standard expectation: second-order mode coupling produces harmonics of the BAO at order (O_lin − 1)² ≈ 0.2–0.4% of the smooth spectrum, and the one-loop terms also shift and damp the primary wiggle in a way that a Gaussian Σ_nl (here poorly constrained at 3 Mpc/h instead of 6–9) does not reproduce exactly; the residual of such a template mismatch has power at the BAO frequency and its harmonics. A 1% second harmonic is therefore 2–5 times the naive second-order estimate but within reach of template systematics, and it is not shared by the two surveys separately (eBOSS-only and BOSS-only scans peak elsewhere). Verdict: a hint, not a detection; 95% limits A_2 < 1.6% (undamped) to 5.7% (Σ2 = 20), A_3 < 1.3% to 13%.
 
 ## Caveats
 

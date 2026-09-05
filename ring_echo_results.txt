@@ -1,5 +1,5 @@
 # ring_echo.py -- second-ringing search in the galaxy P0(k)
-# run 2026-09-05 10:58, NMOCK=500, seed=20260905
+# run 2026-09-05 11:08, NMOCK=500, seed=20260905
 # BAO template: CAMB (r_drag = 147.82 Mpc = 99.93 Mpc/h); broadband EH98 no-wiggle x deg-7 polynomial in ln k
   loaded eBOSS LRG NGC z0.6-1.0: 32 bins, k = 0.0075..0.3151, Hartlap 0.967
   loaded eBOSS LRG SGC z0.6-1.0: 32 bins, k = 0.0075..0.3151, Hartlap 0.967
@@ -176,6 +176,29 @@
     mock Sigma_nl refits: 2.95 +- 1.83 Mpc/h; best-fit A2 of the noise peak: median 0.0183
     where the mock noise peaks land (period bins 20-600, log): 14 2 16 29 12 35 85 87 102 118
 
+## 6. BAO harmonics ('crest ripples'): sinusoids at n k_BAO, n = 2, 3, with k_BAO = alpha_z 2pi/r_d per redshift bin
+  r_d (template) = 99.93 Mpc/h; fitted BAO scales r_d/alpha_z: 98.6 98.0 101.2 100.2 Mpc/h
+  each harmonic: free amplitude and phase, damping exp(-k^2 Sig2^2/2) with Sig2 in {0,5,10,20} Mpc/h (and the fitted Sig_nl);
+  linearised about the null fit (as in the scan), alpha_z and Sig_nl fixed.  Second-order (mode-coupling) expectation: well under 1%.
+# n  Sig2 |   A_n +- err   dchi2   UL95 (worst phase)
+  2   0.0 | 0.0106 +- 0.0032  10.93  0.0159
+  2   5.0 | 0.0140 +- 0.0042  10.90  0.0209
+  2  10.0 | 0.0200 +- 0.0067   8.97  0.0309
+  2  20.0 | 0.0314 +- 0.0154   4.16  0.0567
+  2   3.1 | 0.0120 +- 0.0036  11.06  0.0180
+  3   0.0 | 0.0071 +- 0.0036   3.85  0.0130
+  3   5.0 | 0.0105 +- 0.0050   4.73  0.0190
+  3  10.0 | 0.0274 +- 0.0097   8.31  0.0434
+  3  20.0 | 0.0806 +- 0.0290   8.99  0.1288
+  3   3.1 | 0.0082 +- 0.0041   4.12  0.0150
+  joint n=2 + n=3 fit (4 dof):
+    Sig2  0.0: A2 = 0.0103, A3 = 0.0064, delta chi2 = 14.06 (4 dof, p = 0.007)
+    Sig2  5.0: A2 = 0.0135, A3 = 0.0099, delta chi2 = 14.91 (4 dof, p = 0.005)
+    Sig2 10.0: A2 = 0.0195, A3 = 0.0268, delta chi2 = 16.84 (4 dof, p = 0.002)
+    Sig2 20.0: A2 = 0.0284, A3 = 0.0797, delta chi2 = 12.40 (4 dof, p = 0.015)
+    Sig2  3.1: A2 = 0.0116, A3 = 0.0074, delta chi2 = 14.42 (4 dof, p = 0.006)
+  max delta chi2 over harmonics and dampings = 11.06: below the detection threshold (25); 2-dof local p = 0.004 (10 trials -> p_global ~ 0.039)
+
 ## 5. 95% upper-limit summary (worst phase, envelope over Sig2 in {0,5,10,20})
   periods  20- 30 Mpc/h: A2 < 0.1579 .. 0.2471 (median 0.1982)
   periods  30- 60 Mpc/h: A2 < 0.0711 .. 0.1478 (median 0.1026)
@@ -184,4 +207,4 @@
   periods 200-300 Mpc/h: A2 < 0.0608 .. 0.1004 (median 0.0642)
   periods 300-600 Mpc/h: A2 < 0.0968 .. 0.7434 (median 0.1431)
 
-# runtime 421 s
+# runtime 253 s
