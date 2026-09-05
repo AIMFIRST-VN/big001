@@ -1,0 +1,8 @@
+E~t^-1.43: nu_t=0.105  turnovers N=      636  residual v/c (v0=c) = 9.9e-03
+E~t^-1.43: nu_t=0.01   turnovers N=     6677  residual v/c (v0=c) = 1.9e-03
+E~t^-1.43: nu_t=0.001  turnovers N=    66775  residual v/c (v0=c) = 3.6e-04
+   need N >= 1.0e+07 turnovers -> nu_t <= 6.7e-06; or at nu_t=0.105, v0/c <= 1.0e-03
+E~t^-1.20: nu_t=0.105  turnovers N=      636  residual v/c (v0=c) = 2.1e-02
+E~t^-1.20: nu_t=0.01   turnovers N=     6677  residual v/c (v0=c) = 5.1e-03
+E~t^-1.20: nu_t=0.001  turnovers N=    66775  residual v/c (v0=c) = 1.3e-03
+   need N >= 2.2e+08 turnovers -> nu_t <= 3.1e-07; or at nu_t=0.105, v0/c <= 4.8e-04

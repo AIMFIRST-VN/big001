@@ -1176,8 +1176,24 @@ recombination imprints \(\Delta T/T \gtrsim 10^{-3}\) on the microwave
 sky (Peebles 1971; Jones 1976), a hundred times what is observed. The
 cascade of Kernel 0,0,0 must therefore be complete, and its kinetic
 energy thermalized, long before last scattering; it can set the spectrum
-of the initial conditions, not stir the plasma at \(z = 1100\). That is
-a constraint on the kernel's timeline, added to open problem 3.
+of the initial conditions, not stir the plasma at \(z = 1100\). The
+decay law says how strong the constraint is
+(\texttt{cascade\_decay.py}): free decaying turbulence loses energy as
+\(t^{-10/7}\) in eddy turnovers (Saffman spectra: \(t^{-6/5}\)), and a
+vortical velocity in a radiation fluid does not redshift away, so with
+the fitted turnover ratio \(\nu_t = 0.105\) there are \(\sim 640\)
+turnovers between the bounce and recombination and a cascade starting
+near \(c\) still moves at \(\sim 10^{-2}\,c\) at last scattering, a
+thousand times the Doppler limit; free decay would need
+\(\nu_t \lesssim 10^{-5}\) or a starting speed below \(10^{-3}\,c\). The
+cascade therefore cannot die by free decay: it must be dissipated
+collisionally, in the jammed contact ring where the mean free path is a
+relic diameter and dissipation is exponential, which pins the epoch at
+which it imprints its spectrum to the contact phase and forbids
+turbulence in the free-streaming material afterwards --- the same
+partition the energy-conserving toy of Sec. 3.3 found from the other
+side. That is a constraint on the kernel's timeline, added to open
+problem 3.
 
 \hypertarget{radial-structure-of-the-kernel-and-p12-kernel-gradient}{%
 \subsubsection{\texorpdfstring{\textbf{5.4 Radial structure of the
@@ -2797,7 +2813,9 @@ Problems}}{13. Limitations and Open Problems}}\label{limitations-and-open-proble
   Kolmogorov cascade with near scale invariance is unproven, and the
   cascade must be fully thermalized before last scattering or it
   overproduces anisotropy by two orders of magnitude (Peebles 1971; Sec.
-  5.3).
+  5.3); free decay at the fitted \(\nu_t\) leaves \(10^{-2}\,c\) at
+  recombination, so the dissipation must be collisional and confined to
+  the contact phase.
 \item
   \textbf{The kernel.} H8 (Precious Rings -- Dante's Purgatory) resolves
   the bounce-to-equality conflict of Sec. 5 by location, at a price that
