@@ -1,5 +1,5 @@
-growth + lensing-amplitude fit (gamma=0.55): Omega_m = 0.263 +- 0.031; sigma_8 = 0.83; chi2_min = 9.4 for 13 dof
-h = 0.736 (16-84%: 0.693-0.784)
-AGE from the wave distribution: t0 = 13.28 Gyr (16-84%: 12.85-13.74)
+growth + lensing-amplitude fit (gamma=0.55): Omega_m = 0.273 +- 0.023; sigma_8 = 0.83; chi2_min = 14.0 for 19 dof
+h = 0.714 (16-84%: 0.682-0.748)
+AGE from the wave distribution: t0 = 13.54 Gyr (16-84%: 13.17-13.95)
 for reference: Omega_m=0.315, h=0.6736 gives 13.80 Gyr; h=0.73 gives 13.32 Gyr at fixed Omega_m h^2
-assumptions: GR growth (gamma=0.55), LCDM expansion form (w=-1), flat; data values entered from memory -- verify
+assumptions: GR growth (gamma=0.55), LCDM expansion form (w=-1), flat; data values verified 2026-09-05 (notes/age_from_waves_data.md); overlapping surveys treated as independent
