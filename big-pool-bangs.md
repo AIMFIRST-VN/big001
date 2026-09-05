@@ -64,7 +64,7 @@ Standard cosmology relies on scalar-field inflation to explain why the observabl
 
 The rings are phase transitions of one material. The Earth's 410 km and 660 km discontinuities and its core–mantle boundary are changes of phase of one rock under pressure, and seismology maps them because sound crosses them at different speeds and reflects at the contrast. The Big Apple has the same structure with one material: jammed (the pre-bounce state, pressure diverging at $\eta = 0.64$), then a collisional gas (Kernel 0,0,0, where the relics are so dense that they merge and the merger products evaporate), then a collisionless gas (the mantle and shell), then a wall (the boundary). Each ring has its own sound speed: $c/\sqrt{3}$ in the kernel once conversion has made it a radiation fluid; the relic velocity dispersion in the mantle, where the only restoring force is gravity. In the shell there is no restoring force at all — free-streaming relics carry no sound — so the shell is acoustically dead. At the boundary the restoring force is the wall tension.
 
-The consequence is the same as in seismology: waves from the kernel *reflect* at the kernel–mantle edge, where a radiation fluid meets a pressureless gas and the impedance contrast is total. The kernel's acoustic history is therefore confined to the kernel — the toy of Sec. 3.2 shows the reflected waves recompressing the core repeatedly — and if the kernel's edge lay inside our horizon, primordial acoustic waves that reached it before last scattering would have returned and imprinted a ring-shaped echo in the CMB at the angular scale of the edge, a feature with a preferred centre and radius unlike the statistically isotropic acoustic peaks. None is seen. Either the edge is beyond the horizon, as H8 (Precious Rings – Dante's Purgatory) assumes, or it has no impedance contrast and is not an edge in the acoustic sense; a detected centred echo would falsify the assumption, and we list it as falsifier (v) below.
+The consequence is the same as in seismology: waves from the kernel *reflect* at the kernel–mantle edge, where a radiation fluid meets a pressureless gas and the impedance contrast is total. The kernel's acoustic history is therefore confined to the kernel — the toy of Sec. 3.2 shows the reflected waves recompressing the core repeatedly — and if the kernel's edge lay inside our horizon, primordial acoustic waves that reached it before last scattering would have returned and imprinted a ring-shaped echo in the CMB at the angular scale of the edge, a feature with a preferred centre and radius unlike the statistically isotropic acoustic peaks. None is seen. Either the edge is beyond the horizon, as H8 (Precious Rings – Dante's Purgatory) assumes, or it has no impedance contrast and is not an edge in the acoustic sense; a detected centred echo would falsify the assumption, and we list it as falsifier (v) below. The acoustic reading has two further signatures, both with precedent. *Refraction.* A wave crossing a layer where the sound speed changes arrives with its crests displaced, and the cosmic version has been measured: neutrinos streaming through the plasma shift the phase of the acoustic peaks (Bashinsky & Seljak 2004; Baumann et al. 2016), and Baumann et al. (2019) detected that shift in the baryon acoustic oscillations of BOSS. A ring boundary would imprint a phase shift that varies with scale rather than the constant one neutrinos give; a scale-dependent phase in the BAO harmonics beyond the neutrino value is the refraction test. *A shadow zone.* Earth's core casts a P-wave shadow between $104°$ and $140°$ from a quake; a layered kernel would cast one in scale, a band of frequencies with suppressed power. And a second ringing at a period unrelated to the drag-epoch sound horizon (Hu & Sugiyama 1996; the fossil sound of Peebles & Yu 1970 and Eisenstein et al. 2005) would be an echo of a ring crossing, which nothing in the standard picture produces; a search for it in the BOSS spectrum, with thresholds fixed in advance, is reported in Sec. 3.3. Anything imprinted causally before nucleosynthesis is sub-parsec today, so these are searches for fingerprints in the initial conditions, not for waves that travelled.
 
 **Stratified bodies as analogies.** The Sun is the nearest object stratified the way the rings are: by transport regime, not by material. Its seven conventional layers — core (fusion), radiative zone (photon diffusion), tachocline (a shear layer), convective zone (bulk motion), photosphere (where light escapes), chromosphere and corona (thin, collisionless, magnetic), and the solar wind (material that escapes entirely) — are one plasma under seven different dominant processes, and the interior boundaries were located by helioseismology, i.e. by how sound reflects and refracts at them, which is the method Sec. 3.1 invokes for the kernel's edge. The Sun also supplies a caution for P12 (Kernel Gradient): the corona is a hundred times hotter than the photosphere beneath it, heated by waves and reconnection rather than by proximity to the core, so "further out" is colder only if no ring has heating of its own. The core-collapse supernova is the closer *dynamical* analogy: the collapse halts when the core reaches nuclear density and nuclear matter becomes incompressible — a jamming transition in the sense of Sec. 2 — the rebound launches a shock that ejects most of the star, and a compact remnant of order a tenth of the mass is left behind, supported by degeneracy pressure. The rebound-and-remnant fraction of a supernova is of the same order as the ejected/trapped split of Sec. 4, and the incompressibility that produces the bounce is the same kind of physics as the hard-sphere jamming.
 
@@ -189,7 +189,7 @@ Geometry A and Geometry B are defined in Sec. 4 and assigned by ring in Sec. 3: 
 
 *The background is assumed, not derived.* With the tension included, the matter of Kernel 0,0,0 is treated as pressureless dust on a flat $\Lambda$CDM background once virialized into halos; the $w_{\text{eff}} \approx -0.3$ of the shell toy (Appendix C) describes the shell *kinematics*, not the background equation of state. Inside the kernel the ejection sets the matter's initial peculiar-velocity distribution on that background, those velocities redshift into the Hubble flow under the radiation era that conversion supplies (Sec. 5), and the supernova, BAO and kSZ comparisons are satisfied because the background is assumed. Geometry B — the system of rings seen as a whole — has no such shelter: there the expansion law *is* the ballistic ordering, $v = r/t$, plus the tension. The ballistic-only LTB lightcone (Appendix C) decelerates ($q_0^{\text{eff}} = +0.16$) and departs from $\Lambda$CDM by $\sim\!0.35$ mag by $z \sim 5$; the LTB-plus-$\Lambda$ lightcone has *not* been computed, and until it is, Geometry B cannot claim the agreement the kernel inherits from its assumed background — the agreement that matters, since every observation we make is made inside Kernel 0,0,0. The value of the tension is not supplied: the one framework-native candidate, a residual unconverted vacuum fraction, reproduces the $10^{-123}$ tuning of standard cosmology and is rejected (Appendix C), and the origin of $\rho_\Lambda$ is an open problem (Sec. 13), exactly as in $\Lambda$CDM.
 
-**An age from the waves alone.** The framework inherits its age from the adopted background, so it is worth asking what the wave distribution gives by itself, without the acoustic peaks of the microwave sky and without the distance ladder (`age_from_waves.py`; inputs verified against the source papers in `notes/age_from_waves_data.md`). Two wave measurements suffice. The peak of the matter spectrum is the equality scale and fixes $\Omega_m h^2 = 0.139 \pm 0.006$ (DESI DR1 full-shape with a nucleosynthesis prior on the baryons; DESI Collaboration 2024); the fall of amplitude with radius — the growth rates $f\sigma_8(z)$ from redshift-space distortions in 6dFGS, SDSS, BOSS, eBOSS, WiggleZ, VIPERS, FastSound and DESI DR1, with the joint DES–KiDS cosmic-shear amplitude $S_8 = 0.790 \pm 0.016$ to break the amplitude–density degeneracy — fixes $\Omega_m = 0.273 \pm 0.023$ under general-relativistic growth ($\gamma = 0.55$) and a $\Lambda$CDM expansion form ($\chi^2 = 14$ for $19$ degrees of freedom). Together they give $h = 0.71$ ($0.68$–$0.75$) and an age of $13.5$ Gyr ($16$–$84\%$: $13.2$–$14.0$), against $13.80 \pm 0.02$ from the peaks. The waves agree with the peaks within one standard deviation and lean slightly young, the known preference of growth and lensing for a lower matter density showing through; at four hundred million years of precision they cannot arbitrate that tension, the DESI and BOSS volumes overlap so the combination overstates its independence, and the estimate is independent of the peaks and the ladder but not of gravity. The framework's own addition is the uniformity bound of Sec. 7: whatever the age is, it cannot differ across the observable volume by more than $\sim 0.1$ Gyr.
+**An age from the waves alone.** The framework inherits its age from the adopted background, so it is worth asking what the wave distribution gives by itself, without the acoustic peaks of the microwave sky and without the distance ladder (`age_from_waves.py`; inputs verified against the source papers in `notes/age_from_waves_data.md`). Two wave measurements suffice. The peak of the matter spectrum is the equality scale and fixes $\Omega_m h^2 = 0.139 \pm 0.006$ (DESI DR1 full-shape with a nucleosynthesis prior on the baryons; DESI Collaboration 2024); the fall of amplitude with radius — the growth rates $f\sigma_8(z)$ from redshift-space distortions in 6dFGS, SDSS, BOSS, eBOSS, WiggleZ, VIPERS, FastSound and DESI DR1, with the joint DES–KiDS cosmic-shear amplitude $S_8 = 0.790 \pm 0.016$ to break the amplitude–density degeneracy — fixes $\Omega_m = 0.273 \pm 0.023$ under general-relativistic growth ($\gamma = 0.55$) and a $\Lambda$CDM expansion form ($\chi^2 = 14$ for $19$ degrees of freedom). Together they give $h = 0.71$ ($0.68$–$0.75$) and an age of $13.5$ Gyr ($16$–$84\%$: $13.2$–$14.0$), against $13.80 \pm 0.02$ from the peaks. The waves agree with the peaks within one standard deviation and lean slightly young, the known preference of growth and lensing for a lower matter density showing through; at four hundred million years of precision they cannot arbitrate that tension, the DESI and BOSS volumes overlap so the combination overstates its independence, and the estimate is independent of the peaks and the ladder but not of gravity. The measurement is not new, only the framing: a CMB-independent $H_0$, and so an age, from baryon acoustic oscillations with a nucleosynthesis prior was given by Aubourg et al. (2015) and Schöneberg, Lesgourgues & Hooper (2019), from the full-shape spectrum by Philcox et al. (2020), and from the equality scale alone — the swell without the fossil sound — by Philcox et al. (2022); cosmic chronometers (Jimenez & Loeb 2002; Moresco et al. 2022) date the expansion with no ruler at all. The framing is the oceanographers': Munk (1947) and Barber & Ursell (1948) dated and located storms thousands of kilometres away from the dispersion of their swell, long waves arriving first, and Munk et al. (1963) and Snodgrass et al. (1966) tracked swell across the whole Pacific to its source; the equality peak, the acoustic period and the damping envelope are the cosmic arrivals, and the age is the storm's date. The framework's own addition is the uniformity bound of Sec. 7: whatever the age is, it cannot differ across the observable volume by more than $\sim 0.1$ Gyr.
 
 ## **7. H5 (Our Position – Where Is Nemo): Where Are We Relative to Our Own Big Pool Bang?**
 
@@ -444,13 +444,23 @@ Ashtekar A., Singh P., 2011, "Loop quantum cosmology: a status report", Class. Q
 
 Asvesta K., Kazantzidis L., Perivolaropoulos L., Tsagas C. G., 2022, "Observational constraints on the deceleration parameter in a tilted universe", MNRAS 513, 2394 (arXiv:2202.00962).
 
+Aubourg É. et al., 2015, "Cosmological implications of baryon acoustic oscillation measurements", Phys. Rev. D 92, 123516 (arXiv:1411.1074).
+
 Avrami M., 1939, "Kinetics of phase change. I. General theory", Journal of Chemical Physics, 7, 1103.
+
+Barber N. F., Ursell F., 1948, "The generation and propagation of ocean waves and swell. I. Wave periods and velocities", Phil. Trans. R. Soc. A 240, 527.
 
 Barceló C., Liberati S., Visser M., 2011, "Analogue gravity", Living Rev. Relativ. 14, 3.
 
 Bardeen J. M., Bond J. R., Kaiser N., Szalay A. S., 1986, "The statistics of peaks of Gaussian random fields", ApJ 304, 15.
 
 Barrau A., Rovelli C., Vidotto F., 2014, "Fast radio bursts and white hole signals", Phys. Rev. D 90, 127503 (arXiv:1409.4031).
+
+Bashinsky S., Seljak U., 2004, "Signatures of relativistic neutrinos in CMB anisotropy and matter clustering", Phys. Rev. D 69, 083002 (arXiv:astro-ph/0310198).
+
+Baumann D., Beutler F., Flauger R., Green D., Slosar A., Vargas-Magaña M., Wallisch B., Yèche C., 2019, "First constraint on the neutrino-induced phase shift in the spectrum of baryon acoustic oscillations", Nat. Phys. 15, 465 (arXiv:1803.10741).
+
+Baumann D., Green D., Meyers J., Wallisch B., 2016, "Phases of new physics in the CMB", JCAP 01, 007 (arXiv:1508.06342).
 
 Bianchi E., Christodoulou M., D'Ambrosio F., Haggard H. M., Rovelli C., 2018, "White holes as remnants: a surprising scenario for the end of a black hole", Class. Quantum Grav. 35, 225003 (arXiv:1802.04264).
 
@@ -490,6 +500,10 @@ DESI Collaboration, 2024, "DESI 2024 V: Full-shape galaxy clustering from galaxi
 
 DESI Collaboration, 2025, "DESI DR2 results II: measurements of baryon acoustic oscillations and cosmological constraints" (arXiv:2503.14738).
 
+Eisenstein D. J. et al., 2005, "Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies", ApJ 633, 560 (arXiv:astro-ph/0501171).
+
+Eisenstein D. J., Hu W., 1998, "Baryonic features in the matter transfer function", ApJ 496, 605 (arXiv:astro-ph/9709112).
+
 Erickcek A. L., Kamionkowski M., Carroll S. M., 2008, "A hemispherical power asymmetry from inflation", Phys. Rev. D 78, 123520 (arXiv:0806.0377).
 
 Espinosa J. R., Konstandin T., No J. M., Servant G., 2010, "Energy budget of cosmological first-order phase transitions", JCAP 06, 028 (arXiv:1004.4187).
@@ -508,9 +522,13 @@ Haggard H. M., Rovelli C., 2015, "Quantum-gravity effects outside the horizon sp
 
 Hidding J., Shandarin S. F., van de Weygaert R., 2014, "The Zel'dovich approximation: key to understanding cosmic web complexity", MNRAS 437, 3442 (arXiv:1311.7134).
 
+Hu W., Sugiyama N., 1996, "Small-scale cosmological perturbations: an analytic approach", ApJ 471, 542 (arXiv:astro-ph/9510117).
+
 Hutsemékers D., Cabanac R., Lamy H., Sluse D., 2005, "Mapping extreme-scale alignments of quasar polarization vectors", A&A 441, 915 (arXiv:astro-ph/0507274).
 
 Iye M., Yagi M., Fukumoto H., 2021, "Spin parity of spiral galaxies III: dipole analysis of the distribution of SDSS spirals with 3D random walk simulation", ApJ 907, 123 (arXiv:2011.07216).
+
+Jimenez R., Loeb A., 2002, "Constraining cosmological parameters based on relative galaxy ages", ApJ 573, 37 (arXiv:astro-ph/0106145).
 
 Johnson W. A., Mehl R. F., 1939, "Reaction kinetics in processes of nucleation and growth", Transactions of the AIME, 135, 416.
 
@@ -536,6 +554,12 @@ Migkas K., Pacaud F., Schellenberger G., Erler J., Nguyen-Dang N. T., Reiprich T
 
 Migkas K., Schellenberger G., Reiprich T. H., Pacaud F., Ramos-Ceja M. E., Lovisari L., 2020, "Probing cosmic isotropy with a new X-ray galaxy cluster sample through the $L_X$–$T$ scaling relation", A&A 636, A15 (arXiv:2004.03305).
 
+Moresco M. et al., 2022, "Unveiling the Universe with emerging cosmological probes", Living Rev. Relativ. 25, 6 (arXiv:2201.07241).
+
+Munk W. H., 1947, "Tracking storms by forerunners of swell", J. Meteorol. 4, 45.
+
+Munk W. H., Miller G. R., Snodgrass F. E., Barber N. F., 1963, "Directional recording of swell from distant storms", Phil. Trans. R. Soc. A 255, 505.
+
 Niikura H. et al., 2019a, "Microlensing constraints on primordial black holes with Subaru/HSC Andromeda observations", Nat. Astron. 3, 524 (arXiv:1701.02151).
 
 Niikura H., Takada M., Yokoyama S., Sumi T., Masaki S., 2019b, "Constraints on Earth-mass primordial black holes from OGLE 5-year microlensing events", Phys. Rev. D 99, 083503 (arXiv:1901.07120).
@@ -545,6 +569,10 @@ de Oliveira-Costa A., Tegmark M., Zaldarriaga M., Hamilton A., 2004, "The signif
 Ozernoy L. M., Chernin A. D., 1968, "The fragmentation of matter in a turbulent metagalactic medium", Sov. Astron. 11, 907.
 
 Peebles P. J. E., 1971, "Primeval turbulence?", Astrophys. Space Sci. 11, 443.
+
+Philcox O. H. E., Farren G. S., Sherwin B. D., Baxter E. J., Alonso D., 2022, "Determining the Hubble constant without the sound horizon: a 3.6% constraint on H0 from galaxy surveys, CMB lensing, and supernovae", Phys. Rev. D 106, 063530 (arXiv:2204.02984).
+
+Philcox O. H. E., Ivanov M. M., Simonović M., Zaldarriaga M., 2020, "Combining full-shape and BAO analyses of galaxy power spectra: a 1.6% CMB-independent constraint on H0", JCAP 05, 032 (arXiv:2002.04035).
 
 Planck Collaboration, 2014 XXIII, "Planck 2013 results. XXIII. Isotropy and statistics of the CMB", A&A 571, A23 (arXiv:1303.5083).
 
@@ -576,6 +604,8 @@ Sah S., Rameez M., 2024, on the dipole anisotropy of cosmic acceleration in the 
 
 Sazonov S. Y., Sunyaev R. A., 1999, "Microwave polarization in the direction of galaxy clusters induced by the CMB quadrupole anisotropy", MNRAS 310, 765 (arXiv:astro-ph/9903287).
 
+Schöneberg N., Lesgourgues J., Hooper D. C., 2019, "The BAO+BBN take on the Hubble tension", JCAP 10, 029 (arXiv:1907.11594).
+
 Scolnic D. et al., 2022, "The Pantheon+ analysis: the full data set and light-curve release", ApJ 938, 113 (arXiv:2112.03863).
 
 Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S., Colin J., 2021, "A test of the cosmological principle with quasars", ApJ Lett. 908, L51 (arXiv:2009.14826).
@@ -587,6 +617,8 @@ Shamir L., 2022, "Large-scale asymmetry in galaxy spin directions: analysis of g
 Shamir L., 2025, "Galaxy spin-direction asymmetry in the JWST JADES field", arXiv preprint, 2025.
 
 Shandarin S. F., Zel'dovich Ya. B., 1989, "The large-scale structure of the universe: turbulence, intermittency, structures in a self-gravitating medium", Rev. Mod. Phys. 61, 185.
+
+Snodgrass F. E., Groves G. W., Hasselmann K. F., Miller G. R., Munk W. H., Powers W. H., 1966, "Propagation of ocean swell across the Pacific", Phil. Trans. R. Soc. A 259, 431.
 
 Storey-Fisher K. et al., 2024, "Quaia, the Gaia–unWISE quasar catalog: an all-sky spectroscopic quasar sample", ApJ 964, 69 (arXiv:2306.17749).
 
