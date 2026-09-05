@@ -1,0 +1,72 @@
+Beach-shore test: cluster-count dipole along the slope axis (l,b)=(270,-22)
+nside 16, |b|>20.0, 2000 shuffles, kinematic (2+x)beta = 0.0037 along (264,48); cos(apex,n) = +0.339 -> kinematic term along n = +0.0013
+Sign convention: d_n > 0 means more clusters toward (270,-22). Slope model: d_n = R*eps (+ local + kinematic).
+
+=== PSZ2: N_total 1653, footprint 27287 deg^2 (fsky 0.661); M_typ = 4.5e+14 Msun, sigma(M) = 0.724, R = delta_c/sigma^2 = 3.22
+  [all                         ] N= 1392 fsky=0.661 | fixed-axis d_n = +0.0257 +- 0.0498 | free |d| = 0.0920 toward (156,-52), proj on n +0.0052, kin-corr +0.0040 | null: sigma(d_n)=0.0496 p_fixed=0.600, median|d|=0.0744 p_free=0.294
+  [SNR>6                       ] N=  590 fsky=0.661 | fixed-axis d_n = +0.0407 +- 0.0765 | free |d| = 0.0702 toward (22,-82), proj on n +0.0229, kin-corr +0.0216 | null: sigma(d_n)=0.0771 p_fixed=0.610, median|d|=0.1155 p_free=0.831
+  [COSMO sample                ] N=  485 fsky=0.661 | fixed-axis d_n = +0.0015 +- 0.0844 | free |d| = 0.0503 toward (78,-54), proj on n -0.0116, kin-corr -0.0129 | null: sigma(d_n)=0.0838 p_fixed=0.985, median|d|=0.1233 p_free=0.938
+  [with z                      ] N=  990 fsky=0.661 | fixed-axis d_n = -0.0798 +- 0.0590 | free |d| = 0.1254 toward (134,4), proj on n -0.0868, kin-corr -0.0881 | null: sigma(d_n)=0.0597 p_fixed=0.181, median|d|=0.0874 p_free=0.187
+  [no z                        ] N=  402 fsky=0.661 | fixed-axis d_n = +0.2857 +- 0.0927 | free |d| = 0.3070 toward (283,-62), proj on n +0.2319, kin-corr +0.2307 | null: sigma(d_n)=0.0892 p_fixed=0.002, median|d|=0.1344 p_free=0.009
+  [0.00<=z<0.05                ] N=   50 fsky=0.661 | fixed-axis d_n = +0.0225 +- 0.2628 | free |d| = 0.3229 toward (10,-19), proj on n -0.0099, kin-corr -0.0111 | null: sigma(d_n)=0.2556 p_fixed=0.923, median|d|=0.3824 p_free=0.641
+  [0.05<=z<0.20                ] N=  368 fsky=0.661 | fixed-axis d_n = -0.0189 +- 0.0969 | free |d| = 0.1718 toward (17,-12), proj on n -0.0330, kin-corr -0.0343 | null: sigma(d_n)=0.0952 p_fixed=0.834, median|d|=0.1442 p_free=0.337
+  [0.20<=z<5.00                ] N=  572 fsky=0.661 | fixed-axis d_n = -0.1279 +- 0.0777 | free |d| = 0.3074 toward (157,9), proj on n -0.1282, kin-corr -0.1294 | null: sigma(d_n)=0.0778 p_fixed=0.110, median|d|=0.1143 p_free=0.001
+  [z>=0.05 (far)               ] N=  940 fsky=0.661 | fixed-axis d_n = -0.0852 +- 0.0606 | free |d| = 0.1421 toward (139,6), proj on n -0.0909, kin-corr -0.0922 | null: sigma(d_n)=0.0602 p_fixed=0.161, median|d|=0.0883 p_free=0.121
+  [excluding z<0.05            ] N= 1342 fsky=0.661 | fixed-axis d_n = +0.0259 +- 0.0507 | free |d| = 0.0988 toward (161,-46), proj on n +0.0058, kin-corr +0.0045 | null: sigma(d_n)=0.0497 p_fixed=0.597, median|d|=0.0737 p_free=0.249
+  [all, |b|>30                 ] N= 1077 fsky=0.500 | fixed-axis d_n = -0.0042 +- 0.0596 | free |d| = 0.1292 toward (117,-37), proj on n -0.0569, kin-corr -0.0582 | null: sigma(d_n)=0.0595 p_fixed=0.949, median|d|=0.0893 p_free=0.201
+  2M++ local prediction (10-135 Mpc/h volume-limited, b_cl/b_g=2.5): d_n = -0.0888, free |d| = 0.1918 toward (193,62)
+  eps from all   : (d_n - kin)/R = +0.0076 +- 0.0218; 95% |eps| < 0.0435 (R = 3.2; R = 3-7 range -> |eps| < 0.0467 - 0.0200)
+  eps from far   : (d_n - kin)/R = -0.0269 +- 0.0265; 95% |eps| < 0.0705 (R = 3.2; R = 3-7 range -> |eps| < 0.0757 - 0.0324)
+
+=== eRASS1: N_total 12247, footprint 13593 deg^2 (fsky 0.330); M_typ = 2.0e+14 Msun, sigma(M) = 0.872, R = delta_c/sigma^2 = 2.21
+  [all                         ] N=12107 fsky=0.330 | fixed-axis d_n = +2.1360 +- 0.0480 | free |d| = 2.2915 toward (270,-20), proj on n +2.2906, kin-corr +2.2894 | null: sigma(d_n)=0.0258 p_fixed=0.000, median|d|=0.0332 p_free=0.000
+  [F500>4e-13                  ] N= 2631 fsky=0.330 | fixed-axis d_n = +0.2307 +- 0.0602 | free |d| = 0.2809 toward (252,-15), proj on n +0.2665, kin-corr +0.2653 | null: sigma(d_n)=0.0549 p_fixed=0.000, median|d|=0.0727 p_free=0.001
+  [F500>8e-13                  ] N= 1238 fsky=0.330 | fixed-axis d_n = +0.1940 +- 0.0866 | free |d| = 0.1947 toward (274,-22), proj on n +0.1942, kin-corr +0.1930 | null: sigma(d_n)=0.0821 p_fixed=0.023, median|d|=0.1059 p_free=0.112
+  [F500>2e-12                  ] N=  576 fsky=0.330 | fixed-axis d_n = +0.1668 +- 0.1257 | free |d| = 0.3414 toward (301,-4), proj on n +0.2796, kin-corr +0.2783 | null: sigma(d_n)=0.1169 p_fixed=0.159, median|d|=0.1548 p_free=0.044
+  [DET_LIKE>40                 ] N= 3283 fsky=0.330 | fixed-axis d_n = +2.6555 +- 0.1026 | free |d| = 3.1263 toward (267,-19), proj on n +3.1191, kin-corr +3.1178 | null: sigma(d_n)=0.0493 p_fixed=0.000, median|d|=0.0642 p_free=0.000
+  exposure model: N_i ~ A_i E_i^gamma; gamma (no dipole) = 0.815; joint fit gamma = 0.756, dipole |d| = 0.2074 toward (228,-35), d_n = +0.1619
+  [exposure-corrected          ] N=12107 fsky=0.330 | fixed-axis d_n = +0.1678 +- 0.0264 | free |d| = 0.1548 toward (199,-39), proj on n +0.0729, kin-corr +0.0717 | null: sigma(d_n)=0.0244 p_fixed=0.000, median|d|=0.0343 p_free=0.000
+  flux-limited F500>4e-13: residual exposure index gamma = +0.149 (0 = complete everywhere)
+  flux-limited F500>8e-13: residual exposure index gamma = +0.090 (0 = complete everywhere)
+  flux-limited F500>2e-12: residual exposure index gamma = +0.092 (0 = complete everywhere)
+  [exp-corr 0.00<=z<0.05       ] N=  298 fsky=0.330 | fixed-axis d_n = -0.3359 +- 0.1271 | free |d| = 0.7270 toward (247,49), proj on n +0.2010, kin-corr +0.1998 | null: sigma(d_n)=0.1589 p_fixed=0.034, median|d|=0.2242 p_free=0.011
+  [exp-corr 0.05<=z<0.20       ] N= 3403 fsky=0.330 | fixed-axis d_n = +0.0656 +- 0.0473 | free |d| = 0.0863 toward (171,-34), proj on n +0.0076, kin-corr +0.0063 | null: sigma(d_n)=0.0459 p_fixed=0.159, median|d|=0.0650 p_free=0.282
+  [exp-corr 0.20<=z<0.50       ] N= 5304 fsky=0.330 | fixed-axis d_n = +0.1242 +- 0.0390 | free |d| = 0.2207 toward (151,-31), proj on n -0.0429, kin-corr -0.0441 | null: sigma(d_n)=0.0366 p_fixed=0.000, median|d|=0.0519 p_free=0.000
+  [exp-corr 0.50<=z<5.00       ] N= 3102 fsky=0.330 | fixed-axis d_n = +0.4628 +- 0.0596 | free |d| = 0.3996 toward (261,-29), proj on n +0.3928, kin-corr +0.3915 | null: sigma(d_n)=0.0455 p_fixed=0.000, median|d|=0.0672 p_free=0.000
+  [exp-corr z>=0.05 (far)      ] N=11809 fsky=0.330 | fixed-axis d_n = +0.1848 +- 0.0269 | free |d| = 0.1615 toward (195,-44), proj on n +0.0700, kin-corr +0.0688 | null: sigma(d_n)=0.0247 p_fixed=0.000, median|d|=0.0354 p_free=0.000
+  [0.00<=z<0.05                ] N=  298 fsky=0.330 | fixed-axis d_n = +0.6459 +- 0.2067 | free |d| = 2.9051 toward (272,4), proj on n +2.6167, kin-corr +2.6154 | null: sigma(d_n)=0.1680 p_fixed=0.001, median|d|=0.2128 p_free=0.000
+  [0.05<=z<0.20                ] N= 3403 fsky=0.330 | fixed-axis d_n = +1.8060 +- 0.0840 | free |d| = 2.0172 toward (272,-19), proj on n +2.0144, kin-corr +2.0131 | null: sigma(d_n)=0.0480 p_fixed=0.000, median|d|=0.0642 p_free=0.000
+  [0.20<=z<0.50                ] N= 5304 fsky=0.330 | fixed-axis d_n = +1.9933 +- 0.0702 | free |d| = 1.8322 toward (266,-24), proj on n +1.8274, kin-corr +1.8261 | null: sigma(d_n)=0.0382 p_fixed=0.000, median|d|=0.0504 p_free=0.000
+  [0.50<=z<5.00                ] N= 3102 fsky=0.330 | fixed-axis d_n = +3.1849 +- 0.1164 | free |d| = 3.8898 toward (272,-19), proj on n +3.8824, kin-corr +3.8811 | null: sigma(d_n)=0.0503 p_fixed=0.000, median|d|=0.0669 p_free=0.000
+  [z>=0.05 (far)               ] N=11809 fsky=0.330 | fixed-axis d_n = +2.1924 +- 0.0492 | free |d| = 2.2840 toward (269,-21), proj on n +2.2836, kin-corr +2.2824 | null: sigma(d_n)=0.0253 p_fixed=0.000, median|d|=0.0339 p_free=0.000
+  [excluding z<0.05            ] N=11809 fsky=0.330 | fixed-axis d_n = +2.1924 +- 0.0492 | free |d| = 2.2840 toward (269,-21), proj on n +2.2836, kin-corr +2.2824 | null: sigma(d_n)=0.0260 p_fixed=0.000, median|d|=0.0343 p_free=0.000
+  [all, |b|>30                 ] N= 9579 fsky=0.250 | fixed-axis d_n = +1.7766 +- 0.0468 | free |d| = 2.4528 toward (267,-16), proj on n +2.4371, kin-corr +2.4359 | null: sigma(d_n)=0.0285 p_fixed=0.000, median|d|=0.0406 p_free=0.000
+  2M++ local prediction (10-135 Mpc/h volume-limited, b_cl/b_g=2.5): d_n = -0.1826, free |d| = 0.3242 toward (254,44)
+  eps from all   : (d_n - kin)/R = +0.9638 +- 0.0246; 95% |eps| < 1.0042 (R = 2.2; R = 3-7 range -> |eps| < 0.7415 - 0.3178)
+  eps from far   : (d_n - kin)/R = +0.9892 +- 0.0250; 95% |eps| < 1.0303 (R = 2.2; R = 3-7 range -> |eps| < 0.7607 - 0.3260)
+  eps from exp   : (d_n - kin)/R = +0.0752 +- 0.0162; 95% |eps| < 0.1019 (R = 2.2; R = 3-7 range -> |eps| < 0.0752 - 0.0322)
+  eps from expfar: (d_n - kin)/R = +0.0829 +- 0.0165; 95% |eps| < 0.1100 (R = 2.2; R = 3-7 range -> |eps| < 0.0812 - 0.0348)
+
+=== ACT_DR5: N_total 4195, footprint 12398 deg^2 (fsky 0.301); M_typ = 3.0e+14 Msun, sigma(M) = 0.796, R = delta_c/sigma^2 = 2.66
+  [all                         ] N= 4195 fsky=0.301 | fixed-axis d_n = +0.0158 +- 0.0354 | free |d| = 0.2500 toward (289,40), proj on n +0.1072, kin-corr +0.1059 | null: sigma(d_n)=0.0355 p_fixed=0.657, median|d|=0.0488 p_free=0.000
+  [0.00<=z<0.05] N=4 too few, skipped
+  [0.05<=z<0.20                ] N=  265 fsky=0.301 | fixed-axis d_n = -0.1981 +- 0.1357 | free |d| = 0.2145 toward (18,62), proj on n -0.1000, kin-corr -0.1012 | null: sigma(d_n)=0.1418 p_fixed=0.162, median|d|=0.2020 p_free=0.446
+  [0.20<=z<5.00                ] N= 3926 fsky=0.301 | fixed-axis d_n = +0.0308 +- 0.0367 | free |d| = 0.2579 toward (287,38), proj on n +0.1209, kin-corr +0.1197 | null: sigma(d_n)=0.0356 p_fixed=0.400, median|d|=0.0501 p_free=0.000
+  [z>=0.05 (far)               ] N= 4191 fsky=0.301 | fixed-axis d_n = +0.0158 +- 0.0355 | free |d| = 0.2489 toward (289,40), proj on n +0.1066, kin-corr +0.1054 | null: sigma(d_n)=0.0353 p_fixed=0.653, median|d|=0.0489 p_free=0.000
+  [excluding z<0.05            ] N= 4191 fsky=0.301 | fixed-axis d_n = +0.0158 +- 0.0355 | free |d| = 0.2489 toward (289,40), proj on n +0.1066, kin-corr +0.1054 | null: sigma(d_n)=0.0367 p_fixed=0.659, median|d|=0.0506 p_free=0.000
+  2M++ local prediction (10-135 Mpc/h volume-limited, b_cl/b_g=2.5): d_n = -0.2083, free |d| = 0.4146 toward (147,42)
+  eps from all   : (d_n - kin)/R = +0.0055 +- 0.0188; 95% |eps| < 0.0365 (R = 2.7; R = 3-7 range -> |eps| < 0.0324 - 0.0139)
+  eps from far   : (d_n - kin)/R = +0.0055 +- 0.0188; 95% |eps| < 0.0364 (R = 2.7; R = 3-7 range -> |eps| < 0.0323 - 0.0138)
+
+=== SPT-SZ: N_total 677, footprint 2647 deg^2 (fsky 0.064); M_typ = 3.5e+14 Msun, sigma(M) = 0.768, R = delta_c/sigma^2 = 2.86
+  [all                         ] N=  674 fsky=0.064 | fixed-axis d_n = +0.6059 +- 0.2460 | free |d| = 0.6929 toward (264,-34), proj on n +0.6742, kin-corr +0.6729 | null: sigma(d_n)=0.1900 p_fixed=0.009, median|d|=0.4014 p_free=0.222
+  [0.00<=z<0.05] N=28 too few, skipped
+  [0.05<=z<0.20] N=33 too few, skipped
+  [0.20<=z<5.00                ] N=  613 fsky=0.064 | fixed-axis d_n = +0.3892 +- 0.2307 | free |d| = 2.1859 toward (282,-47), proj on n +1.9451, kin-corr +1.9438 | null: sigma(d_n)=0.1942 p_fixed=0.047, median|d|=0.4181 p_free=0.089
+  [z>=0.05 (far)               ] N=  646 fsky=0.064 | fixed-axis d_n = +0.3480 +- 0.2197 | free |d| = 2.1519 toward (288,-42), proj on n +1.9568, kin-corr +1.9555 | null: sigma(d_n)=0.1929 p_fixed=0.069, median|d|=0.4132 p_free=0.092
+  [excluding z<0.05            ] N=  646 fsky=0.064 | fixed-axis d_n = +0.3480 +- 0.2197 | free |d| = 2.1519 toward (288,-42), proj on n +1.9568, kin-corr +1.9555 | null: sigma(d_n)=0.1868 p_fixed=0.056, median|d|=0.4045 p_free=0.074
+  2M++ local prediction (10-135 Mpc/h volume-limited, b_cl/b_g=2.5): d_n = +0.1495, free |d| = 0.9599 toward (107,72)
+  eps from all   : (d_n - kin)/R = +0.2116 +- 0.1088; 95% |eps| < 0.3905 (R = 2.9; R = 3-7 range -> |eps| < 0.3720 - 0.1594)
+  eps from far   : (d_n - kin)/R = +0.1213 +- 0.1023; 95% |eps| < 0.2896 (R = 2.9; R = 3-7 range -> |eps| < 0.2759 - 0.1182)
+
+Done.
