@@ -42,3 +42,7 @@ Section and label references are to `big-pool-bangs.md` (current release). Updat
 Group IV has no observation in it beyond what runs through the ghost wave; it is where the framework has the least to test and the most to build.
 
 Ten of the twenty-three have answers, seven of them negative (one only over 11% of the sky).
+
+## Coda: what is known but unknown
+
+Every spectrum has two tails we cannot see, and neither is dark. Below the lowest observable frequency lie the waves longer than our horizon: they exist, the framework counts them (the slope of H5 (Our Position – Where Is Nemo), the walls of the tessellation, the remnant beyond the horizon), and their only trace inside the horizon is a gradient and a quadrupole. Above the highest observable frequency lies the non-linear, sub-resolution tail, where the same mass hides in the froth. `figures/pool_spectrum.png` plots the mass of the universe as an energy–frequency spectrum next to an ocean with no land (Pierson–Moskowitz) and a finite pool (JONSWAP): the universe's spectrum is far broader on both sides of its peak, the tail falls as the third power of frequency where the ocean's falls as the fifth, and a single line of sight, one buoy, sees no peak at all. The known unknowns are the two tails; the questions above are what can be read from the part in between.

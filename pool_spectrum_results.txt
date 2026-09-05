@@ -1,0 +1,5 @@
+peak: k_p = 0.0168 h/Mpc (3-D), K_p = 0.0105 h/Mpc (2-D), lensing band peak l ~ 11; fsky = 0.68
+high-frequency slopes (f/f_p = 10..100): ocean PM -5.00, universe 3-D -2.12, projected -1.12, 1-D cut -0.47
+low-frequency slopes (f/f_p = 0.2..0.5): ocean PM 660.23 (exp cut-off), universe 3-D 0.66 (k^n_s), projected 0.02, 1-D -0.00
+horizon cut: k_H = 7e-5 h/Mpc = 0.0042 of the peak frequency; everything to the left is the unobservable low-frequency tail
+shoaling (Green's law A ~ h^-1/4): a 7% amplitude asymmetry across the sky (Planck hemispherical asymmetry, l<60) corresponds to a 28% depth change across the pool
