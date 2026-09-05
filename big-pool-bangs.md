@@ -394,7 +394,7 @@ We set out with three questions and a pool table. Here is where the balls came t
 
 ### What surprised us
 
-Seven things we did not expect when we racked the balls, and two things we were glad to lose.
+Eight things we did not expect when we racked the balls, and two things we were glad to lose.
 
 *A one-sided sky.* All eight of the most extreme spots in the Planck map lie in the southern galactic hemisphere, none in the north, and the Cold Spot is one of them.
 
@@ -409,6 +409,8 @@ Seven things we did not expect when we racked the balls, and two things we were 
 *The rings solve the budget.* We spent a long time trying to make one history do two jobs — a jammed rebound whose ejecta are the dark matter, and a radiation era that leaves cold relics — and the energy budget refused every version of it. The answer was not a new ingredient but a map: the same relics, different physics by ring. We live in Kernel 0,0,0, the only ring with light, which is why there is anyone here to notice.
 
 *The ball did not peel, yet.* When we replaced the billiard balls with a fluid, our first toy seemed to sort itself into three bands at fixed mass fractions and to need twice the escape speed to unbind $88\%$. Our own referee read the code and showed both numbers were the kick profile and the band-finder talking, not the fluid. The second toy then blew up — energies of $10^{21}$ in a system that started with one — and was withdrawn as well. Only the third, which reports its own energy conservation in every run, is allowed to speak (Sec. 3.3), and what it says is smaller: two tissues, not three, and the $88\%$ belongs to the skin. We withdrew them (Sec. 3.2) and rebuilt the toy so that the ballistic answer is a step and anything else is physics (Sec. 3.3). The surprise here is a methodological one: releasing the code is what caught it.
+
+*The flows are surf, not swell.* We went looking for the tilt of the whole pool — a slope across our horizon that would say which way the origin of Kernel 0,0,0 lies — and the compass needles all pointed the same way: the void excess, the bulk flow, the cluster dipole, all toward $(270°, -22°)$. Then we asked the flows how far away the source was, the way a seismologist asks a seismogram, and they answered: nearby. The flow signal is largest close to us and dies by about $570$ Mpc; a wave that has broken, not a wave passing under us. The mass along that line has piled into the caustics of Shapley and the Great Attractor, and everything within a few hundred megaparsecs is sliding into the foam. So the direction persists with depth, as a breaker's does, and the amplitude decays, as a slope's would not. The swell, if the seed sits five horizons out, is a tilt of at most a few per mille hiding under the surf, and only far-field stations — the microwave quadrupole as seen from distant clusters, the hydrogen map of the dark ages, the gravitational-wave sky — can feel it. The cosmic web, it turns out, is a beach: the same equation that breaks water on a shore, Burgers', builds the pancakes and filaments, and what we had taken for the tide was the surf.
 
 ### What we got rid of: the dark-matter particle, and the inflaton
 
