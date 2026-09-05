@@ -2,6 +2,8 @@
 
 Speculative cosmology paper: a jammed hard-sphere Planck-relic core, a loop-quantum-cosmology-type bounce, chaotic ejection as the origin of dark matter, and a set of hypotheses about where we sit inside our own Big Pool Bang and where a second one might be (the Cold Spot direction). Every hypothesis carries explicit falsifiers and a pre-registered test list.
 
+The framework's decidable questions, with status, are collected in [CELESTIAL_QUESTIONS.md](CELESTIAL_QUESTIONS.md) (twenty-three, four groups).
+
 ## Paper
 
 Single current version at the head of the repo: `big-pool-bangs.md` (source), `big-pool-bangs.tex`, `big-pool-bangs.pdf`.
