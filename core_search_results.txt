@@ -1,0 +1,81 @@
+DES Y3 KS map: nside 1024, mask area 4742 deg^2, raw pixel std inside mask 0.00254
+Counterpart catalogues:
+  catalogue DESY3_redMaPPer          21092 entries
+    (group catalog/cluster, lambda range 20.0-221.7)
+  catalogue DESY1_redMaPPer           6729 entries
+  catalogue Planck_PSZ2               1653 entries
+  catalogue ACT_DR5                   4195 entries
+  catalogue SPT-SZ                     677 entries
+  catalogue eRASS1                   12247 entries
+  catalogue MCXC                      1743 entries
+  catalogue 2MRS_groups              25474 entries
+  DESY3_redMaPPer        entries inside DES mask: 20840
+  DESY1_redMaPPer        entries inside DES mask: 6476
+  Planck_PSZ2            entries inside DES mask: 248
+  ACT_DR5                entries inside DES mask: 1775
+  SPT-SZ                 entries inside DES mask: 550
+  eRASS1                 entries inside DES mask: 4604
+  MCXC                   entries inside DES mask: 277
+  2MRS_groups            entries inside DES mask: 2870
+CosmicFlows-4 per-group velocities: skipped (table3.dat column layout unverified); using 2M++ velocity field and the published CF4 bulk-flow axis (298,-8) instead.
+Mass convention: M_ap = Sigma_crit(z_l, z_s=0.63) * sum_pix (kappa - kappa_annulus) * A_pix(z_l) inside theta_ap = 2 FWHM, background from the 2-3 FWHM annulus; KS maps are noise-dominated and biased low by the smoothing, so treat as order of magnitude.
+
+=== FWHM 5 arcmin: sigma_MAD = 0.00248, interior area 4461 deg^2, peaks S/N>=4.0: 10, S/N>=5.0: 2
+    interior pixels with S/N>=4: 833, >=5: 146 (of 1360729)
+
+=== FWHM 10 arcmin: sigma_MAD = 0.00245, interior area 4266 deg^2, peaks S/N>=4.0: 11, S/N>=5.0: 3
+    interior pixels with S/N>=4: 839, >=5: 151 (of 1301359)
+
+=== FWHM 20 arcmin: sigma_MAD = 0.00234, interior area 4150 deg^2, peaks S/N>=4.0: 10, S/N>=5.0: 2
+    interior pixels with S/N>=4: 859, >=5: 172 (of 1265830)
+
+
+================ ALL PEAKS (S/N >= 4) ================
+FWHM  S/N   kappa    RA       Dec      l       b     edge'  flags   M_ap(z_l=0.05,0.1,0.2) [Msun]   counterparts
+   5  5.80 +0.0144   13.975   -1.380  125.50  -64.23     7  -       6.4e+12 1.3e+13 3.1e+13   DESY3_redMaPPer(sep 5.5', z=0.416, 29.7); Planck_PSZ2(sep 7.8', z=0.044, 15.2)
+   5  5.39 +0.0133   49.583  -44.400  253.17  -55.97    13  -       5.1e+12 1.1e+13 2.4e+13   DESY3_redMaPPer(sep 8.5', z=0.233, 23.5); DESY1_redMaPPer(sep 6.8', z=0.231, 37.6); Planck_PSZ2(sep 9.9', z=0.075, 10.5); ACT_DR5(sep 5.5', z=0.111, 5.29); eRASS1(sep 5.8', z=0.089, 3.5)
+   5  4.91 +0.0122  326.599  -57.114  337.18  -45.81    18  -       7.6e+12 1.6e+13 3.6e+13   DESY3_redMaPPer(sep 5.8', z=0.485, 34.2); DESY1_redMaPPer(sep 5.8', z=0.483, 37.1); Planck_PSZ2(sep 9.9', z=0.076, 7.19)
+   5  4.65 +0.0115   86.146  -47.994  254.76  -30.67    24  -       9.3e+12 1.9e+13 4.4e+13   DESY3_redMaPPer(sep 6.5', z=0.123, 108); DESY1_redMaPPer(sep 9.6', z=0.459, 67.7); Planck_PSZ2(sep 8.7', z=0.125, 5.21); eRASS1(sep 7.6', z=0.119, 81.6); MCXC(sep 9.8', z=0.125)
+   5  4.42 +0.0109   49.552  -45.537  255.10  -55.62    16  -       6.3e+12 1.3e+13 3.0e+13   NONE
+   5  4.37 +0.0108   28.477   -6.843  161.94  -64.87    17  -       5.3e+12 1.1e+13 2.5e+13   NONE
+   5  4.29 +0.0106  328.558  -57.733  335.74  -46.52     7  -       8.6e+12 1.8e+13 4.1e+13   Planck_PSZ2(sep 7.9', z=0.076, 14.6); ACT_DR5(sep 7.7', z=0.076, 5.7); eRASS1(sep 7.7', z=0.075, 121); MCXC(sep 7.4', z=0.076)
+   5  4.26 +0.0105   55.832  -53.716  265.13  -48.84    24  -       8.2e+12 1.7e+13 3.9e+13   DESY3_redMaPPer(sep 9.5', z=0.586, 38.6); DESY1_redMaPPer(sep 9.5', z=0.584, 38.9); Planck_PSZ2(sep 8.0', z=0.059, 19.8); ACT_DR5(sep 6.1', z=0.060, 5.53); eRASS1(sep 6.7', z=0.059, 638); MCXC(sep 6.2', z=0.059); 2MRS_groups(sep 7.4', z=0.065, 4.71e+15)
+   5  4.17 +0.0103   17.314  -15.443  143.34  -77.60    17  -       7.3e+12 1.5e+13 3.5e+13   DESY3_redMaPPer(sep 7.6', z=0.109, 74.2); Planck_PSZ2(sep 7.6', z=0.053, 6.92); MCXC(sep 6.4', z=0.053)
+   5  4.09 +0.0101   71.297  -44.994  250.32  -40.68    10  -       3.9e+12 8.2e+12 1.9e+13   NONE
+  10  5.78 +0.0142   13.975   -1.380  125.50  -64.23     7  EDGE    8.6e+13 1.8e+14 4.1e+14   DESY3_redMaPPer(sep 5.5', z=0.416, 29.7); Planck_PSZ2(sep 7.8', z=0.044, 15.2); MCXC(sep 11.5', z=0.044)
+  10  5.39 +0.0132   49.583  -44.400  253.17  -55.97    13  -       6.5e+13 1.4e+14 3.1e+14   DESY3_redMaPPer(sep 8.5', z=0.233, 23.5); DESY1_redMaPPer(sep 6.8', z=0.231, 37.6); Planck_PSZ2(sep 9.9', z=0.075, 10.5); ACT_DR5(sep 5.5', z=0.111, 5.29); eRASS1(sep 5.8', z=0.089, 3.5); MCXC(sep 10.4', z=0.075)
+  10  5.14 +0.0126   14.194   -1.268  125.99  -64.11     3  EDGE    7.3e+13 1.5e+14 3.5e+14   DESY3_redMaPPer(sep 8.4', z=0.448, 21.7); Planck_PSZ2(sep 8.1', z=0.044, 15.2); MCXC(sep 7.7', z=0.044); 2MRS_groups(sep 11.5', z=0.044, 1.87e+15)
+  10  4.88 +0.0120  326.599  -57.114  337.18  -45.81    15  -       9.8e+13 2.1e+14 4.7e+14   DESY3_redMaPPer(sep 5.8', z=0.485, 34.2); DESY1_redMaPPer(sep 5.8', z=0.483, 37.1); Planck_PSZ2(sep 9.9', z=0.076, 7.19); eRASS1(sep 10.4', z=0.073, 71); MCXC(sep 10.5', z=0.076)
+  10  4.62 +0.0113   86.146  -47.994  254.76  -30.67    23  -       9.9e+13 2.1e+14 4.7e+14   DESY3_redMaPPer(sep 6.5', z=0.123, 108); DESY1_redMaPPer(sep 9.6', z=0.459, 67.7); Planck_PSZ2(sep 8.7', z=0.125, 5.21); eRASS1(sep 7.6', z=0.119, 81.6); MCXC(sep 9.8', z=0.125); 2MRS_groups(sep 12.5', z=0.052, 1.03e+15)
+  10  4.40 +0.0108   49.552  -45.537  255.10  -55.62    16  -       7.7e+13 1.6e+14 3.6e+14   DESY3_redMaPPer(sep 12.1', z=0.100, 62.9); eRASS1(sep 13.1', z=0.077, 28.4); 2MRS_groups(sep 12.5', z=0.071, 4.93e+15)
+  10  4.36 +0.0107   28.477   -6.843  161.94  -64.87    17  -       7.1e+13 1.5e+14 3.4e+14   DESY3_redMaPPer(sep 14.2', z=0.632, 20.1)
+  10  4.25 +0.0104  328.558  -57.733  335.74  -46.52     7  EDGE    8.8e+13 1.8e+14 4.2e+14   Planck_PSZ2(sep 7.9', z=0.076, 14.6); ACT_DR5(sep 7.7', z=0.076, 5.7); eRASS1(sep 7.7', z=0.075, 121); MCXC(sep 7.4', z=0.076)
+  10  4.22 +0.0103   55.832  -53.716  265.13  -48.84    21  -       9.1e+13 1.9e+14 4.3e+14   DESY3_redMaPPer(sep 9.5', z=0.586, 38.6); DESY1_redMaPPer(sep 9.5', z=0.584, 38.9); Planck_PSZ2(sep 8.0', z=0.059, 19.8); ACT_DR5(sep 6.1', z=0.060, 5.53); eRASS1(sep 6.7', z=0.059, 638); MCXC(sep 6.2', z=0.059); 2MRS_groups(sep 7.4', z=0.065, 4.71e+15)
+  10  4.14 +0.0101   17.314  -15.443  143.34  -77.60    17  -       9.1e+13 1.9e+14 4.3e+14   DESY3_redMaPPer(sep 7.6', z=0.109, 74.2); Planck_PSZ2(sep 7.6', z=0.053, 6.92); MCXC(sep 6.4', z=0.053)
+  10  4.10 +0.0100   71.277  -45.043  250.38  -40.69    13  -       4.8e+13 1.0e+14 2.3e+14   eRASS1(sep 11.3', z=0.279, 3.73)
+  20  5.79 +0.0136   13.931   -1.343  125.39  -64.19    13  EDGE    8.5e+14 1.8e+15 4.0e+15   DESY3_redMaPPer(sep 8.2', z=0.416, 29.7); Planck_PSZ2(sep 8.6', z=0.044, 15.2); MCXC(sep 11.5', z=0.044); 2MRS_groups(sep 19.6', z=0.044, 1.87e+15)
+  20  5.44 +0.0127   49.583  -44.400  253.17  -55.97    46  -       5.2e+14 1.1e+15 2.5e+15   DESY3_redMaPPer(sep 8.5', z=0.233, 23.5); DESY1_redMaPPer(sep 6.8', z=0.231, 37.6); Planck_PSZ2(sep 9.9', z=0.075, 10.5); ACT_DR5(sep 5.5', z=0.111, 5.29); eRASS1(sep 5.8', z=0.089, 3.5); MCXC(sep 10.4', z=0.075)
+  20  4.80 +0.0112  326.599  -57.114  337.18  -45.81    15  EDGE    5.8e+14 1.2e+15 2.8e+15   DESY3_redMaPPer(sep 5.8', z=0.485, 34.2); DESY1_redMaPPer(sep 5.8', z=0.483, 37.1); Planck_PSZ2(sep 9.9', z=0.076, 7.19); ACT_DR5(sep 22.2', z=0.480, 12.4); SPT-SZ(sep 22.4', z=0.480, 12.6); eRASS1(sep 10.4', z=0.073, 71); MCXC(sep 10.5', z=0.076); 2MRS_groups(sep 22.7', z=0.056, 1.71e+14)
+  20  4.49 +0.0105   86.146  -47.994  254.76  -30.67    60  -       6.9e+14 1.4e+15 3.3e+15   DESY3_redMaPPer(sep 6.5', z=0.123, 108); DESY1_redMaPPer(sep 9.6', z=0.459, 67.7); Planck_PSZ2(sep 8.7', z=0.125, 5.21); ACT_DR5(sep 17.7', z=0.459, 4.21); SPT-SZ(sep 17.6', z=0.434, 4.82); eRASS1(sep 7.6', z=0.119, 81.6); MCXC(sep 9.8', z=0.125); 2MRS_groups(sep 12.5', z=0.052, 1.03e+15)
+  20  4.35 +0.0102   49.552  -45.537  255.10  -55.62    20  EDGE    4.5e+14 9.4e+14 2.1e+15   DESY3_redMaPPer(sep 12.1', z=0.100, 62.9); DESY1_redMaPPer(sep 21.4', z=0.507, 22.4); eRASS1(sep 13.1', z=0.077, 28.4); 2MRS_groups(sep 12.5', z=0.071, 4.93e+15)
+  20  4.34 +0.0102   28.477   -6.843  161.94  -64.87    14  EDGE    5.2e+14 1.1e+15 2.5e+15   DESY3_redMaPPer(sep 14.2', z=0.632, 20.1)
+  20  4.14 +0.0097   71.277  -45.043  250.38  -40.69    21  -       4.2e+14 8.8e+14 2.0e+15   DESY3_redMaPPer(sep 18.5', z=0.671, 25.7); DESY1_redMaPPer(sep 16.8', z=0.237, 20.2); eRASS1(sep 11.3', z=0.279, 3.73)
+  20  4.10 +0.0096   55.832  -53.716  265.13  -48.84    17  EDGE    5.0e+14 1.1e+15 2.4e+15   DESY3_redMaPPer(sep 9.5', z=0.586, 38.6); DESY1_redMaPPer(sep 9.5', z=0.584, 38.9); Planck_PSZ2(sep 8.0', z=0.059, 19.8); ACT_DR5(sep 6.1', z=0.060, 5.53); SPT-SZ(sep 16.1', z=0.518, 5.54); eRASS1(sep 6.7', z=0.059, 638); MCXC(sep 6.2', z=0.059); 2MRS_groups(sep 7.4', z=0.065, 4.71e+15)
+  20  4.10 +0.0096  328.474  -57.685  335.83  -46.50     4  EDGE    3.2e+14 6.8e+14 1.5e+15   DESY3_redMaPPer(sep 24.9', z=0.465, 22.2); DESY1_redMaPPer(sep 24.9', z=0.474, 20.3); Planck_PSZ2(sep 10.8', z=0.076, 14.6); ACT_DR5(sep 10.6', z=0.076, 5.7); eRASS1(sep 10.6', z=0.075, 121); MCXC(sep 10.4', z=0.076)
+  20  4.02 +0.0094   17.314  -15.443  143.34  -77.60    33  -       5.6e+14 1.2e+15 2.7e+15   DESY3_redMaPPer(sep 7.6', z=0.109, 74.2); Planck_PSZ2(sep 7.6', z=0.053, 6.92); MCXC(sep 6.4', z=0.053); 2MRS_groups(sep 15.0', z=0.055, 8.59e+14)
+
+
+================ UNMATCHED PEAKS ================
+3 unmatched of 31 peaks (all scales pooled); unmatched with S/N>=5: 0; unmatched, S/N>=5, no EDGE flag: 0
+FWHM 5' S/N 4.42 kappa +0.0109 RA 49.552 Dec -45.537 (l,b)=(255.1,-55.6) edge 16' flags [-]
+     M_ap: z_l=0.02: 2.5e+12 z_l=0.05: 6.3e+12 z_l=0.1: 1.3e+13 z_l=0.2: 3.0e+13 z_l=0.4: 9.7e+13
+     2M++ LOS 20-200 Mpc/h: mean delta -0.28, min delta -0.94 (UNDERDENSE); 2M++ mean LOS peculiar velocity +36 km/s (+ = flowing toward this direction)
+     angle between peak and CF4 bulk-flow axis (l,b)=(298,-8) (Watkins+23): 58 deg
+FWHM 5' S/N 4.37 kappa +0.0108 RA 28.477 Dec -6.843 (l,b)=(161.9,-64.9) edge 17' flags [-]
+     M_ap: z_l=0.02: 2.1e+12 z_l=0.05: 5.3e+12 z_l=0.1: 1.1e+13 z_l=0.2: 2.5e+13 z_l=0.4: 8.1e+13
+     2M++ LOS 20-200 Mpc/h: mean delta +0.24, min delta -0.79 (overdense); 2M++ mean LOS peculiar velocity -130 km/s (+ = flowing toward this direction)
+     angle between peak and CF4 bulk-flow axis (l,b)=(298,-8) (Watkins+23): 100 deg
+FWHM 5' S/N 4.09 kappa +0.0101 RA 71.297 Dec -44.994 (l,b)=(250.3,-40.7) edge 10' flags [-]
+     M_ap: z_l=0.02: 1.5e+12 z_l=0.05: 3.9e+12 z_l=0.1: 8.2e+12 z_l=0.2: 1.9e+13 z_l=0.4: 6.0e+13
+     2M++ LOS 20-200 Mpc/h: mean delta +0.13, min delta -0.93 (overdense); 2M++ mean LOS peculiar velocity +34 km/s (+ = flowing toward this direction)
+     angle between peak and CF4 bulk-flow axis (l,b)=(298,-8) (Watkins+23): 53 deg

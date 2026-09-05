@@ -6,7 +6,7 @@ Section and label references are to `big-pool-bangs.md` (current release). Updat
 
 ## I. Where are we? — H5 (Our Position – Where Is Nemo), H8 (Precious Rings – Dante's Purgatory)
 
-1. **The Holy Grail.** Is the cold core of our own bang inside our horizon: a naked mass of 10^13 suns or more with no galaxy, no gas and no light? *Decided by:* weak-lensing peaks without counterparts, Einstein rings around nothing, flows converging on empty space (Sec. 3.1). *Status:* archival search running; prior odds ~1%, so a find is evidence and a null is free.
+1. **The Holy Grail.** Is the cold core of our own bang inside our horizon: a naked mass of 10^13 suns or more with no galaxy, no gas and no light? *Decided by:* weak-lensing peaks without counterparts, Einstein rings around nothing, flows converging on empty space (Sec. 3.1). *Status:* answered no in the DES Y3 footprint (11% of sky; no naked mass above ~10^14 suns at z~0.1; `core_search.py`); open elsewhere, Euclid next. Prior odds ~1%, so the null is free.
 2. Are we displaced from the centre of our own bang? *Decided by:* void-abundance dipole (2M++, DESI/BOSS voids), P4 (Off-Centre Flow). *Status:* hint (1.5–2σ toward the southern void excess).
 3. Is the primordial temperature, and the dark-to-baryon ratio, flat across the observable volume? *Decided by:* SZ temperature–redshift relation, cluster baryon fractions, P12 (Kernel Gradient). *Status:* flat to a few percent; consistent.
 4. Does the expansion anisotropy persist with depth along one axis? *Decided by:* CosmicFlows-4 bulk flow, X-ray cluster H0 dipole, supernova dipoles (Sec. 7). *Status:* hint (2σ, direction (260°–305°, −30°)).
@@ -41,4 +41,4 @@ Section and label references are to `big-pool-bangs.md` (current release). Updat
 
 Group IV has no observation in it beyond what runs through the ghost wave; it is where the framework has the least to test and the most to build.
 
-Nine of the twenty-three have answers, six of them negative.
+Ten of the twenty-three have answers, seven of them negative (one only over 11% of the sky).
