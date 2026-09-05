@@ -602,6 +602,8 @@ Whitford A. M., Howlett C., Davis T. M., 2023, "Evaluating bulk flow estimators 
 
 Wu H.-Y., Huterer D., 2017, "Sample variance in the local measurements of the Hubble constant", MNRAS 471, 4946 (arXiv:1706.09723).
 
+Zel'dovich Ya. B., 1970, "Gravitational instability: an approximate theory for large density perturbations", A&A 5, 84.
+
 Zel'dovich Ya. B., Kobzarev I. Yu., Okun L. B., 1974, "Cosmological consequences of a spontaneous breakdown of a discrete symmetry", Zh. Eksp. Teor. Fiz. 67, 3 (Sov. Phys. JETP 40, 1, 1975).
 
 Zhang P., Stebbins A., 2011, "Confirmation of the Copernican principle at Gpc radial scale and above from the kinetic Sunyaev–Zel'dovich effect power spectrum", Phys. Rev. Lett. 107, 041301 (arXiv:1009.3967).
