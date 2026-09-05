@@ -1,0 +1,126 @@
+
+=== Grid 1: CONTACT (eta_c=0.03/0.1/0.3 pooled)  (n=28 grid points; seed scatter sigma_seed ~ 0.031, mean half-range 0.019) ===
+form                      k  cx    RMS RMS/sc LOO-RMS      BIC  parameters
+logistic_sigwidth         3   5  0.050   1.62   0.076   -158.0  [0.91, 0.103, 0.162]   1/(1+exp(-(f-fc)/(w0+w1 sigma)))
+logistic_feff             2   4  0.053   1.72   0.060   -157.7  [1.072, 0.23]   1/(1+exp(-(f sqrt(1+sigma^2)-fc)/w))
+erfc_escape               3   6  0.033   1.08   0.041   -180.4  [0.931, 0.202, 0.89]   0.5 erfc((fc-f)/sqrt(2(w0^2+(k sigma f)^2)))
+erfc_escape_k1            2   5  0.035   1.12   0.037   -181.7  [0.94, 0.204]   0.5 erfc((fc-f)/sqrt(2(w0^2+sigma^2 f^2)))   [single-shell escape, k=1]
+tautology_1-fbar^-3       1   3  0.109   3.53   0.113   -120.9  [0.754]   max(0, 1-(fc/(f sqrt(1+sigma^2)))^3)
+KE_over_U_linear          2   3  0.045   1.45   0.051   -167.5  [0.238, -0.066]   clip(a*2f^2(1+sigma^2)+b)
+powerlaw_feff             3   5  0.026   0.85   0.035   -194.1  [0.773, 0.545, 0.755]   a (f sqrt(1+sigma^2)-fc)_+^n
+powerlaw_f_sigma          4   6  0.023   0.74   0.028   -198.4  [0.977, 0.584, 0.856, 0.226]   a (f-fc+c sigma)_+^n
+exp_sat_feff              3   6  0.024   0.78   0.031   -199.0  [1.231, 0.51, 1.088]   1-exp(-a (f sqrt(1+sigma^2)-fc)_+^n)
+exp_sat_KE                3   6  0.025   0.82   0.032   -196.1  [-0.429, 0.587, 0.787]   1-exp(-a (KE/|U| - q0)_+^n)
+rational_feff             2   4  0.026   0.84   0.027   -198.3  [0.382, 0.697]   x^2/(x^2+b^2), x=(f sqrt(1+sigma^2)-fc)_+
+poly2_f_sigma             6   6  0.019   0.60   0.025   -203.3  [-0.896, 1.842, 0.295, -0.458, -0.246, 0.112]   quadratic polynomial in f, sigma (6 coeff)
+
+=== Grid 1: BALLISTIC null (eta_c=1e9)  (n=28 grid points; seed scatter sigma_seed ~ 0.041, mean half-range 0.027) ===
+form                      k  cx    RMS RMS/sc LOO-RMS      BIC  parameters
+logistic_sigwidth         3   5  0.171   4.16   0.241    -89.1  [0.685, 0.176, 0.019]   1/(1+exp(-(f-fc)/(w0+w1 sigma)))
+logistic_feff             2   4  0.205   5.00   0.240    -82.2  [0.773, 0.273]   1/(1+exp(-(f sqrt(1+sigma^2)-fc)/w))
+erfc_escape               3   6  0.172   4.21   0.248    -88.4  [0.679, 0.308, 0.163]   0.5 erfc((fc-f)/sqrt(2(w0^2+(k sigma f)^2)))
+erfc_escape_k1            2   5  0.184   4.50   0.261    -88.1  [0.671, 0.299]   0.5 erfc((fc-f)/sqrt(2(w0^2+sigma^2 f^2)))   [single-shell escape, k=1]
+tautology_1-fbar^-3       1   3  0.247   6.02   0.271    -75.1  [0.611]   max(0, 1-(fc/(f sqrt(1+sigma^2)))^3)
+KE_over_U_linear          2   3  0.211   5.16   0.247    -80.4  [0.288, 0.141]   clip(a*2f^2(1+sigma^2)+b)
+powerlaw_feff             3   5  0.210   5.13   0.260    -77.3  [0.499, -0.207, 1.456]   a (f sqrt(1+sigma^2)-fc)_+^n
+powerlaw_f_sigma          4   6  0.147   3.58   0.181    -94.2  [0.0, -3.033, 10.768, -0.095]   a (f-fc+c sigma)_+^n
+exp_sat_feff              3   6  0.206   5.03   0.241    -78.5  [0.0, -2.759, 9.083]   1-exp(-a (f sqrt(1+sigma^2)-fc)_+^n)
+exp_sat_KE                3   6  0.204   4.98   0.245    -79.1  [-0.125, -1.095, 2.027]   1-exp(-a (KE/|U| - q0)_+^n)
+rational_feff             2   4  0.214   5.22   0.257    -79.8  [-0.005, 0.768]   x^2/(x^2+b^2), x=(f sqrt(1+sigma^2)-fc)_+
+poly2_f_sigma             6   6  0.127   3.10   0.179    -95.6  [0.96, -3.018, -0.263, 3.412, -0.1, 0.199]   quadratic polynomial in f, sigma (6 coeff)
+
+=== Grid 1: DIFFERENCE U_contact - U_ballistic ===
+grid (rows f, cols sigma=0,0.3,0.5,1.0):
+  f=0.3: contact [0.0, 0.0, 0.0, 0.01]  ballistic [0.36, 0.35, 0.27, 0.15]  diff [-0.36, -0.35, -0.27, -0.14]
+  f=0.4: contact [0.0, 0.0, 0.01, 0.07]  ballistic [0.35, 0.33, 0.16, 0.16]  diff [-0.35, -0.33, -0.15, -0.09]
+  f=0.5: contact [0.0, 0.04, 0.05, 0.19]  ballistic [0.36, 0.3, 0.13, 0.25]  diff [-0.36, -0.26, -0.08, -0.06]
+  f=0.6: contact [0.03, 0.11, 0.15, 0.29]  ballistic [0.3, 0.2, 0.17, 0.4]  diff [-0.27, -0.09, -0.02, -0.11]
+  f=0.7: contact [0.14, 0.22, 0.27, 0.41]  ballistic [0.14, 0.29, 0.4, 0.51]  diff [0.0, -0.07, -0.13, -0.1]
+  f=0.8: contact [0.29, 0.32, 0.36, 0.51]  ballistic [1.0, 0.88, 0.66, 0.61]  diff [-0.71, -0.56, -0.3, -0.1]
+  f=0.9: contact [0.44, 0.37, 0.45, 0.58]  ballistic [1.0, 0.97, 0.79, 0.68]  diff [-0.56, -0.6, -0.34, -0.1]
+Ratio contact/ballistic is undefined at f<=0.5 (contact U=0) and not smooth (ballistic non-monotone in f); the
+difference is fitted below with the same library (no clipping to [0,1] is appropriate for a difference, values in [-1,0]).
+
+=== Grid 1: DIFFERENCE  (n=28 grid points; seed scatter sigma_seed ~ 0.051, mean half-range 0.037) ===
+form                      k  cx    RMS RMS/sc LOO-RMS      BIC  parameters
+poly2_unclipped           6   6  0.116   2.26   0.165   -100.6  [-0.948, 2.614, 0.133, -2.512, 0.398, -0.082]   quadratic polynomial in f, sigma (6 coeff), no clipping
+sigma_damped_gap          3   4  0.146   2.86   0.189    -97.6  [0.166, 1.247, 2.269]   -A exp(-b sigma) (1 + c f)
+const                     1   1  0.186   3.64   0.200    -90.7  [-0.245]   constant
+
+Empirical crossing f where U_contact = 0.10 (linear interpolation per sigma):
+  sigma=0.0: f_0.1 = 0.664   (f sqrt(1+sigma^2) = 0.664, KE/|U| = 0.881)
+  sigma=0.3: f_0.1 = 0.586   (f sqrt(1+sigma^2) = 0.612, KE/|U| = 0.748)
+  sigma=0.5: f_0.1 = 0.550   (f sqrt(1+sigma^2) = 0.615, KE/|U| = 0.756)
+  sigma=1.0: f_0.1 = 0.426   (f sqrt(1+sigma^2) = 0.602, KE/|U| = 0.725)
+
+--- PySR Pareto front, contact ---
+    complexity      loss                                           equation
+0            1  0.032537                                         0.18940437
+1            3  0.007894                                    f + -0.41059068
+2            4  0.005523                             square(0.20983395 - f)
+3            6  0.005485             square(f + -0.19599926) + -0.013815559
+4            7  0.005062            (sigma - -0.39643866) * (f - 0.3846608)
+5            8  0.001317     square((0.30829766 ^ (1.8649395 ^ sigma)) - f)
+6            9  0.001060  square(f - ((0.33836517 ^ square(sigma)) * 0.2...
+7           10  0.001006  f * (f - ((0.39461258 ^ square(sigma)) * 0.457...
+8           11  0.001006  f * (f - square((0.62814623 ^ square(sigma)) *...
+9           12  0.000927  square((f - 0.15439682) * (f ^ (0.33973885 - s...
+10          14  0.000659  square((0.31555927 - f) * (f ^ ((1.2826236 - s...
+
+--- PySR Pareto front, ballistic ---
+    complexity      loss                                           equation
+0            1  0.059689                                                  f
+1            2  0.027711                                          square(f)
+2            3  0.027415                                      f ^ 1.8821115
+3            4  0.025981                                         f ^ exp(f)
+4            5  0.020363                      (f ^ 4.1878204) - -0.22590035
+5            6  0.020363               (square(f) ^ 2.093889) - -0.22589767
+6            7  0.019915        ((f * 1.0268036) ^ 4.7488446) - -0.22762264
+7            8  0.018177       (square(f) ^ (f ^ -2.7033026)) - -0.23904052
+8            9  0.017734  (f ^ (2.8560874 ^ (f ^ -1.2527423))) + 0.24918243
+9           11  0.016072  f ^ ((1.8113914 - f) ^ ((f * 2.4987638) ^ 4.10...
+10          13  0.016072  f ^ (((1.8116943 - f) ^ ((f * 2.1172915) ^ 4.0...
+
+=== Grid 2a: nearest-wall distance w/L (600 realizations from ['jm_cells_samples_0.npz', 'jm_cells_samples_1.npz']) ===
+  percentiles 10/50/90: [0.028, 0.125, 0.335]; mean 0.160; s_grid resolution 0.0075
+  exponential (a=mean)               KS = 0.0787  (n=600, 1 fitted par)   1-exp(-w/0.160)
+  Weibull                            KS = 0.0473  (n=600, 2 fitted par)   1-exp(-(w/0.172)^1.263)
+  gamma                              KS = 0.0483  (n=600, 2 fitted par)   Gamma(shape=1.422, scale=0.112)
+  Lomax 1-(1+w/b)^-n                 KS = 0.1211  (n=600, 2 fitted par)   1-(1+w/6884.505)^-48917.295
+  P(w<0.05)=0.202 (exponential predicts 0.269); P(w<0.25)=0.772; P(w<0.5)=0.988
+
+=== Grid 2b: observer offset r/L (600 realizations) ===
+  percentiles 10/50/90: [0.347, 0.655, 0.995]; mean 0.671; rms 0.719
+  Maxwell r^2 exp(-r^2/2s^2)         KS = 0.0442  (n=600, 1 fitted par)   s=0.415 (from rms)
+  gen-gamma r^(d-1) exp(-(r/b)^k)    KS = 0.0189  (n=600, 3 fitted par)   a=1.157 (d=a*c), c=k=2.558, b=0.703
+  r^2 exp(-(r/b)^4)  [JM ansatz]     KS = 0.0510  (n=600, 1 fitted par)   b=0.814; mean = b Gamma(1)/Gamma(3/4) = 0.664
+  JM exact p(r) = 4 pi r^2 int_r^inf exp(-pi a^4/3) da KS = 0.0263  (n=600, 0 fitted par)   0 par; mean = 0.672, median = 0.664
+  r^2 exp(-(r/b)^3)  [Poisson-Voronoi] KS = 0.0273  (n=600, 1 fitted par)   b=0.747
+  neighbours touched: mean 14.90, sd 4.55, 10/50/90 [9.0, 15.0, 21.0]
+  age differences: 10/50/90 [-0.221, 0.11, 0.556], fraction older 0.329
+
+=== Grid 2c: cell volume V/L^3 (552 interior cells from ['jm_sizes_samples_0.npz', 'jm_sizes_samples_1.npz', 'jm_sizes_samples_2.npz']) ===
+  mean 0.964 L^3 (JM analytic mean volume per nucleus for I=c=1: 1/N, N = Gamma(1/4)/(4 (pi/3)^(1/4)) -> 1.116 L^3; interior-box truncation biases the MC low), median 0.653, sd 1.000, sd/mean 1.037
+  percentiles 5/25/50/75/95: [0.006, 0.151, 0.653, 1.446, 3.09]; P(V<0.1)=0.203; P(V<0.01)=0.071
+  gamma (2 par)                      KS = 0.0629  (n=552, 2 fitted par)   shape=0.641, scale=1.505 (mean 0.964)
+  Kiang gamma shape 5.6 (Poisson-Voronoi) KS = 0.3499  (n=552, 0 fitted par)   shape 5.6, scale mean/5.6
+  exponential (gamma shape 1)        KS = 0.1140  (n=552, 0 fitted par)   1-exp(-V/0.964)
+  lognormal                          KS = 0.1301  (n=552, 2 fitted par)   sigma_ln=1.889, median=0.371
+  Weibull                            KS = 0.0696  (n=552, 2 fitted par)   k=0.764, scale=0.843
+
+=== Grid 2d: birth time vs final volume ===
+  t_birth ~ 0.09: n= 121 median V = 2.118  (IQR 1.380-2.934)
+  t_birth ~ 0.30: n= 154 median V = 1.075  (IQR 0.689-1.609)
+  t_birth ~ 0.49: n= 111 median V = 0.503  (IQR 0.252-0.808)
+  t_birth ~ 0.69: n=  80 median V = 0.143  (IQR 0.065-0.309)
+  t_birth ~ 0.88: n=  56 median V = 0.051  (IQR 0.008-0.121)
+  t_birth ~ 1.10: n=  29 median V = 0.009  (IQR 0.004-0.025)
+  fits to log(median V) vs mean birth time in bin (RMS in dex, BIC):
+    V0 exp(-t/tau)                         p=[5.091, 0.185]  RMS=0.118 dex  BIC=-12.0
+    V0 exp(-(t/tau)^2)                     p=[1.623, 0.477]  RMS=0.086 dex  BIC=-15.8
+    V0 exp(-(t/tau)^4)                     p=[0.758, 0.743]  RMS=0.296 dex  BIC=-1.0
+    V0 exp(-(t/tau)^k)                     p=[2.378, 0.361, 1.531]  RMS=0.026 dex  BIC=-28.5
+    V0 (1-t/t*)^n                          p=[3.129, 1.758, 5.919]  RMS=0.032 dex  BIC=-25.7
+    V0 exp(-pi t^4/3) [JM untransformed]   p=[0.313]  RMS=0.590 dex  BIC=5.5
+  per-cell scatter of log10 V about V0 exp(-(t/tau)^k): sd = 0.470 dex (IQR 0.444 dex)
+  birth-time distribution of real seeds: 10/50/90 = [0.087, 0.402, 0.88]; JM predicts density ~ exp(-pi t^4/3), median t = 0.452 (numerical; MC lower because late seeds near the box edge are excluded)
