@@ -546,8 +546,6 @@ Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S., Colin J., 20
 
 Tully R. B. et al., 2023, "Cosmicflows-4", ApJ 944, 94 (arXiv:2209.11238).
 
-Watkins R., Allen T., Bradford C. J., et al., 2023, "Analysing the large-scale bulk flow using CosmicFlows4: increasing tension with the standard cosmological model", MNRAS 524, 1885 (arXiv:2302.02028).
-
 Turner M. S., 1991, "Tilted Universe and other remnants of the preinflationary Universe", Phys. Rev. D 44, 3737.
 
 Vielva P., Martínez-González E., Barreiro R. B., Sanz J. L., Cayón L., 2004, "Detection of non-Gaussianity in the WMAP 1-year data using spherical wavelets", ApJ 609, 22 (arXiv:astro-ph/0310273).
