@@ -37,6 +37,7 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `frag_ps.py`, `frag_ps2.py`, `frag_blue.py` | Fragment-and-detonate toy (road (iii), Sec. 13): horizon-crossing Press–Schechter of the kernel, Planck-star clock, survivor/tail/injection bookkeeping; results in `frag_*_results.txt`; referee reports in `notes/` |
 | `contact_annihilation_long.py` | Relic/anti-relic annihilation with many reshuffles: survivor law ~1/rounds; `contact_annihilation_long_results.txt`, `notes/annihilation_radiation.md` |
 | `pool_spectrum.py` | Energy–frequency spectrum of the universe's mass (3-D, projected on a plane, one line cut; Planck lensing convergence as measured projection) against ocean spectra; `figures/pool_spectrum.png`, `pool_spectrum_results.txt` |
+| `hypocentre.py` | Hypocentre inversion for H5: joint posterior over seed direction and distance from the four axis tests plus flow/dipole/quadrupole amplitudes; `hypocentre_results.txt`, `notes/hypocentre.md` |
 | `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `core_search.py` | Pre-registered dark-lens search for the Kernel 0,0,0 remnant in the DES Y3 convergence map vs. cluster/group/SZ/X-ray catalogues; `core_search_results.txt`, `notes/core_search.md` |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |

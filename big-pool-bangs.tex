@@ -1674,6 +1674,66 @@ Coriolis-type deflection scales with a global rotation the CMB bounds at
 version can be stated once a rotation mechanism exists, and it is not
 counted.
 
+\textbf{Distance: a hypocentre inversion.} Seismology locates a source
+from direction \emph{and} distance, the second from how the signals fall
+off. We tried the same (\texttt{hypocentre.py},
+\texttt{notes/hypocentre.md}): a rebound profile
+\(A(r) \propto (r/D)^s\) seen from an offset \(D\), so that a gradient
+across our horizon has amplitude \(\epsilon = s\,d_{\rm LS}/D\);
+flow-type signals then scale as \(R/D^3\) (adiabatic) or \(R/D\)
+(isocurvature) and the Grishchuk--Zel'dovich quadrupole as \(1/D^2\),
+and the ratio is the arrival-time lag that could fix \(D\). A posterior
+over direction and distance on a HEALPix grid, with the four direction
+tests above as a proper likelihood, the CosmicFlows-4 bulk flows
+(\(387 \pm 28\) km s\(^{-1}\) at \(150\,h^{-1}\) Mpc, \(428 \pm 36\) at
+\(200\,h^{-1}\) Mpc; Watkins et al.~2023), the cluster dipole, the
+supernova dipole, the kSZ cap, the quadrupole and the intrinsic-dipole
+bounds, and the tessellation's offset distribution as the prior on
+\(D\), gives three results. (i) The direction is as before,
+\((l,b) = (270°, -22°)\) with a \(68\%\) region of \(1900\) deg\(^2\),
+stable against the likelihood width. (ii) \emph{The distance is not
+constrained by the data at all}: the amplitude likelihood varies by less
+than \(0.7\) in \(\ln L\) over \(0.5\)--\(50\,d_{\rm LS}\) in every
+variant, so the posterior on \(D\) is the prior --- \(5.2\,d_{\rm LS}\)
+(median; \(68\%\): \(3.2\)--\(7.3\)) for \(L = 8\,d_{\rm LS}\),
+consistent with \(0.7\,L\) by construction only. (iii) What the
+amplitudes do fix is the \emph{flatness} at our position:
+\(\epsilon < 8\times10^{-3}\) for an adiabatic slope and
+\(< 5\times10^{-4}\) for an isocurvature one, i.e.~the profile is flat
+to a few percent in potential and a few per mille in composition across
+our horizon, which is P12 (Kernel Gradient) made quantitative; an
+order-unity slope at the typical seed distance is excluded, and the seed
+must lie beyond \(\sim 25\)--\(40\,d_{\rm LS}\) unless the profile is
+nearly flat there. The Wadati variant --- the amplitude of the
+Hubble-dipole-equivalent signal against depth --- has a positive
+intercept, \(0.13 \pm 0.01\), and a slope of \(-3.1 \pm 0.5\) per
+\(d_{\rm LS}\) (\(\chi^2 = 1.0\) for 2 degrees of freedom, against
+\(121\) for a through-origin fit): the flow signal is largest nearby and
+reaches zero at \(\sim 0.04\,d_{\rm LS}\), about \(570\) Mpc. Read as a
+source, it extrapolates to a \emph{local} origin, not a super-horizon
+one: the direction persists with depth, as Sec. 7 found, but the
+amplitude decays, which is what local structure along that direction
+does and a slope does not. Treating the flows as the slope itself costs
+\(163\) in \(\ln L\) against treating them as the \(\Lambda\)CDM floor,
+and would need the seed inside the horizon, which the CMB bounds exclude
+by three to five orders of magnitude. So the flows and the void excess
+give a direction and no distance, and they are, on this evidence, the
+local structure that lies in that direction; the slope, if there is one,
+is the few-per-mille residual the far-field tests below must find.
+\textbf{The far-field arm of P4 (Off-Centre Flow).} Three probes sample
+the same gradient at Gpc baselines, where local flows cannot reach: the
+polarized Sunyaev--Zel'dovich effect, which reads the CMB quadrupole
+seen from each cluster and so places remote observers along the slope
+(Kamionkowski \& Loeb 1997; Sazonov \& Sunyaev 1999; forecast for Simons
+Observatory and CMB-S4 by stacking); 21-cm intensity mapping at
+\(z = 6\)--\(20\) (SKA), in which a gradient appears as a large-scale
+trend along \(\hat{\mathbf n}\); and the anisotropy of the transition
+gravitational-wave background of P3 (Transition GW Background). The
+prediction is the same for all three: a trend along \((270°, -22°)\),
+growing with distance toward the seed, of amplitude at most the
+\(\epsilon\) bounds above and of a sign fixed by the void excess,
+against no trend under isotropy.
+
 \hypertarget{h2-vortex-the-cold-eye-of-sauron-the-cold-spot-and-the-axis-of-evil}{%
 \subsection{\texorpdfstring{\textbf{8. H2 (Vortex -- The Cold Eye of
 Sauron): The Cold Spot and the Axis of
@@ -3358,6 +3418,10 @@ ApJ Lett. 908, L51 (arXiv:2009.14826).
 
 Tully R. B. et al., 2023, ``Cosmicflows-4'', ApJ 944, 94
 (arXiv:2209.11238).
+
+Watkins R., Allen T., Bradford C. J., et al., 2023, ``Analysing the
+large-scale bulk flow using CosmicFlows4: increasing tension with the
+standard cosmological model'', MNRAS 524, 1885 (arXiv:2302.02028).
 
 Turner M. S., 1991, ``Tilted Universe and other remnants of the
 preinflationary Universe'', Phys. Rev.~D 44, 3737.

@@ -1,0 +1,135 @@
+# Hypocentre inversion (hypocentre.py).  d_LS = 14000 Mpc, d_H = 4400 Mpc, nside 16, 3072 directions.
+direction-only fit (four pre-stated tests, as fit_slope.py at nside 16): best (l,b) = (262,-30), Fisher p = 4.9e-05
+  vMF/Watson direction likelihood, sigma = 20 deg: MAP (l,b) = (270,-22); sky fraction with L > 0.32 L_max = 0.010
+  vMF/Watson direction likelihood, sigma = 30 deg: MAP (l,b) = (270,-22); sky fraction with L > 0.32 L_max = 0.020
+  vMF/Watson direction likelihood, sigma = 45 deg: MAP (l,b) = (270,-22); sky fraction with L > 0.32 L_max = 0.045
+
+amplitude data used (value, error; LCDM local floor added in quadrature in the 'floor' treatment):
+  CF4 bulk flow 150/h Mpc (Watkins+23: 387+-28 km/s): R = 0.0153 d_LS, v = 0.0258 +- 0.0019, floor 0.0113
+  CF4 bulk flow 200/h Mpc (428+-36 km/s, paper Table 3): R = 0.0204 d_LS, v = 0.0214 +- 0.0018, floor 0.0075
+  cluster H0 dipole, Migkas+21 (9% peak-to-trough -> dipole 0.045+-0.015, z~0.1): R = 0.0300 d_LS, H = 0.0450 +- 0.0150, floor 0.0200
+  SN H0 dipole, Pantheon+/DES-SN (~1+-1 %, z~0.12): R = 0.0357 d_LS, H = 0.0100 +- 0.0100, floor 0.0100
+  bound: Planck kSZ bulk flow < 254 km/s at ~1 Gpc (v/HR): R = 0.071 d_LS, v < 3.63e-03 (95%)
+  bound: GZ quadrupole DT/T < 1e-5: R = 1.000 d_LS, Q < 1.00e-05 (95%)
+  bound: intrinsic dipole < 1e-4 (isocurvature only): R = 1.000 d_LS, dip < 1.00e-04 (95%)
+
+JM observer offset / L (offset-only MC, 4000 realizations): 10/50/90% = [0.326 0.65  0.999]  (jm_cells.py: 0.35/0.67/1.05)
+prior 'JM (L = 8 d_LS)': D/d_LS 10/50/90% = [2.52 5.05 7.86]
+prior 'JM (L log-flat 8-32 d_LS)': D/d_LS 10/50/90% = [ 4.11  9.62 21.01]
+prior 'flat in log D': D/d_LS 10/50/90% = [ 0.75  4.86 31.36]
+
+=== Amplitude likelihood L_amp(D) (direction factorises out: the four axis tests carry no D information) ===
+
+--- mode adiabatic, flows treated as 'floor' ---
+  s=0.1  merged=False: A-marginalised ln L(D) range over grid = -0.51..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 24.8 d_LS; best ln L overall = -8.34 vs null (no slope) = -8.34
+  s=0.3  merged=False: A-marginalised ln L(D) range over grid = -0.58..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 39.6 d_LS; best ln L overall = -8.34 vs null (no slope) = -8.34
+  s=1.0  merged=False: A-marginalised ln L(D) range over grid = -0.62..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -8.34 vs null (no slope) = -8.34
+  s=3.0  merged=False: A-marginalised ln L(D) range over grid = -0.67..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -8.34 vs null (no slope) = -8.34
+  s=0.1  merged=True : A-marginalised ln L(D) range over grid = -0.51..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 24.8 d_LS; best ln L overall = -6.72 vs null (no slope) = -6.72
+  s=0.3  merged=True : A-marginalised ln L(D) range over grid = -0.58..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 39.6 d_LS; best ln L overall = -6.72 vs null (no slope) = -6.72
+  s=1.0  merged=True : A-marginalised ln L(D) range over grid = -0.62..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -6.72 vs null (no slope) = -6.72
+  s=3.0  merged=True : A-marginalised ln L(D) range over grid = -0.67..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -6.72 vs null (no slope) = -6.72
+
+--- mode adiabatic, flows treated as 'signal' ---
+  s=0.1  merged=False: A-marginalised ln L(D) range over grid = -0.51..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 24.8 d_LS; best ln L overall = -171.29 vs null (no slope) = -171.29
+  s=0.3  merged=False: A-marginalised ln L(D) range over grid = -0.58..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 39.6 d_LS; best ln L overall = -171.29 vs null (no slope) = -171.29
+  s=1.0  merged=False: A-marginalised ln L(D) range over grid = -0.61..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -171.29 vs null (no slope) = -171.29
+  s=3.0  merged=False: A-marginalised ln L(D) range over grid = -0.64..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -171.28 vs null (no slope) = -171.29
+  s=0.1  merged=True : A-marginalised ln L(D) range over grid = -0.51..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 24.8 d_LS; best ln L overall = -166.79 vs null (no slope) = -166.79
+  s=0.3  merged=True : A-marginalised ln L(D) range over grid = -0.58..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= 39.6 d_LS; best ln L overall = -166.79 vs null (no slope) = -166.79
+  s=1.0  merged=True : A-marginalised ln L(D) range over grid = -0.61..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -166.79 vs null (no slope) = -166.79
+  s=3.0  merged=True : A-marginalised ln L(D) range over grid = -0.64..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -166.78 vs null (no slope) = -166.79
+
+--- mode isocurvature, flows treated as 'floor' ---
+  s=0.1  merged=False: A-marginalised ln L(D) range over grid = -0.42..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -8.40 vs null (no slope) = -8.40
+  s=0.3  merged=False: A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -8.40 vs null (no slope) = -8.40
+  s=1.0  merged=False: A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -8.40 vs null (no slope) = -8.40
+  s=3.0  merged=False: A-marginalised ln L(D) range over grid = -0.48..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -8.40 vs null (no slope) = -8.40
+  s=0.1  merged=True : A-marginalised ln L(D) range over grid = -0.42..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -6.78 vs null (no slope) = -6.78
+  s=0.3  merged=True : A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -6.78 vs null (no slope) = -6.78
+  s=1.0  merged=True : A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -6.78 vs null (no slope) = -6.78
+  s=3.0  merged=True : A-marginalised ln L(D) range over grid = -0.48..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -6.78 vs null (no slope) = -6.78
+
+--- mode isocurvature, flows treated as 'signal' ---
+  s=0.1  merged=False: A-marginalised ln L(D) range over grid = -0.42..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -171.34 vs null (no slope) = -171.34
+  s=0.3  merged=False: A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -171.34 vs null (no slope) = -171.34
+  s=1.0  merged=False: A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -171.34 vs null (no slope) = -171.34
+  s=3.0  merged=False: A-marginalised ln L(D) range over grid = -0.48..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -171.34 vs null (no slope) = -171.34
+  s=0.1  merged=True : A-marginalised ln L(D) range over grid = -0.42..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -166.84 vs null (no slope) = -166.84
+  s=0.3  merged=True : A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -166.84 vs null (no slope) = -166.84
+  s=1.0  merged=True : A-marginalised ln L(D) range over grid = -0.44..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -166.84 vs null (no slope) = -166.84
+  s=3.0  merged=True : A-marginalised ln L(D) range over grid = -0.48..0 (max at D=50.00); A=1 fixed (eps = s d_LS/D): allowed (ln L within 1.92 of null) only for D >= inf d_LS; best ln L overall = -166.84 vs null (no slope) = -166.84
+
+=== Posterior on D (marginalised over direction, over A log-flat, over s log-flat) ===
+mode adiabatic, treat floor, merged False:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.18; 68% [3.18, 7.32]; 95% [1.60, 9.43]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 10.10; 68% [5.31, 18.70]; 95% [2.59, 29.02]; P(D in 0.7L range 2.8-8.4) = 0.36
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.81; 68% [1.25, 27.57]; 95% [0.56, 45.66]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.014 nats  -> D essentially unconstrained by the amplitudes
+mode adiabatic, treat floor, merged True:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.18; 68% [3.18, 7.32]; 95% [1.60, 9.43]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 10.10; 68% [5.31, 18.70]; 95% [2.59, 29.02]; P(D in 0.7L range 2.8-8.4) = 0.36
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.81; 68% [1.25, 27.58]; 95% [0.56, 45.66]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.014 nats  -> D essentially unconstrained by the amplitudes
+mode adiabatic, treat signal, merged False:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.18; 68% [3.18, 7.32]; 95% [1.60, 9.43]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 10.10; 68% [5.31, 18.70]; 95% [2.59, 29.01]; P(D in 0.7L range 2.8-8.4) = 0.36
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.78; 68% [1.24, 27.54]; 95% [0.55, 45.65]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.014 nats  -> D essentially unconstrained by the amplitudes
+mode adiabatic, treat signal, merged True:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.18; 68% [3.18, 7.32]; 95% [1.60, 9.43]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 10.10; 68% [5.31, 18.70]; 95% [2.59, 29.01]; P(D in 0.7L range 2.8-8.4) = 0.36
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.78; 68% [1.24, 27.54]; 95% [0.55, 45.65]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.014 nats  -> D essentially unconstrained by the amplitudes
+mode isocurvature, treat floor, merged False:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.13; 68% [3.14, 7.29]; 95% [1.57, 9.40]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 9.91; 68% [5.20, 18.43]; 95% [2.53, 28.78]; P(D in 0.7L range 2.8-8.4) = 0.37
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.13; 68% [1.18, 26.32]; 95% [0.55, 45.32]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.007 nats  -> D essentially unconstrained by the amplitudes
+mode isocurvature, treat floor, merged True:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.13; 68% [3.14, 7.29]; 95% [1.57, 9.40]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 9.91; 68% [5.20, 18.43]; 95% [2.53, 28.78]; P(D in 0.7L range 2.8-8.4) = 0.37
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.13; 68% [1.18, 26.32]; 95% [0.55, 45.32]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.007 nats  -> D essentially unconstrained by the amplitudes
+mode isocurvature, treat signal, merged False:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.13; 68% [3.14, 7.29]; 95% [1.57, 9.40]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 9.91; 68% [5.20, 18.43]; 95% [2.53, 28.78]; P(D in 0.7L range 2.8-8.4) = 0.37
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.13; 68% [1.18, 26.32]; 95% [0.55, 45.32]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.007 nats  -> D essentially unconstrained by the amplitudes
+mode isocurvature, treat signal, merged True:
+  prior JM (L = 8 d_LS)           : MAP D = 6.13 d_LS; median 5.13; 68% [3.14, 7.29]; 95% [1.57, 9.40]; P(D in 0.7L range 2.8-8.4) = 0.81
+  prior JM (L log-flat 8-32 d_LS) : MAP D = 9.77 d_LS; median 9.91; 68% [5.20, 18.43]; 95% [2.53, 28.78]; P(D in 0.7L range 2.8-8.4) = 0.37
+  prior flat in log D             : MAP D = 50.00 d_LS; median 6.13; 68% [1.18, 26.32]; 95% [0.55, 45.32]; P(D in 0.7L range 2.8-8.4) = 0.24
+  information from amplitudes alone (KL posterior||flat prior) = 0.007 nats  -> D essentially unconstrained by the amplitudes
+
+=== Joint (n, D) posterior: baseline = adiabatic, floor, not merged, JM prior L=8; direction = four tests ===
+  four tests, JM L=8: MAP (l,b) = (270,-22), D = 6.13 d_LS; sky 68% region = 1934 deg^2 (l 242-301, b -42..-2); 95% region = 5143 deg^2; P(void centroid (305,-30) in 68%) = False, in 95% = True
+  four tests, flat-log prior: MAP (l,b) = (270,-22), D = 50.00 d_LS; sky 68% region = 1934 deg^2 (l 242-301, b -42..-2); 95% region = 5143 deg^2; P(void centroid (305,-30) in 68%) = False, in 95% = True
+  cluster dipole merged with flow: MAP (l,b) = (264,-27), D = 6.13 d_LS; sky 68% region = 2793 deg^2 (l 225-304, b -48..-2); 95% region = 7587 deg^2; P(void centroid (305,-30) in 68%) = False, in 95% = True
+  isocurvature mode: MAP (l,b) = (270,-22), D = 6.13 d_LS; sky 68% region = 1934 deg^2 (l 242-301, b -42..-2); 95% region = 5143 deg^2; P(void centroid (305,-30) in 68%) = False, in 95% = True
+  flows as pure slope signal (naive): MAP (l,b) = (270,-22), D = 6.13 d_LS; sky 68% region = 1934 deg^2 (l 242-301, b -42..-2); 95% region = 5143 deg^2; P(void centroid (305,-30) in 68%) = False, in 95% = True
+
+=== What the amplitude data constrain: the horizon-scale gradient eps = s A_D d_LS/D, not D ===
+  adiabatic, s=0.3: 95% upper limit on eps = s*A_D*(d_LS/D) from all amplitude data: 7.58e-03
+  adiabatic, s=1.0: 95% upper limit on eps = s*A_D*(d_LS/D) from all amplitude data: 1.59e-02
+  isocurvature, s=0.3: 95% upper limit on eps = s*A_D*(d_LS/D) from all amplitude data: 4.85e-04
+  isocurvature, s=1.0: 95% upper limit on eps = s*A_D*(d_LS/D) from all amplitude data: 4.85e-04
+  -> at D = 5.6 d_LS (0.7 L, L = 8 d_LS) this is a flatness requirement on the profile at our position, A_D*s < eps_lim*5.6.
+
+=== If the flows WERE the slope (A_D = 1): required D/d_LS per datum (D/s) ===
+  CF4 bulk flow 150/h Mpc (Watkins+23: 387+-28 km/s): isocurvature D/(s S_D) = 0.0593 d_LS; adiabatic D^3/(s(s+1)|s-2| Phi_D) = 0.4004 d_LS^3
+  CF4 bulk flow 200/h Mpc (428+-36 km/s, paper Table 3): isocurvature D/(s S_D) = 0.0954 d_LS; adiabatic D^3/(s(s+1)|s-2| Phi_D) = 0.6436 d_LS^3
+  cluster H0 dipole, Migkas+21 (9% peak-to-trough -> dipole 0.045+-0.015, z~0.1): isocurvature D/(s S_D) = 0.2000 d_LS; adiabatic D^3/(s(s+1)|s-2| Phi_D) = 1.3499 d_LS^3
+  SN H0 dipole, Pantheon+/DES-SN (~1+-1 %, z~0.12): isocurvature D/(s S_D) = 1.0714 d_LS; adiabatic D^3/(s(s+1)|s-2| Phi_D) = 7.2314 d_LS^3
+  Quadrupole bound with A_D = 1: adiabatic/iso Q = 0.05|s(s-2)|/D^2 < 1e-5 -> D > 71*sqrt|s(s-2)| d_LS;  intrinsic dipole (iso): s/D < 3e-4 -> D > 3300 s d_LS
+
+=== 'Wadati' variant: does the flow-type amplitude vs depth extrapolate to a common origin? ===
+  A slope predicts signal/(R) = const, i.e. v/(H R) and dH/H both proportional to R with zero intercept; a local source gives a non-zero intercept / decreasing ratio.
+  CF4 bulk flow 150/h Mpc (Wat   R = 0.0153  H-dipole-equivalent = 0.0774 +- 0.0056  ratio/R = 5.06  -> D/(s S_D) = 0.0593 d_LS
+  CF4 bulk flow 200/h Mpc (428   R = 0.0204  H-dipole-equivalent = 0.0642 +- 0.0054  ratio/R = 3.15  -> D/(s S_D) = 0.0954 d_LS
+  cluster H0 dipole, Migkas+21   R = 0.0300  H-dipole-equivalent = 0.0450 +- 0.0150  ratio/R = 1.50  -> D/(s S_D) = 0.2000 d_LS
+  SN H0 dipole, Pantheon+/DES-   R = 0.0357  H-dipole-equivalent = 0.0100 +- 0.0100  ratio/R = 0.28  -> D/(s S_D) = 1.0714 d_LS
+  weighted linear fit y = a + b R: a = 0.1269 +- 0.0116, b = -3.13 +- 0.53, chi2 = 1.0 (2 dof); through-origin fit b = 2.40, chi2 = 121.2 (3 dof); delta chi2 = 120.2
+  origin implied by the linear fit (y = 0): R0 = 0.0405 d_LS (567 Mpc); slope-model D/(s S_D) from through-origin fit = 0.1252 d_LS
+  Verdict: the intercept is the signal (non-zero at 4-5 sigma); the depth dependence is flat-to-falling, so the flow-type signals do not extrapolate to a
+  super-horizon origin; a through-origin (slope) fit is strongly disfavoured.  The 'Wadati intercept' points at a local source, i.e. the mapped attractors.
