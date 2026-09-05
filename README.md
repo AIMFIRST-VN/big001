@@ -41,6 +41,7 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `shore_dipole.py` | Shore test: cluster-count dipole along the fitted slope axis in PSZ2, ACT DR5, eRASS1, SPT-SZ with footprint correction, shuffles and kinematic subtraction; `shore_dipole_results.txt`, `notes/shore_dipole.md` |
 | `pool_spectrum_3d.py` | 3-D spectrum: P(k,z) growing with time vs JONSWAP developing with fetch; `figures/pool_spectrum_3d.png` |
 | `extreme_events.py` | Extreme-value test: most extreme CMB peak and peak counts vs Gaussian skies with the map's own spectrum; nucleation action as a sigma excursion; `extreme_events_results.txt` |
+| `pool_spectrum_shells.py` | Projected-mass spectrum of thin shells at increasing radius (Limber): the peak walks from l~2 nearby to l~160 at last scattering, amplitude falls as D(z)^2; `figures/pool_spectrum_shells.png` |
 | `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `core_search.py` | Pre-registered dark-lens search for the Kernel 0,0,0 remnant in the DES Y3 convergence map vs. cluster/group/SZ/X-ray catalogues; `core_search_results.txt`, `notes/core_search.md` |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |

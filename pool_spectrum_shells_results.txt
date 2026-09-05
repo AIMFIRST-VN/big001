@@ -1,0 +1,6 @@
+z=0.05, 150 Mpc/h (the local sea)      chi=   148 Mpc/h  peak at l=    2 (theta=90.0 deg)  amplitude x0.95
+z=0.3                                  chi=   833 Mpc/h  peak at l=   13 (theta=13.8 deg)  amplitude x0.73
+z=1                                    chi=  2292 Mpc/h  peak at l=   38 (theta=4.7 deg)  amplitude x0.37
+z=3                                    chi=  4384 Mpc/h  peak at l=   73 (theta=2.5 deg)  amplitude x0.099
+z=10 (21-cm era)                       chi=  6491 Mpc/h  peak at l=  108 (theta=1.7 deg)  amplitude x0.013
+z=1100 (last scattering, linear)       chi=  9388 Mpc/h  peak at l=  157 (theta=1.1 deg)  amplitude x1.3e-06
