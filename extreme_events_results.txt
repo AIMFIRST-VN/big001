@@ -1,0 +1,10 @@
+  ms = hp.smoothing(m, fwhm=fwhm, verbose=False); cl = hp.anafast(np.where(mask, m - m[mask].mean(), 0), lmax=3*nside-1) / mask.mean()
+  g = hp.smoothing(hp.synfast(cl, nside, verbose=False), fwhm=fwhm, verbose=False); pg = peaks(g)
+SMICA, 1 deg smoothing, |b|>20, nside 128: most extreme peak = 4.18 sigma; peaks >3.5 sigma: 21; >4 sigma: 1
+Gaussian mocks (300, same spectrum/mask/smoothing): max peak median 4.40 (5-95%: 4.02-4.98); P(max >= data) = 0.773
+  peaks >3.5 sigma: median 20 (5-95%: 13-28), P(>= data) = 0.423;  >4 sigma: median 3, P(>= data) = 0.970
+  Gumbel fit to mock maxima: mode 4.29 sigma, scale 0.23; the spectrum (through its moments) fixes these two numbers
+Ocean (Rayleigh, narrow band): P(H > 2 H_s) = exp(-8) = 3.4e-4 per wave, one in 3000; observed freak-wave rates exceed this by 2-10x in steep seas (Benjamin-Feir instability; Dysthe et al. 2008)
+Nucleation action S = 184: as a Gaussian excursion nu = sqrt(2S) = 19.2 sigma
+Nucleation action S = 280: as a Gaussian excursion nu = sqrt(2S) = 23.7 sigma
+Nucleation action S = 560: as a Gaussian excursion nu = sqrt(2S) = 33.5 sigma

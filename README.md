@@ -39,6 +39,8 @@ Build: `pandoc big-pool-bangs.md -s -o big-pool-bangs.pdf --pdf-engine=pdflatex 
 | `pool_spectrum.py` | Energy–frequency spectrum of the universe's mass (3-D, projected on a plane, one line cut; Planck lensing convergence as measured projection) against ocean spectra; `figures/pool_spectrum.png`, `pool_spectrum_results.txt` |
 | `hypocentre.py` | Hypocentre inversion for H5: joint posterior over seed direction and distance from the four axis tests plus flow/dipole/quadrupole amplitudes; `hypocentre_results.txt`, `notes/hypocentre.md` |
 | `shore_dipole.py` | Shore test: cluster-count dipole along the fitted slope axis in PSZ2, ACT DR5, eRASS1, SPT-SZ with footprint correction, shuffles and kinematic subtraction; `shore_dipole_results.txt`, `notes/shore_dipole.md` |
+| `pool_spectrum_3d.py` | 3-D spectrum: P(k,z) growing with time vs JONSWAP developing with fetch; `figures/pool_spectrum_3d.png` |
+| `extreme_events.py` | Extreme-value test: most extreme CMB peak and peak counts vs Gaussian skies with the map's own spectrum; nucleation action as a sigma excursion; `extreme_events_results.txt` |
 | `void_dipole.py` | Void-fraction dipole compass for H5 in WISE×SuperCOSMOS (2-D) and 2M++ (3-D) |
 | `core_search.py` | Pre-registered dark-lens search for the Kernel 0,0,0 remnant in the DES Y3 convergence map vs. cluster/group/SZ/X-ray catalogues; `core_search_results.txt`, `notes/core_search.md` |
 | `energy_budget.py` | Bounce-to-equality energy budget: relic kinetic energy, Kernel 0,0,0 conversion radiation, latent heat; ejecta momentum at equality |

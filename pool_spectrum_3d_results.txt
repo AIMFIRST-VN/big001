@@ -1,0 +1,3 @@
+  x = k*R; W = 3*(np.sin(x)-x*np.cos(x))/x**3; return np.sqrt(np.trapz(k**2*P*W**2, k)/(2*np.pi**2))
+non-linear scale today k_nl = 0.252 h/Mpc; at z=1: 0.76; enters the grid (k<16) at z ~ 3
+sea: peak frequency 1 km -> 1000 km fetch: 0.66 -> 0.067 Hz; peak energy grows x19499
