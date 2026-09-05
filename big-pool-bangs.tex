@@ -262,17 +262,19 @@ that Planck relics possess a minimum spatial extent \(\sim\!\ell_P\)
 that no interaction can compress}, and treat them as effective
 incompressible hard spheres. The ansatz is judged by the phenomenology
 it generates (Secs. 3--11); its microphysical justification is an open
-problem (Sec. 13). The closest object in the quantum-gravity literature
-is the white-hole remnant of loop gravity (Bianchi et al.~2018; Rovelli
-\& Vidotto 2018): a black hole that has Hawking-evaporated down to the
-Planck mass tunnels into a long-lived Planck-mass white hole, proposed
-there as a dark-matter candidate. We take it as the candidate
-microphysics of the relic, together with its two clocks --- evaporation
-of a clump of \(N\) relics in \(\sim N^3\,t_P\) and a remnant lifetime
-\(\sim N^4\,t_P\) --- and note that the Planck-star bounce time
-\(\sim N^2\,t_P\) of Rovelli \& Vidotto (2014), used in Sec. 3.1 for
-baby bangs, is the earlier, shorter estimate that this later work
-supersedes.
+problem (Sec. 13); condensed-matter pictures of the vacuum (Volovik
+2003) and analogue gravity in fluids (Barceló, Liberati \& Visser 2011)
+are the nearest precedents for treating it as a medium. The closest
+object in the quantum-gravity literature is the white-hole remnant of
+loop gravity (Bianchi et al.~2018; Rovelli \& Vidotto 2018): a black
+hole that has Hawking-evaporated down to the Planck mass tunnels into a
+long-lived Planck-mass white hole, proposed there as a dark-matter
+candidate. We take it as the candidate microphysics of the relic,
+together with its two clocks --- evaporation of a clump of \(N\) relics
+in \(\sim N^3\,t_P\) and a remnant lifetime \(\sim N^4\,t_P\) --- and
+note that the Planck-star bounce time \(\sim N^2\,t_P\) of Rovelli \&
+Vidotto (2014), used in Sec. 3.1 for baby bangs, is the earlier, shorter
+estimate that this later work supersedes.
 
 \textbf{Relic counts.} Because quantum geometry prohibits localized
 infinite densities, the energy crystallizes into irreducible
@@ -352,8 +354,12 @@ for its first seed, so the expected number of seeds in that time is
 \(S \approx 4\ln(L/\ell_P)\) --- \(S \approx 184\) for
 \(L = 10^{20}\,\ell_P\) and \(S \approx 270\)--\(280\) for a cell of
 order the present Hubble volume at the bounce (Sec. 11f). These are
-rogue-wave odds, \(10^{-80}\) to \(10^{-120}\) per Planck 4-volume, and
-they are not fine-tuned: in the thin-wall formula
+rogue-wave odds, \(10^{-80}\) to \(10^{-120}\) per Planck 4-volume ---
+and the sea analogy is literal: the statistics of extreme excursions of
+a random field are those of Rice (1944, 1945) and Longuet-Higgins (1957)
+for a random sea surface, which is where the peaks theory of
+cosmological structure (Bardeen et al.~1986) took them from --- and they
+are not fine-tuned: in the thin-wall formula
 \(S = 27\pi^2\sigma^4/(2\epsilon^3)\) with \(\epsilon \approx \rho_P\),
 they correspond to a wall tension
 \(\sigma \approx 1.1\)--\(1.2\,M_P^3\), the natural Planck value. The
@@ -1162,7 +1168,16 @@ One may parametrize the scalar index by a turbulent dissipation ratio
 \(\nu_t \approx 0.105\). Both the relation and the value are fitted
 inputs, and showing that a Kolmogorov cascade
 (\(E(k) \propto k^{-5/3}\)) can produce a nearly scale-invariant
-curvature spectrum is an open problem (Sec. 13).
+curvature spectrum is an open problem (Sec. 13). \emph{Prior art and a
+constraint.} A turbulent origin of cosmic structure is an old idea ---
+von Weizsäcker (1951), Gamow (1952), Ozernoy \& Chernin (1968) --- and
+it was abandoned for a reason that binds us too: turbulence surviving to
+recombination imprints \(\Delta T/T \gtrsim 10^{-3}\) on the microwave
+sky (Peebles 1971; Jones 1976), a hundred times what is observed. The
+cascade of Kernel 0,0,0 must therefore be complete, and its kinetic
+energy thermalized, long before last scattering; it can set the spectrum
+of the initial conditions, not stir the plasma at \(z = 1100\). That is
+a constraint on the kernel's timeline, added to open problem 3.
 
 \hypertarget{radial-structure-of-the-kernel-and-p12-kernel-gradient}{%
 \subsubsection{\texorpdfstring{\textbf{5.4 Radial structure of the
@@ -1724,22 +1739,24 @@ is the few-per-mille residual the far-field tests below must find.
 the same gradient at Gpc baselines, where local flows cannot reach: the
 polarized Sunyaev--Zel'dovich effect, which reads the CMB quadrupole
 seen from each cluster and so places remote observers along the slope
-(Kamionkowski \& Loeb 1997; Sazonov \& Sunyaev 1999; forecast for Simons
-Observatory and CMB-S4 by stacking); 21-cm intensity mapping at
-\(z = 6\)--\(20\) (SKA), in which a gradient appears as a large-scale
-trend along \(\hat{\mathbf n}\); and the anisotropy of the transition
-gravitational-wave background of P3 (Transition GW Background). The
-prediction is the same for all three: a trend along \((270°, -22°)\),
-growing with distance toward the seed, of amplitude at most the
-\(\epsilon\) bounds above and of a sign fixed by the void excess,
-against no trend under isotropy. \textbf{The shore test.} A slope also
-shows up in what has already broken: a long-wavelength overdensity
-\(\epsilon\) raises the abundance of massive clusters on its dense side
-by \(R\,\epsilon\) with \(R = \delta_c/\sigma^2(M) \approx 2\)--\(3\) at
-cluster masses (peak--background split), so a slope makes a dipole in
-cluster counts along \(\hat{\mathbf n}\), the same on every depth shell,
-whereas local structure makes one that decays with depth. We measured it
-with thresholds fixed before looking (\texttt{shore\_dipole.py},
+(Kamionkowski \& Loeb 1997; Sazonov \& Sunyaev 1999; Bunn 2006, who
+framed the remote quadrupoles as the only probe of super-horizon modes;
+forecast for Simons Observatory and CMB-S4 by stacking); 21-cm intensity
+mapping at \(z = 6\)--\(20\) (SKA), in which a gradient appears as a
+large-scale trend along \(\hat{\mathbf n}\); and the anisotropy of the
+transition gravitational-wave background of P3 (Transition GW
+Background). The prediction is the same for all three: a trend along
+\((270°, -22°)\), growing with distance toward the seed, of amplitude at
+most the \(\epsilon\) bounds above and of a sign fixed by the void
+excess, against no trend under isotropy. \textbf{The shore test.} A
+slope also shows up in what has already broken: a long-wavelength
+overdensity \(\epsilon\) raises the abundance of massive clusters on its
+dense side by \(R\,\epsilon\) with
+\(R = \delta_c/\sigma^2(M) \approx 2\)--\(3\) at cluster masses
+(peak--background split), so a slope makes a dipole in cluster counts
+along \(\hat{\mathbf n}\), the same on every depth shell, whereas local
+structure makes one that decays with depth. We measured it with
+thresholds fixed before looking (\texttt{shore\_dipole.py},
 \texttt{notes/shore\_dipole.md}): pixel counts at \(|b| > 20°\) with
 footprint correction, a Poisson fit of the dipole along the fixed axis
 \((270°, -22°)\) and a free-axis fit, \(2000\) shuffles within each
@@ -1855,6 +1872,20 @@ polarization edge) and its low-\(\ell\) tail, P9 (Low-\(\ell\) Tail).
 Its present-day effect on our volume is a static field --- an induced
 (monopole) velocity of the local volume and a tidal shear --- fixed once
 the mass and distance are (Sec. 10).
+
+\textbf{Prior art: colliding bubbles.} The idea that a neighbouring
+bubble imprints a disc on the microwave sky, cold or hot, with a power
+asymmetry along its axis, is the bubble-collision signature of eternal
+inflation (Chang, Kleban \& Levi 2009; Aguirre \& Johnson 2011), and it
+has been searched for: Feeney et al.~(2011) and Planck Collaboration
+(2014 XXIII) find no collision discs at the amplitudes their templates
+allow. Our neighbour is not a colliding bubble --- the wall never
+reaches us and the imprint is a fossil potential --- and the
+point-source template of this section is not the disc template of those
+searches, but the null constrains any reading of the eight extremes as
+broad discs, which is also what the tessellation says (Sec. 11f); a
+Feeney-type Bayesian search with our compact template is the
+pre-registered version of P6 (Spot Population).
 
 \textbf{The Sachs--Wolfe model.} For a potential \(\Phi\) present at
 last scattering, \(\Delta T/T = \alpha\,\Phi/c^2\) (Sachs \& Wolfe
@@ -2187,7 +2218,8 @@ falsifies H7 (Pool Model) as a whole is given in Table 7 (Sec. 12).
 If the seeds of Sec. 2 are a Poisson process in space \emph{and time} at
 rate \(\Gamma\) and each cascade grows at \(c\), the cells tile space as
 a Johnson--Mehl tessellation (Kolmogorov 1937; Johnson \& Mehl 1939;
-Avrami 1939) with mean cell size
+Avrami 1939; applied to cosmological transitions by Guth \& Weinberg
+1983 and Turner, Weinberg \& Widrow 1992) with mean cell size
 \(L = (c/\Gamma)^{1/4} = e^{S/4}\,\ell_P\), and the population of
 neighbours becomes a counted, sized and normalized object. A Monte Carlo
 of this process (\texttt{jm\_cells.py}, \(600\) realizations: random
@@ -2762,7 +2794,10 @@ Problems}}{13. Limitations and Open Problems}}\label{limitations-and-open-proble
 \item
   \textbf{Spectral index.} \(\nu_t\) and the relation
   \(n_s - 1 = -\nu_t/3\) are fitted inputs; the compatibility of a
-  Kolmogorov cascade with near scale invariance is unproven.
+  Kolmogorov cascade with near scale invariance is unproven, and the
+  cascade must be fully thermalized before last scattering or it
+  overproduces anisotropy by two orders of magnitude (Peebles 1971; Sec.
+  5.3).
 \item
   \textbf{The kernel.} H8 (Precious Rings -- Dante's Purgatory) resolves
   the bounce-to-equality conflict of Sec. 5 by location, at a price that
@@ -3167,9 +3202,11 @@ the seed sits five horizons out, is a tilt of at most a few per mille
 hiding under the surf, and only far-field stations --- the microwave
 quadrupole as seen from distant clusters, the hydrogen map of the dark
 ages, the gravitational-wave sky --- can feel it. The cosmic web, it
-turns out, is a beach: the same equation that breaks water on a shore,
-Burgers', builds the pancakes and filaments, and what we had taken for
-the tide was the surf.
+turns out, is a beach: the same non-linear advection that steepens a
+wave until it breaks, Burgers' equation, builds the pancakes and
+filaments (Zel'dovich 1970; Gurbatov, Saichev \& Shandarin 1989;
+Shandarin \& Zel'dovich 1989; Hidding, Shandarin \& van de Weygaert
+2014), and what we had taken for the tide was the surf.
 
 \hypertarget{what-we-got-rid-of-the-dark-matter-particle-and-the-inflaton}{%
 \subsubsection{What we got rid of: the dark-matter particle, and the
@@ -3239,6 +3276,9 @@ flow itself depending on which ring one asks --- and a cold fingerprint
 on the far wall that may belong to someone else. Each of these is stated
 so that a measurement can remove it.
 
+The ocean has been mapped as far as the horizon and no coast has been
+sighted. So we sail on, with passion, to find land.
+
 \hypertarget{references}{%
 \subsection{\texorpdfstring{\textbf{References}}{References}}\label{references}}
 
@@ -3267,6 +3307,9 @@ universe'', MNRAS 513, 2394 (arXiv:2202.00962).
 Avrami M., 1939, ``Kinetics of phase change. I. General theory'',
 Journal of Chemical Physics, 7, 1103.
 
+Barceló C., Liberati S., Visser M., 2011, ``Analogue gravity'', Living
+Rev.~Relativ. 14, 3.
+
 Bardeen J. M., Bond J. R., Kaiser N., Szalay A. S., 1986, ``The
 statistics of peaks of Gaussian random fields'', ApJ 304, 15.
 
@@ -3294,6 +3337,10 @@ constraints'', ApJ 938, 110 (arXiv:2202.04077).
 Bucher M., Spergel D., 1999, ``Is the dark matter a solid?'', Phys.
 Rev.~D 60, 043505 (arXiv:astro-ph/9812022).
 
+Bunn E. F., 2006, ``Probing the Universe on gigaparsec scales with
+remote cosmic microwave background quadrupole measurements'', Phys.
+Rev.~D 73, 123517 (arXiv:astro-ph/0603271).
+
 Carr B., Kohri K., Sendouda Y., Yokoyama J., 2021, ``Constraints on
 primordial black holes'', Rep.~Prog. Phys. 84, 116902
 (arXiv:2002.12778).
@@ -3306,6 +3353,10 @@ with predictions from the 2M++ density field'', MNRAS 450, 317
 Carron J., Mirmelstein M., Lewis A., 2022, ``CMB lensing from Planck PR4
 maps'', JCAP 09, 039 (arXiv:2206.07773).
 
+Chang S., Kleban M., Levi T. S., 2009, ``Watching worlds collide:
+effects on the CMB from cosmological bubble collisions'', JCAP 04, 025
+(arXiv:0810.5128).
+
 Cohen A. G., De Rújula A., Glashow S. L., 1998, ``A matter--antimatter
 universe?'', ApJ 495, 539 (arXiv:astro-ph/9707087).
 
@@ -3314,10 +3365,6 @@ decay'', Phys. Rev.~D 21, 3305.
 
 Colin J., Mohayaee R., Rameez M., Sarkar S., 2019, ``Evidence for
 anisotropy of cosmic acceleration'', A\&A 631, L13 (arXiv:1808.04597).
-
-de Oliveira-Costa A., Tegmark M., Zaldarriaga M., Hamilton A., 2004,
-``The significance of the largest scale CMB fluctuations in WMAP'',
-Phys. Rev.~D 69, 063516 (arXiv:astro-ph/0307282).
 
 Cruz M., Martínez-González E., Vielva P., Cayón L., 2005, ``Detection of
 a non-Gaussian spot in WMAP'', MNRAS 356, 29 (arXiv:astro-ph/0405341).
@@ -3341,13 +3388,31 @@ Espinosa J. R., Konstandin T., No J. M., Servant G., 2010, ``Energy
 budget of cosmological first-order phase transitions'', JCAP 06, 028
 (arXiv:1004.4187).
 
+Feeney S. M., Johnson M. C., Mortlock D. J., Peiris H. V., 2011, ``First
+observational tests of eternal inflation'', Phys. Rev.~Lett. 107, 071301
+(arXiv:1012.1995).
+
+Gamow G., 1952, ``The role of turbulence in the evolution of the
+universe'', Phys. Rev.~86, 251.
+
 Grishchuk L. P., Zel'dovich Ya. B., 1978, ``Long-wavelength
 perturbations of a Friedmann universe, and anisotropy of the microwave
 background radiation'', Sov. Astron. 22, 125.
 
+Gurbatov S. N., Saichev A. I., Shandarin S. F., 1989, ``The large-scale
+structure of the universe in the frame of the model equation of
+non-linear diffusion'', MNRAS 236, 385.
+
+Guth A. H., Weinberg E. J., 1983, ``Could the universe have recovered
+from a slow first-order phase transition?'', Nucl. Phys. B 212, 321.
+
 Haggard H. M., Rovelli C., 2015, ``Quantum-gravity effects outside the
 horizon spark black to white hole tunneling'', Phys. Rev.~D 92, 104020
 (arXiv:1407.0989).
+
+Hidding J., Shandarin S. F., van de Weygaert R., 2014, ``The Zel'dovich
+approximation: key to understanding cosmic web complexity'', MNRAS 437,
+3442 (arXiv:1311.7134).
 
 Hutsemékers D., Cabanac R., Lamy H., Sluse D., 2005, ``Mapping
 extreme-scale alignments of quasar polarization vectors'', A\&A 441, 915
@@ -3359,6 +3424,13 @@ walk simulation'', ApJ 907, 123 (arXiv:2011.07216).
 
 Johnson W. A., Mehl R. F., 1939, ``Reaction kinetics in processes of
 nucleation and growth'', Transactions of the AIME, 135, 416.
+
+Jones B. J. T., 1976, ``The origin of galaxies: a review of recent
+theoretical developments and their confrontation with observation'',
+Rev.~Mod. Phys. 48, 107.
+
+Kamionkowski M., Loeb A., 1997, ``Getting around cosmic variance'',
+Phys. Rev.~D 56, 4511 (arXiv:astro-ph/9703118).
 
 Keenan R. C., Barger A. J., Cowie L. L., 2013, ``Evidence for a
 \textasciitilde300 Mpc scale under-density in the local galaxy
@@ -3383,15 +3455,18 @@ Longo M. J., 2011, ``Detection of a dipole in the handedness of spiral
 galaxies with redshifts z \textasciitilde{} 0.04'', Phys. Lett. B 699,
 224 (arXiv:1104.2815).
 
-Migkas K., Schellenberger G., Reiprich T. H., Pacaud F., Ramos-Ceja M.
-E., Lovisari L., 2020, ``Probing cosmic isotropy with a new X-ray galaxy
-cluster sample through the \(L_X\)--\(T\) scaling relation'', A\&A 636,
-A15 (arXiv:2004.03305).
+Longuet-Higgins M. S., 1957, ``The statistical analysis of a random,
+moving surface'', Phil. Trans. R. Soc. A 249, 321.
 
 Migkas K., Pacaud F., Schellenberger G., Erler J., Nguyen-Dang N. T.,
 Reiprich T. H., Ramos-Ceja M. E., Lovisari L., 2021, ``Cosmological
 implications of the anisotropy of ten galaxy cluster scaling
 relations'', A\&A 649, A151 (arXiv:2103.02572).
+
+Migkas K., Schellenberger G., Reiprich T. H., Pacaud F., Ramos-Ceja M.
+E., Lovisari L., 2020, ``Probing cosmic isotropy with a new X-ray galaxy
+cluster sample through the \(L_X\)--\(T\) scaling relation'', A\&A 636,
+A15 (arXiv:2004.03305).
 
 Niikura H. et al., 2019a, ``Microlensing constraints on primordial black
 holes with Subaru/HSC Andromeda observations'', Nat. Astron. 3, 524
@@ -3400,6 +3475,19 @@ holes with Subaru/HSC Andromeda observations'', Nat. Astron. 3, 524
 Niikura H., Takada M., Yokoyama S., Sumi T., Masaki S., 2019b,
 ``Constraints on Earth-mass primordial black holes from OGLE 5-year
 microlensing events'', Phys. Rev.~D 99, 083503 (arXiv:1901.07120).
+
+de Oliveira-Costa A., Tegmark M., Zaldarriaga M., Hamilton A., 2004,
+``The significance of the largest scale CMB fluctuations in WMAP'',
+Phys. Rev.~D 69, 063516 (arXiv:astro-ph/0307282).
+
+Ozernoy L. M., Chernin A. D., 1968, ``The fragmentation of matter in a
+turbulent metagalactic medium'', Sov. Astron. 11, 907.
+
+Peebles P. J. E., 1971, ``Primeval turbulence?'', Astrophys. Space Sci.
+11, 443.
+
+Planck Collaboration, 2014 XXIII, ``Planck 2013 results. XXIII. Isotropy
+and statistics of the CMB'', A\&A 571, A23 (arXiv:1303.5083).
 
 Planck Collaboration, 2014, ``Planck intermediate results XIII:
 constraints on peculiar velocities'', A\&A 561, A97 (arXiv:1303.5090).
@@ -3423,6 +3511,9 @@ Popovic B. et al., 2025, ``Dovekie: an updated cross-calibration of Type
 Ia supernova photometric systems for the DES-SN5YR and Pantheon+
 samples'', arXiv preprint, 2025.
 
+Rice S. O., 1944, 1945, ``Mathematical analysis of random noise'', Bell
+Syst. Tech. J. 23, 282; 24, 46.
+
 Rovelli C., Vidotto F., 2014, ``Planck stars'', International Journal of
 Modern Physics D, 23, 1442026 (arXiv:1401.6562).
 
@@ -3439,8 +3530,16 @@ and angular variations of the microwave background'', ApJ 147, 73.
 Sah S., Rameez M., 2024, on the dipole anisotropy of cosmic acceleration
 in the Pantheon+ supernova sample, preprint, 2024.
 
+Sazonov S. Y., Sunyaev R. A., 1999, ``Microwave polarization in the
+direction of galaxy clusters induced by the CMB quadrupole anisotropy'',
+MNRAS 310, 765 (arXiv:astro-ph/9903287).
+
 Scolnic D. et al., 2022, ``The Pantheon+ analysis: the full data set and
 light-curve release'', ApJ 938, 113 (arXiv:2112.03863).
+
+Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S.,
+Colin J., 2021, ``A test of the cosmological principle with quasars'',
+ApJ Lett. 908, L51 (arXiv:2009.14826).
 
 Shamir L., 2012, ``Handedness asymmetry of spiral galaxies with z
 \textless{} 0.3 shows cosmic parity violation and a dipole axis'', Phys.
@@ -3453,13 +3552,13 @@ Survey'', preprint, 2022.
 Shamir L., 2025, ``Galaxy spin-direction asymmetry in the JWST JADES
 field'', arXiv preprint, 2025.
 
+Shandarin S. F., Zel'dovich Ya. B., 1989, ``The large-scale structure of
+the universe: turbulence, intermittency, structures in a
+self-gravitating medium'', Rev.~Mod. Phys. 61, 185.
+
 Storey-Fisher K. et al., 2024, ``Quaia, the Gaia--unWISE quasar catalog:
 an all-sky spectroscopic quasar sample'', ApJ 964, 69
 (arXiv:2306.17749).
-
-Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S.,
-Colin J., 2021, ``A test of the cosmological principle with quasars'',
-ApJ Lett. 908, L51 (arXiv:2009.14826).
 
 Tully R. B. et al., 2023, ``Cosmicflows-4'', ApJ 944, 94
 (arXiv:2209.11238).
@@ -3471,6 +3570,9 @@ Vielva P., Martínez-González E., Barreiro R. B., Sanz J. L., Cayón L.,
 2004, ``Detection of non-Gaussianity in the WMAP 1-year data using
 spherical wavelets'', ApJ 609, 22 (arXiv:astro-ph/0310273).
 
+Volovik G. E., 2003, ``The Universe in a Helium Droplet'', Oxford
+University Press.
+
 Wang P., Libeskind N. I., Tempel E., Kang X., Guo Q., 2021, ``Possible
 observational evidence for cosmic filament spin'', Nature Astronomy 5,
 839 (arXiv:2106.05989).
@@ -3478,6 +3580,9 @@ observational evidence for cosmic filament spin'', Nature Astronomy 5,
 Watkins R. et al., 2023, ``Analysing the large-scale bulk flow using
 CosmicFlows4: increasing tension with the standard cosmological model'',
 MNRAS 524, 1885 (arXiv:2302.02028).
+
+von Weizsäcker C. F., 1951, ``The evolution of galaxies and stars'', ApJ
+114, 165.
 
 Whitford A. M., Howlett C., Davis T. M., 2023, ``Evaluating bulk flow
 estimators for CosmicFlows-4 measurements'', MNRAS 526, 3051
