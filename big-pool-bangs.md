@@ -256,7 +256,7 @@ The Eridanus Cold Spot (Vielva et al. 2004; Cruz et al. 2005) is the sky's outst
 
 ![Fig. 4 — Planck 2018 SMICA radial temperature profile around the Cold Spot, vs. 500 random reference positions.](coldspot_profile.png)
 
-**Preferred axis.** Our simulations find ejection isotropic within shot noise (Sec. 4), so an axis can only be supplied by an external seed, the neighbouring bang of Sec. 9. The literature's cluster of tentative ($\lesssim 3\sigma$) alignments — a supernova acceleration dipole roughly along our CMB motion (Colin et al. 2019; Sah & Rameez 2024), the quadrupole–octupole alignment with the dipole direction, coincident bulk-flow and quasar-polarization axes (Hutsemékers et al. 2005) — is motivation for H2 (Vortex – The Cold Eye of Sauron)/H3 (Neighbour – Big Pool Bang Multiverse 2), not support.
+**Preferred axis.** Our simulations find ejection isotropic within shot noise (Sec. 4), so an axis can only be supplied by an external seed, the neighbouring bang of Sec. 9. The literature's cluster of tentative ($\lesssim 3\sigma$) alignments — a supernova acceleration dipole roughly along our CMB motion (Colin et al. 2019; Sah et al. 2025), the quadrupole–octupole alignment with the dipole direction, coincident bulk-flow and quasar-polarization axes (Hutsemékers et al. 2005) — is motivation for H2 (Vortex – The Cold Eye of Sauron)/H3 (Neighbour – Big Pool Bang Multiverse 2), not support.
 
 **Galaxy handedness.** Claimed spin-handedness dipoles (Longo 2011; Shamir 2012, 2022) lie $70°$ from each other and $50°$–$74°$ from the axes above; we treat them as systematics-limited (Iye et al. 2021). The JWST/JADES handedness claim $8.6°$ from the Cold Spot is a coincidence awaiting a control-field test (Appendix A).
 
@@ -545,7 +545,7 @@ Hu W., Sugiyama N., 1996, "Small-scale cosmological perturbations: an analytic a
 
 Hutsemékers D., Cabanac R., Lamy H., Sluse D., 2005, "Mapping extreme-scale alignments of quasar polarization vectors", A&A 441, 915 (arXiv:astro-ph/0507274).
 
-Iye M., Yagi M., Fukumoto H., 2021, "Spin parity of spiral galaxies III: dipole analysis of the distribution of SDSS spirals with 3D random walk simulation", ApJ 907, 123 (arXiv:2011.07216).
+Iye M., Yagi M., Fukumoto H., 2021, "Spin parity of spiral galaxies III: dipole analysis of the distribution of SDSS spirals with 3D random walk simulation", ApJ 907, 123 (arXiv:2011.00662).
 
 Jimenez R., Loeb A., 2002, "Constraining cosmological parameters based on relative galaxy ages", ApJ 573, 37 (arXiv:astro-ph/0106145).
 
@@ -571,7 +571,7 @@ Longuet-Higgins M. S., 1957, "The statistical analysis of a random, moving surfa
 
 Longuet-Higgins M. S., 1963, "The generation of capillary waves by steep gravity waves", J. Fluid Mech. 16, 138.
 
-Migkas K., Pacaud F., Schellenberger G., Erler J., Nguyen-Dang N. T., Reiprich T. H., Ramos-Ceja M. E., Lovisari L., 2021, "Cosmological implications of the anisotropy of ten galaxy cluster scaling relations", A&A 649, A151 (arXiv:2103.02572).
+Migkas K., Pacaud F., Schellenberger G., Erler J., Nguyen-Dang N. T., Reiprich T. H., Ramos-Ceja M. E., Lovisari L., 2021, "Cosmological implications of the anisotropy of ten galaxy cluster scaling relations", A&A 649, A151 (arXiv:2103.13904).
 
 Migkas K., Schellenberger G., Reiprich T. H., Pacaud F., Ramos-Ceja M. E., Lovisari L., 2020, "Probing cosmic isotropy with a new X-ray galaxy cluster sample through the $L_X$–$T$ scaling relation", A&A 636, A15 (arXiv:2004.03305).
 
@@ -609,7 +609,7 @@ Planck Collaboration, 2020 VII, "Planck 2018 results VII: isotropy and statistic
 
 Planck Collaboration, 2020 VIII, "Planck 2018 results VIII: gravitational lensing", A&A 641, A8 (arXiv:1807.06210).
 
-Popovic B. et al., 2025, "Dovekie: an updated cross-calibration of Type Ia supernova photometric systems for the DES-SN5YR and Pantheon+ samples", arXiv preprint, 2025.
+Popovic B. et al., 2025, "A Reassessment of the Pantheon+ and DES 5YR Calibration Uncertainties: Dovekie" (arXiv:2506.05471).
 
 Rice S. O., 1944, 1945, "Mathematical analysis of random noise", Bell Syst. Tech. J. 23, 282; 24, 46.
 
@@ -621,7 +621,7 @@ Saadeh D., Feeney S. M., Pontzen A., Peiris H. V., McEwen J. D., 2016, "How isot
 
 Sachs R. K., Wolfe A. M., 1967, "Perturbations of a cosmological model and angular variations of the microwave background", ApJ 147, 73.
 
-Sah S., Rameez M., 2024, on the dipole anisotropy of cosmic acceleration in the Pantheon+ supernova sample, preprint, 2024.
+Sah S., Rameez M., Sarkar S., Tsagas C. G., 2025, "Anisotropy in Pantheon+ supernovae", Eur. Phys. J. C 85, 596 (arXiv:2411.10838).
 
 Sazonov S. Y., Sunyaev R. A., 1999, "Microwave polarization in the direction of galaxy clusters induced by the CMB quadrupole anisotropy", MNRAS 310, 765 (arXiv:astro-ph/9903287).
 
@@ -633,9 +633,9 @@ Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S., Colin J., 20
 
 Shamir L., 2012, "Handedness asymmetry of spiral galaxies with z < 0.3 shows cosmic parity violation and a dipole axis", Phys. Lett. B 715, 25 (arXiv:1207.5464).
 
-Shamir L., 2022, "Large-scale asymmetry in galaxy spin directions: analysis of galaxies with spectra in DES, SDSS, and DESI Legacy Survey", preprint, 2022.
+Shamir L., 2022, "Large-scale asymmetry in galaxy spin directions: analysis of galaxies with spectra in DES, SDSS, and DESI Legacy Survey", Astron. Nachr., 2022 (arXiv:2204.01192).
 
-Shamir L., 2025, "Galaxy spin-direction asymmetry in the JWST JADES field", arXiv preprint, 2025.
+Shamir L., 2025, "The distribution of galaxy rotation in JWST Advanced Deep Extragalactic Survey", MNRAS (arXiv:2502.18781).
 
 Shandarin S. F., Zel'dovich Ya. B., 1989, "The large-scale structure of the universe: turbulence, intermittency, structures in a self-gravitating medium", Rev. Mod. Phys. 61, 185.
 
