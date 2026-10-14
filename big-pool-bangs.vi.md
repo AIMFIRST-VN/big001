@@ -1,11 +1,7 @@
 ---
 title: "Lý thuyết Big Pool Bangs"
 subtitle: "Loại bỏ vật chất tối và lạm phát hài hước"
-author:
-  - Minh Ky Phong Dang
-  - Fable Nỗ lực Thấp (*Fable Low Effort*)
-  - Thế lực Bóng tối (*the Dark Force*)
-  - với sự hỗ trợ của Gemini
+author: "Minh Ky Phong Dang"
 date: "`\\small`{=latex} *14 tháng 10 năm 2026 · phiên bản v6-8-vi (bản dịch từ bản gốc tiếng Anh v6-8)*"
 ---
 
@@ -446,6 +442,10 @@ Hầu hết các phép kiểm tra quyết định là từ kho lưu trữ và r�
 Trong một đoạn: một tinh thể bị kẹt cứng đã nảy và bóc vỏ, một trường mảnh vụn sắp theo tốc độ được xếp thành các vòng — lõi, Kernel 0,0,0, được nghiền thành ánh sáng ta sống trong đó và dấu vết lạnh ta gọi là vật chất tối; phần thịt và da tối, và hạt giống của dòng Hubble hay chính dòng Hubble tùy ta hỏi vòng nào — và một dấu vân tay lạnh trên vách xa có thể thuộc về ai đó khác. Mỗi điều này được phát biểu sao cho một phép đo có thể loại bỏ nó.
 
 Đại dương đã được lập bản đồ tới tận chân trời và chưa thấy bờ nào. Vậy ta tiếp tục ra khơi, với đam mê, để tìm đất liền.
+
+## **Lời cảm ơn**
+
+Tác giả chịu hoàn toàn trách nhiệm về nội dung của bài báo này. Việc soạn thảo, mã nguồn và phân tích được hỗ trợ bởi các mô hình ngôn ngữ AI (Anthropic Claude, bao gồm mô hình được ghi công trong các phiên bản trước là "Fable Low Effort", và Google Gemini); mọi kết quả, hình vẽ và tài liệu tham khảo đều đã được tác giả kiểm tra. Cảm ơn "Thế lực Bóng tối" (*the Dark Force*) vì những trao đổi.
 
 ## **Tài liệu tham khảo**
 

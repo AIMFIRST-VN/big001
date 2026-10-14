@@ -1,11 +1,7 @@
 ---
 title: "The Big Pool Bangs Theory"
 subtitle: "Getting Rid of Dark Matter and Comic Inflation"
-author:
-  - Minh Ky Phong Dang
-  - Fable Low Effort
-  - the Dark Force
-  - with Gemini assist
+author: "Minh Ky Phong Dang"
 date: "5 September 2026 · version v6-8"
 ---
 
@@ -448,6 +444,10 @@ Most of the decisive tests are archival and cheap. The curl search (P8 (Curl Tes
 In one paragraph: a jammed crystal that bounced and peeled, a speed-sorted debris field arranged in rings — the core, Kernel 0,0,0, ground into the light we live in and the cold trace we call dark matter; the flesh and skin dark, and the seed of the Hubble flow or the Hubble flow itself depending on which ring one asks — and a cold fingerprint on the far wall that may belong to someone else. Each of these is stated so that a measurement can remove it.
 
 The ocean has been mapped as far as the horizon and no coast has been sighted. So we sail on, with passion, to find land.
+
+## **Acknowledgements**
+
+The author takes full responsibility for the content of this paper. Drafting, code and analysis were assisted by AI language models (Anthropic Claude, including the model credited in earlier versions as "Fable Low Effort", and Google Gemini); every result, figure and reference was checked by the author. Thanks to "the Dark Force" for discussions.
 
 ## **References**
 
