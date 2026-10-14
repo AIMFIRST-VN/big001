@@ -516,7 +516,7 @@ DES Collaboration, 2024, "The Dark Energy Survey: cosmology results with ~1500 n
 
 DESI Collaboration, 2024, "DESI 2024 V: Full-shape galaxy clustering from galaxies and quasars" (arXiv:2411.12021); "DESI 2024 VII: Cosmological constraints from the full-shape modeling of clustering measurements" (arXiv:2411.12022).
 
-DESI Collaboration, 2025, "DESI DR2 results II: measurements of baryon acoustic oscillations and cosmological constraints" (arXiv:2503.14738).
+DESI Collaboration, 2025, "DESI DR2 results II: measurements of baryon acoustic oscillations and cosmological constraints", Phys. Rev. D 112, 083515 (arXiv:2503.14738).
 
 Eisenstein D. J. et al., 2005, "Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies", ApJ 633, 560 (arXiv:astro-ph/0501171).
 
@@ -544,7 +544,7 @@ Hu W., Sugiyama N., 1996, "Small-scale cosmological perturbations: an analytic a
 
 Hutsemékers D., Cabanac R., Lamy H., Sluse D., 2005, "Mapping extreme-scale alignments of quasar polarization vectors", A&A 441, 915 (arXiv:astro-ph/0507274).
 
-Iye M., Yagi M., Fukumoto H., 2021, "Spin parity of spiral galaxies III: dipole analysis of the distribution of SDSS spirals with 3D random walk simulation", ApJ 907, 123 (arXiv:2011.00662).
+Iye M., Yagi M., Fukumoto H., 2021, "Spin parity of spiral galaxies III: dipole analysis of the distribution of SDSS spirals with 3D random walk simulations", ApJ 907, 123 (arXiv:2011.00662).
 
 Jimenez R., Loeb A., 2002, "Constraining cosmological parameters based on relative galaxy ages", ApJ 573, 37 (arXiv:astro-ph/0106145).
 
@@ -584,13 +584,15 @@ Niikura H. et al., 2019a, "Microlensing constraints on primordial black holes wi
 
 Niikura H., Takada M., Yokoyama S., Sumi T., Masaki S., 2019b, "Constraints on Earth-mass primordial black holes from OGLE 5-year microlensing events", Phys. Rev. D 99, 083503 (arXiv:1901.07120).
 
-de Oliveira-Costa A., Tegmark M., Zaldarriaga M., Hamilton A., 2004, "The significance of the largest scale CMB fluctuations in WMAP", Phys. Rev. D 69, 063516 (arXiv:astro-ph/0307282).
+de Oliveira-Costa A., Tegmark M., Zaldarriaga M., Hamilton A., 2004, "Significance of the largest scale CMB fluctuations in WMAP", Phys. Rev. D 69, 063516 (arXiv:astro-ph/0307282).
 
 Ozernoy L. M., Chernin A. D., 1968, "The fragmentation of matter in a turbulent metagalactic medium", Sov. Astron. 11, 907.
 
 Peebles P. J. E., 1971, "Primeval turbulence?", Astrophys. Space Sci. 11, 443.
 
-Philcox O. H. E., Farren G. S., Sherwin B. D., Baxter E. J., Alonso D., 2022, "Determining the Hubble constant without the sound horizon: a 3.6% constraint on H0 from galaxy surveys, CMB lensing, and supernovae", Phys. Rev. D 106, 063530 (arXiv:2204.02984).
+Peebles P. J. E., Yu J. T., 1970, "Primeval adiabatic perturbation in an expanding universe", ApJ 162, 815.
+
+Philcox O. H. E., Farren G. S., Sherwin B. D., Baxter E. J., Brout D. J., 2022, "Determining the Hubble constant without the sound horizon: a 3.6% constraint on H0 from galaxy surveys, CMB lensing, and supernovae", Phys. Rev. D 106, 063530 (arXiv:2204.02984).
 
 Philcox O. H. E., Ivanov M. M., Simonović M., Zaldarriaga M., 2020, "Combining full-shape and BAO analyses of galaxy power spectra: a 1.6% CMB-independent constraint on H0", JCAP 05, 032 (arXiv:2002.04035).
 
@@ -608,7 +610,7 @@ Planck Collaboration, 2020 VII, "Planck 2018 results VII: isotropy and statistic
 
 Planck Collaboration, 2020 VIII, "Planck 2018 results VIII: gravitational lensing", A&A 641, A8 (arXiv:1807.06210).
 
-Popovic B. et al., 2025, "A Reassessment of the Pantheon+ and DES 5YR Calibration Uncertainties: Dovekie" (arXiv:2506.05471).
+Popovic B. et al., 2025, "A Reassessment of the Pantheon+ and DES 5YR Calibration Uncertainties: Dovekie", A&A 712, A131 (arXiv:2506.05471).
 
 Rice S. O., 1944, 1945, "Mathematical analysis of random noise", Bell Syst. Tech. J. 23, 282; 24, 46.
 
@@ -620,7 +622,7 @@ Saadeh D., Feeney S. M., Pontzen A., Peiris H. V., McEwen J. D., 2016, "How isot
 
 Sachs R. K., Wolfe A. M., 1967, "Perturbations of a cosmological model and angular variations of the microwave background", ApJ 147, 73.
 
-Sah S., Rameez M., Sarkar S., Tsagas C. G., 2025, "Anisotropy in Pantheon+ supernovae", Eur. Phys. J. C 85, 596 (arXiv:2411.10838).
+Sah A., Rameez M., Sarkar S., Tsagas C. G., 2025, "Anisotropy in Pantheon+ supernovae", Eur. Phys. J. C 85, 596 (arXiv:2411.10838).
 
 Sazonov S. Y., Sunyaev R. A., 1999, "Microwave polarization in the direction of galaxy clusters induced by the CMB quadrupole anisotropy", MNRAS 310, 765 (arXiv:astro-ph/9903287).
 
@@ -632,9 +634,9 @@ Secrest N. J., von Hausegger S., Rameez M., Mohayaee R., Sarkar S., Colin J., 20
 
 Shamir L., 2012, "Handedness asymmetry of spiral galaxies with z < 0.3 shows cosmic parity violation and a dipole axis", Phys. Lett. B 715, 25 (arXiv:1207.5464).
 
-Shamir L., 2022, "Large-scale asymmetry in galaxy spin directions: analysis of galaxies with spectra in DES, SDSS, and DESI Legacy Survey", Astron. Nachr., 2022 (arXiv:2204.01192).
+Shamir L., 2022, "Large-scale asymmetry in galaxy spin directions: analysis of galaxies with spectra in DES, SDSS, and DESI Legacy Survey", Astron. Nachr. 343, e20220010 (arXiv:2204.01192).
 
-Shamir L., 2025, "The distribution of galaxy rotation in JWST Advanced Deep Extragalactic Survey", MNRAS (arXiv:2502.18781).
+Shamir L., 2025, "The distribution of galaxy rotation in JWST Advanced Deep Extragalactic Survey", MNRAS 538, 76 (arXiv:2502.18781).
 
 Shandarin S. F., Zel'dovich Ya. B., 1989, "The large-scale structure of the universe: turbulence, intermittency, structures in a self-gravitating medium", Rev. Mod. Phys. 61, 185.
 
@@ -646,7 +648,9 @@ Tully R. B. et al., 2023, "Cosmicflows-4", ApJ 944, 94 (arXiv:2209.11238).
 
 Turner M. S., 1991, "Tilted Universe and other remnants of the preinflationary Universe", Phys. Rev. D 44, 3737.
 
-Vielva P., Martínez-González E., Barreiro R. B., Sanz J. L., Cayón L., 2004, "Detection of non-Gaussianity in the WMAP 1-year data using spherical wavelets", ApJ 609, 22 (arXiv:astro-ph/0310273).
+Turner M. S., Weinberg E. J., Widrow L. M., 1992, "Bubble nucleation in first-order inflation and other cosmological phase transitions", Phys. Rev. D 46, 2384.
+
+Vielva P., Martínez-González E., Barreiro R. B., Sanz J. L., Cayón L., 2004, "Detection of non-Gaussianity in the Wilkinson Microwave Anisotropy Probe first-year data using spherical wavelets", ApJ 609, 22 (arXiv:astro-ph/0310273).
 
 Volovik G. E., 2003, "The Universe in a Helium Droplet", Oxford University Press.
 
