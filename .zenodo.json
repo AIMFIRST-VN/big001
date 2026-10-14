@@ -1,0 +1,25 @@
+{
+  "title": "The Big Pool Bangs Theory: Getting Rid of Dark Matter and Comic Inflation",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Dang, Minh Ky Phong",
+      "affiliation": "AIMFIRST-VN"
+    }
+  ],
+  "description": "We propose a mechanical alternative to inflation in which the universe is a set of concentric rings of identical Planck-mass relics, treated as effective hard spheres, obeying different mechanics in each ring. A jammed relic ensemble rebounds under a loop-quantum-cosmology-type modified Friedmann equation; toy N-body simulations with a turbulent kick distribution eject 88% +/- 4% of the mass with clean velocity sorting, forming dark outer rings. We live in the innermost ring, Kernel 0,0,0, where relic mergers grind mass into light: that light is the hot Big Bang, and the surviving trace of relics is cold dark matter with no new particle, so a confirmed particle detection would falsify the model. Dark energy is not explained: coasting expansion is disfavored by Pantheon+ and DES-SN5YR, a relativistic LTB lightcone decelerates, and a kSZ gate caps any ejection contribution at ~1%, so we adopt a constant tension of space (w=-1). A non-singular bounce evades the Borde-Guth-Vilenkin theorem, but the horizon and flatness problems remain open and the spectral tilt is fitted. A neighbouring universe beyond our horizon can imprint only an initial-condition Sachs-Wolfe potential; for the CMB Cold Spot this fixes a source mass ~10^48 kg (+0.6/-0.4 dex) 1-2.5 Gly beyond last scattering. We organize the claims into eight hypotheses with explicit falsifiers, catalogue thirteen predictions with the instruments required, and state the open problems, led by a merger cross-section that misses the required survivor fraction by up to 28 orders of magnitude.",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "cosmology",
+    "dark matter",
+    "inflation alternatives",
+    "bounce cosmology",
+    "Planck relics",
+    "CMB Cold Spot",
+    "cosmic dipole",
+    "falsifiable predictions"
+  ],
+  "notes": "Not peer reviewed. Vietnamese translation included (big-pool-bangs.vi.pdf). Code and data: https://github.com/AIMFIRST-VN/big001"
+}
