@@ -1,6 +1,6 @@
 # The Big Pool Bangs Theory
 
-DOI (Zenodo, v6-9): [https://doi.org/10.5281/zenodo.23357433](https://doi.org/10.5281/zenodo.23357433)
+DOI (Zenodo, always the latest version): [https://doi.org/10.5281/zenodo.23357432](https://doi.org/10.5281/zenodo.23357432) · v6-10: [10.5281/zenodo.23357517](https://doi.org/10.5281/zenodo.23357517) · v6-9: [10.5281/zenodo.23357433](https://doi.org/10.5281/zenodo.23357433)
 
 Speculative cosmology paper: a jammed hard-sphere Planck-relic core, a loop-quantum-cosmology-type bounce, chaotic ejection as the origin of dark matter, and a set of hypotheses about where we sit inside our own Big Pool Bang and where a second one might be (the Cold Spot direction). Every hypothesis carries explicit falsifiers and a pre-registered test list.
 
