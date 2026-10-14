@@ -3,7 +3,7 @@ title: "Lý thuyết Big Pool Bangs"
 subtitle: "Loại bỏ vật chất tối và lạm phát hài hước"
 author:
   - Minh Ky Phong Dang
-  - Fable Low Effort
+  - Fable Nỗ lực Thấp (*Fable Low Effort*)
   - Thế lực Bóng tối (*the Dark Force*)
   - với sự hỗ trợ của Gemini
 date: "14 tháng 10 năm 2026 · phiên bản v6-8-vi (bản dịch từ bản gốc tiếng Anh v6-8)"
